@@ -1,0 +1,9 @@
+{
+    "path" : "~/GitHub/Website/content/courses/CPE",
+    "sortOrder" : [
+        {
+            "ascending" : true,
+            "columnIndex" : 2
+        }
+    ]
+}

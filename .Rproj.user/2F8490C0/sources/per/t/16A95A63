@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1586623811167.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "464177642",
+    "id" : "16A95A63",
+    "lastKnownWriteTime" : 1586626914,
+    "last_content_update" : 1586626914370,
+    "path" : "~/GitHub/Website/content/courses/CPE/_index.Rmd",
+    "project_path" : "content/courses/CPE/_index.Rmd",
+    "properties" : {
+        "cursorPosition" : "11,10",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

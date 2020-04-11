@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1586626703036.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4184236158",
+    "id" : "8E12920A",
+    "lastKnownWriteTime" : 1586623616,
+    "last_content_update" : 1586623616,
+    "path" : "~/GitHub/Website/content/courses/example/_index.md",
+    "project_path" : "content/courses/example/_index.md",
+    "properties" : {
+        "cursorPosition" : "4,14",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "markdown"
+}
