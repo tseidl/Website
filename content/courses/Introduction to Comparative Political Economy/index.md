@@ -8,11 +8,11 @@ links:
 - icon: bookmark
   icon_pack: fas
   name: Syllabus
-  url:
+  url: files/Syllabus_CPE_Seidl.pdf
 - icon: tv
   icon_pack: fas
   name: Slides
-  url:
+  url: 
 summary: Undergraduate Level Introductory Course.
 tags:
 - Substantive
