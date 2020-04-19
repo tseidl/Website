@@ -1,14 +1,14 @@
 ---
 date: 2020
 links:
-- icon: bookmark
-  icon_pack: fas
-  name: Syllabus
-  url: 
 - icon: link
   icon_pack: fas
   name: Course Website (Password Protected)
-  url:
+  url: https://tseidl.github.io/CPE/
+- icon: bookmark
+  icon_pack: fas
+  name: Syllabus
+  url: files/Syllabus_CPE_Seidl.pdf
 - icon: tv
   icon_pack: fas
   name: Slides
