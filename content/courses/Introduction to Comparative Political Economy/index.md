@@ -8,7 +8,7 @@ links:
 - icon: bookmark
   icon_pack: fas
   name: Syllabus
-  url: files/Syllabus_CPE_Seidl.pdf
+  url:
 - icon: tv
   icon_pack: fas
   name: Slides
