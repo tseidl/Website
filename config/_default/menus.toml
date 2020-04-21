@@ -37,7 +37,3 @@
   url = "files/CV_Seidl.pdf"
   weight = 70
 
-[[main]]
-  name = "Research Interests"
-  url = "research interests/_index.html"
-  weight = 80
