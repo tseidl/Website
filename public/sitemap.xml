@@ -58,11 +58,6 @@
   </url>
   
   <url>
-    <loc>/projects/text-as-data/</loc>
-    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/theoretical/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url>
@@ -74,6 +69,11 @@
   
   <url>
     <loc>/projects/political-economy-of-digital-capitalism/</loc>
+    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/projects/text-as-data/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url>
   
