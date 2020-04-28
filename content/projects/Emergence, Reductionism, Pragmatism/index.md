@@ -7,6 +7,7 @@ summary: What is the relationship between the social sciences and the psychologi
 tags:
 - Theoretical
 title: Emergence, Reductionism, Pragmatism?
+weight: 30
 url_code: ""
 url_pdf: ""
 url_slides: ""

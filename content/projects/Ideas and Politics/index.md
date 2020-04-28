@@ -7,6 +7,7 @@ summary: How do ideas become effective forces in history?
 tags:
 - Theoretical
 title: Ideas and Politics
+weight: 15
 url_code: ""
 url_pdf: ""
 url_slides: ""

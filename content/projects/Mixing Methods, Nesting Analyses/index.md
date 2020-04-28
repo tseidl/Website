@@ -1,5 +1,5 @@
 ---
-date: "2020-05-01"
+date: "2020-01-01"
 image:
   caption: 
   focal_point: Smart
@@ -7,6 +7,7 @@ summary: How can be combine different types of evidence in ways that are more th
 tags:
 - Methodological
 title: Mixing Methods, Nesting Analyses
+weight: 25
 url_code: ""
 url_pdf: ""
 url_slides: ""

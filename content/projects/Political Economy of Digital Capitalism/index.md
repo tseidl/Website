@@ -3,10 +3,11 @@ date: "2020-01-01"
 image:
   caption: 
   focal_point: Smart
-summary: How do ideas become effective forces in history?
+summary: How does politics shape the course and character of digitalization?
 tags:
 - Substantive
 title: Political Economy of Digital Capitalism
+weight: 10
 url_code: ""
 url_pdf: ""
 url_slides: ""

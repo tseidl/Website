@@ -1,5 +1,5 @@
 ---
-date: "2020-05-01"
+date: "2020-01-01"
 image:
   caption:
   focal_point: Smart
@@ -7,6 +7,7 @@ summary: What are the interests and ideas driving Germany's foreign policy, both
 tags:
 - Substantive
 title: German Foreign Policy
+weight: 90
 url_code: ""
 url_pdf: ""
 url_slides: ""

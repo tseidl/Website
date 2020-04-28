@@ -13,122 +13,15 @@
     </image>
     
     <item>
-      <title>Example Talk</title>
-      <link>/talk/example/</link>
-      <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
-      <guid>/talk/example/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Slides can be added in a few ways:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Create&lt;/strong&gt; slides using Academic&amp;rsquo;s 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Slides&lt;/em&gt;&lt;/a&gt; feature and link using &lt;code&gt;slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Upload&lt;/strong&gt; an existing slide deck to &lt;code&gt;static/&lt;/code&gt; and link using &lt;code&gt;url_slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Embed&lt;/strong&gt; your slides (e.g. Google Slides) or presentation video on this page using 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;shortcodes&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Further talk details can easily be added to this page using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Emergence, Reductionism, Pragmatism?</title>
-      <link>/projects/emergence-reductionism-pragmatism/</link>
-      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
-      <guid>/projects/emergence-reductionism-pragmatism/</guid>
-      <description>&lt;p&gt;This is a bit of an older strand of my work, and one that is at risk of loosing itself in abstract theorizing. A while ago, I wrote a whole (and somewhat turgid) chapter about my thinking on this topic, which hasn&amp;rsquo;t changed much since. Unfortunately (and naturally), however, the chapter is in German, so here is a quick summary of my thoughts.&lt;/p&gt;
-&lt;p&gt;In a nutshell, I find myself unconvinced by attempts to justify non-reductive forms of individualism.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; What do I mean by that? The central premise of non-reductive indidvidualists is the &lt;em&gt;emergentist&lt;/em&gt; claim that while social phenomena must always be realized in individuals (much like thoughts must always be somehow realized in brain activity), they are nonetheless &lt;em&gt;irreducible&lt;/em&gt; to these underlying individual (or ultimately physial) processes in that they exert independent causal influences on them.&lt;/p&gt;
-&lt;p&gt;Without going into too much detail here, it strikes me as implausible that things that are always realized on a lower level can also be somehow independent of these lower levels (this is the same criticism that Jaegwon Kim&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; has levelled against analogous arguments in the philosophy of mind). If everything always also has to happen on the lower level, there is simply nothing left to do for top-down causality. Either things happen on a higher level that don&amp;rsquo;t happen on a lower level, or there is just no causal work left to do for higher-level processes.&lt;/p&gt;
-&lt;p&gt;Without going further down this rabbit hole, we find ourselves at an impasse. What seems obvious, namely that psychology or biology, not to speak of physics, don&amp;rsquo;t even come close to offering a reasonable explanation for the intricacies and excentricities of social and political life, also seems philosophically questionable.&lt;/p&gt;
-&lt;p&gt;The problem is of course resolved if we acknowledge that the language game social scientists are playing offers incredibly useful &lt;em&gt;shortcuts&lt;/em&gt; for describing processes that would be devilishly difficult to describe otherwise (it is, after all, also much easier to say &amp;ldquo;I am hungry&amp;rdquo; than to give an detailed account of the complex physiological processes that underlie both the feeling of hunger and its representation in the mind).&lt;/p&gt;
-&lt;p&gt;But if that is the case, why even bother with psychological or biological explanations? Why not just keep playing the social scientific language game if that gets us where we want to be? Well, it is not that easy either. That is because if we acknowledge that all social life is realized in individuals - that causality flows only between individuals and not from society &amp;ldquo;down&amp;rdquo; to individuals - we also need to acknowledge that our theories of social life should not contradict the best theories we have about individuals.&lt;/p&gt;
-&lt;p&gt;But fear now, fellow social scientists. In the pragmatist understanding I and many others offer, the social sciences are not reduced to a biologistic or psychologistic science of the individual, but need only be &lt;em&gt;compatible&lt;/em&gt; with their findings. This is not to say, of course, that social scientists cannot challenge these findings, but they should seriously engage with those that are well replicated and adjust their theories accordingly (for an excellent example, see Stephen Vaisey&amp;rsquo;s work on sociological theories of motivation and justification&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;).&lt;/p&gt;
-&lt;p&gt;It is in this spirit that I made the case for a more serious and sustained engagement between &amp;ldquo;human scientists&amp;rdquo; from different backgrounds. It heartening to see that multiple lines of research converge on similiar conclusions, from the work on the social-evolutionary origins of human thinking and human morality&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;, to the work at the intersection of sociology and genetics&lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;, to the &amp;ldquo;social turn&amp;rdquo; in many life sciences&lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;, to the &amp;ldquo;psychological turn&amp;rdquo; in many subfields of political science.&lt;sup id=&#34;fnref:7&#34;&gt;&lt;a href=&#34;#fn:7&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;7&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;p&gt;I have no current projects in this area, but I am convinced that a full account of social life needs to take recourse to not only structural, institutional, and ideational explanations, but also to psychological (or biological) ones - sometimes this simply mean to make sure that our theories do not outrightly contradict &amp;ldquo;lower-level&amp;rdquo; theories, sometimes it means to actively incorporate (and advance) them.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Greve, J. (2012) ‘Emergence in Sociology: A Critique of Nonreductive Individualism’, Philosophy of the Social Sciences, 42(2), pp. 188–223. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Kim, J. (ed.) (1993) Supervenience and mind: Selected philosophical essays. New York: Cambridge University Press. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Vaisey, S. (2009) ‘Motivation and Justification: A Dual-Process Model of Culture in Action’, American Journal of Sociology, 114(6), pp. 1675–1715. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Tomasello, M. (2014) A Natural History of Human Thinking. Cambridge, Mass.: Harvard Univ. Press.
-Tomasello, M. (2016) A Natural History of Human Morality. Cambridge, Mass.: Harvard University Press. &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id=&#34;fn:5&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Freese, J. and Shostak, S. (2009) ‘Genetics and Social Inquiry’, Annual Review of Sociology, 35(1), pp. 107–128. &lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id=&#34;fn:6&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Meloni, M. (2014) ‘How biology became social, and what it means for social theory’, The Sociological Review, 62(3), pp. 593–614. &lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id=&#34;fn:7&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;For example, Kertzer, J.D. and Tingley, D. (2018) ‘Political Psychology in International Relations: Beyond the Paradigms’, Annual Review of Political Science, 21(1), pp. 319–339. &lt;a href=&#34;#fnref:7&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/section&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>German Foreign Policy</title>
-      <link>/projects/german-foreign-policy/</link>
-      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
-      <guid>/projects/german-foreign-policy/</guid>
-      <description>&lt;p&gt;The questions which are &amp;hellip;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Mixing Methods, Nesting Analyses</title>
-      <link>/projects/mixing-methods-nesting-analyses/</link>
-      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
-      <guid>/projects/mixing-methods-nesting-analyses/</guid>
-      <description>&lt;p&gt;It sounds an aweful lot like a cheap cliché, but I really am a believer in combining different types of methods to make a case.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Social Science and Social Criticism?</title>
-      <link>/projects/social-science-and-social-criticism/</link>
-      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
-      <guid>/projects/social-science-and-social-criticism/</guid>
-      <description>&lt;p&gt;It is perhaps the &lt;em&gt;Gretchenfrage&lt;/em&gt; for every social scientist: &amp;ldquo;how do you feel about social criticism?&amp;rdquo;&lt;/p&gt;
-&lt;h2 id=&#34;frankfurt-school-and-the-search-for-a-yardstick&#34;&gt;Frankfurt School and the search for a yardstick&lt;/h2&gt;
-&lt;p&gt;I have long been fascinated by attempts to develop something like a normative yardstick by which to judge whether a particular social practice or arrangment is good or bad, worthy of critic or deserving of praise.&lt;/p&gt;
-&lt;p&gt;In a certain sense, these attempts to put social critcism on an &amp;lsquo;objective&amp;rsquo; foundation were of course doomed to fail. But they also produced a rich body of work at the intersection of social philsophpy and empirical social science that I continue to feel drawn to, and that is, perhaps, the saving grace of the Frankfurt School, which has first developed but not always lived up to promise of this interdisciplinary approach.&lt;/p&gt;
-&lt;p&gt;In addition, many of the thinkers of the Frankfurt School, above all Jürgen Habermas, expressed an intution that has always rung true to me: that despite its flaws, modernity is something worth saving. Habermas own theory is an attempt to show how the process of moderization has released the rationality potential embedded in human language. This same process of modernization, however, now threatens to undermine the progress it has made possible as an unteethered capitalist system wreaks havoc on the very lifeworlds from where it once emerged.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;h2 id=&#34;the-french-and-the-search-for-a-way-out&#34;&gt;The French and the search for a way out&lt;/h2&gt;
-&lt;p&gt;This approach to social criticism is of course not the only one possible. From Friedrich Nietzsche to Michel Foucault, there is a long history of genealogical critics, which attempt to drill holes in the solid concrete of taken-for-granted lifeworlds by forcing societies to look into the mirror of their own, often dark and always contingent histories.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; The point of these genealogical critics, as Foucault readily acknowledges, is no longer to put criticism on normative foundation, but to elicit a &amp;ldquo;limit-experience&amp;rdquo; that &amp;ldquo;changes us, that prevents us from always being the same, or from having the same kind of relationoship with things and others that we had before.&amp;quot;&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;p&gt;This, of course, leads to a point where everything solid melts into air, as Marx once put it, even the purpuose of the genealogical critcism itself. Foucault says he does what he does so that those implicated in relations of power&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&amp;ldquo;might escape them through their actions of resistance and rebellion, might transform them in order not to be subjugated any longer. And if I don&amp;rsquo;t ever say what must be done, it isn&amp;rsquo;t because I believe that there&amp;rsquo;s nothing to be done; on the contrary, it is because I think that there are a thousand things to do, to invent, to forge, on the part of those who, recognizing the relations of power in which they&amp;rsquo;re implicated, have decided to resist or escape them. From this point of view all of my investigations rest on a postulate of absolute optimism. I do not conduct my analyses in order to say: this is how things are, look how trapped you are. I say certain things only to the extent to which I see them as capable of permitting the transformation of reality.&amp;quot;&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Foucault, then, does not want to be the one who criticizes but hopes that his genealogical descriptions might elicit rebellion in the reader. Why rebellion is better than non-rebellion, why replacing one system of power with another, is a question that Foucault does not have an answer for.&lt;/p&gt;
-&lt;p&gt;I always found this position frustrating, thought that we could &amp;lsquo;do better&amp;rsquo;, not just by developing standards that are at least better justifiable.&lt;/p&gt;
-&lt;p&gt;In a similar yet different fashion, Pierre Bourdieu has offered a&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Habermas, J. (1987) The Theory of Communicative Action: Volume 2. Lifeworld and System: A Critique of Functionalist Reason. Boston: Beacon. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Foucault, M. (1984) ‘What is Enlightenment?’ in Rabinow, P. (ed.) The Foucault Reader. New York: Vintage Books, pp. 32–50. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Foucault, M. (1991) Remarks on Marx: Conversations with Duccio Trombardori: Semiotext(e). &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/section&gt;
+      <title>Political Economy of Digital Capitalism</title>
+      <link>/projects/political-economy-of-digital-capitalism/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/projects/political-economy-of-digital-capitalism/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
 </description>
     </item>
     
@@ -210,19 +103,6 @@ Tomasello, M. (2016) A Natural History of Human Morality. Cambridge, Mass.: Harv
     </item>
     
     <item>
-      <title>Political Economy of Digital Capitalism</title>
-      <link>/projects/political-economy-of-digital-capitalism/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>/projects/political-economy-of-digital-capitalism/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
-&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
-&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
-&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
-&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Text as Data</title>
       <link>/projects/text-as-data/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
@@ -232,6 +112,126 @@ Tomasello, M. (2016) A Natural History of Human Morality. Cambridge, Mass.: Harv
 &lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
 &lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
 &lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mixing Methods, Nesting Analyses</title>
+      <link>/projects/mixing-methods-nesting-analyses/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/projects/mixing-methods-nesting-analyses/</guid>
+      <description>&lt;p&gt;It sounds an aweful lot like a cheap cliché, but I really am a believer in combining different types of methods to make a case.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Emergence, Reductionism, Pragmatism?</title>
+      <link>/projects/emergence-reductionism-pragmatism/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      <guid>/projects/emergence-reductionism-pragmatism/</guid>
+      <description>&lt;p&gt;This is a bit of an older strand of my work, and one that is at risk of loosing itself in abstract theorizing. A while ago, I wrote a whole (and somewhat turgid) chapter about my thinking on this topic, which hasn&amp;rsquo;t changed much since. Unfortunately (and naturally), however, the chapter is in German, so here is a quick summary of my thoughts.&lt;/p&gt;
+&lt;p&gt;In a nutshell, I find myself unconvinced by attempts to justify non-reductive forms of individualism.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; What do I mean by that? The central premise of non-reductive indidvidualists is the &lt;em&gt;emergentist&lt;/em&gt; claim that while social phenomena must always be realized in individuals (much like thoughts must always be somehow realized in brain activity), they are nonetheless &lt;em&gt;irreducible&lt;/em&gt; to these underlying individual (or ultimately physial) processes in that they exert independent causal influences on them.&lt;/p&gt;
+&lt;p&gt;Without going into too much detail here, it strikes me as implausible that things that are always realized on a lower level can also be somehow independent of these lower levels (this is the same criticism that Jaegwon Kim&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; has levelled against analogous arguments in the philosophy of mind). If everything always also has to happen on the lower level, there is simply nothing left to do for top-down causality. Either things happen on a higher level that don&amp;rsquo;t happen on a lower level, or there is just no causal work left to do for higher-level processes.&lt;/p&gt;
+&lt;p&gt;Without going further down this rabbit hole, we find ourselves at an impasse. What seems obvious, namely that psychology or biology, not to speak of physics, don&amp;rsquo;t even come close to offering a reasonable explanation for the intricacies and excentricities of social and political life, also seems philosophically questionable.&lt;/p&gt;
+&lt;p&gt;The problem is of course resolved if we acknowledge that the language game social scientists are playing offers incredibly useful &lt;em&gt;shortcuts&lt;/em&gt; for describing processes that would be devilishly difficult to describe otherwise (it is, after all, also much easier to say &amp;ldquo;I am hungry&amp;rdquo; than to give an detailed account of the complex physiological processes that underlie both the feeling of hunger and its representation in the mind).&lt;/p&gt;
+&lt;p&gt;But if that is the case, why even bother with psychological or biological explanations? Why not just keep playing the social scientific language game if that gets us where we want to be? Well, it is not that easy either. That is because if we acknowledge that all social life is realized in individuals - that causality flows only between individuals and not from society &amp;ldquo;down&amp;rdquo; to individuals - we also need to acknowledge that our theories of social life should not contradict the best theories we have about individuals.&lt;/p&gt;
+&lt;p&gt;But fear now, fellow social scientists. In the pragmatist understanding I and many others offer, the social sciences are not reduced to a biologistic or psychologistic science of the individual, but need only be &lt;em&gt;compatible&lt;/em&gt; with their findings. This is not to say, of course, that social scientists cannot challenge these findings, but they should seriously engage with those that are well replicated and adjust their theories accordingly (for an excellent example, see Stephen Vaisey&amp;rsquo;s work on sociological theories of motivation and justification&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;).&lt;/p&gt;
+&lt;p&gt;It is in this spirit that I made the case for a more serious and sustained engagement between &amp;ldquo;human scientists&amp;rdquo; from different backgrounds. It heartening to see that multiple lines of research converge on similiar conclusions, from the work on the social-evolutionary origins of human thinking and human morality&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;, to the work at the intersection of sociology and genetics&lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;, to the &amp;ldquo;social turn&amp;rdquo; in many life sciences&lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;, to the &amp;ldquo;psychological turn&amp;rdquo; in many subfields of political science.&lt;sup id=&#34;fnref:7&#34;&gt;&lt;a href=&#34;#fn:7&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;7&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;I have no current projects in this area, but I am convinced that a full account of social life needs to take recourse to not only structural, institutional, and ideational explanations, but also to psychological (or biological) ones - sometimes this simply mean to make sure that our theories do not outrightly contradict &amp;ldquo;lower-level&amp;rdquo; theories, sometimes it means to actively incorporate (and advance) them.&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Greve, J. (2012) ‘Emergence in Sociology: A Critique of Nonreductive Individualism’, Philosophy of the Social Sciences, 42(2), pp. 188–223. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Kim, J. (ed.) (1993) Supervenience and mind: Selected philosophical essays. New York: Cambridge University Press. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Vaisey, S. (2009) ‘Motivation and Justification: A Dual-Process Model of Culture in Action’, American Journal of Sociology, 114(6), pp. 1675–1715. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Tomasello, M. (2014) A Natural History of Human Thinking. Cambridge, Mass.: Harvard Univ. Press.
+Tomasello, M. (2016) A Natural History of Human Morality. Cambridge, Mass.: Harvard University Press. &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:5&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Freese, J. and Shostak, S. (2009) ‘Genetics and Social Inquiry’, Annual Review of Sociology, 35(1), pp. 107–128. &lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:6&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Meloni, M. (2014) ‘How biology became social, and what it means for social theory’, The Sociological Review, 62(3), pp. 593–614. &lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:7&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;For example, Kertzer, J.D. and Tingley, D. (2018) ‘Political Psychology in International Relations: Beyond the Paradigms’, Annual Review of Political Science, 21(1), pp. 319–339. &lt;a href=&#34;#fnref:7&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Social Science and Social Criticism?</title>
+      <link>/projects/social-science-and-social-criticism/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/projects/social-science-and-social-criticism/</guid>
+      <description>&lt;p&gt;It is perhaps the &lt;em&gt;Gretchenfrage&lt;/em&gt; for every social scientist: &amp;ldquo;how do you feel about social criticism?&amp;rdquo;&lt;/p&gt;
+&lt;h2 id=&#34;frankfurt-school-and-the-search-for-a-yardstick&#34;&gt;Frankfurt School and the search for a yardstick&lt;/h2&gt;
+&lt;p&gt;I have long been fascinated by attempts to develop something like a normative yardstick by which to judge whether a particular social practice or arrangment is good or bad, worthy of critic or deserving of praise.&lt;/p&gt;
+&lt;p&gt;In a certain sense, these attempts to put social critcism on an &amp;lsquo;objective&amp;rsquo; foundation were of course doomed to fail. But they also produced a rich body of work at the intersection of social philsophpy and empirical social science that I continue to feel drawn to, and that is, perhaps, the saving grace of the Frankfurt School, which has first developed but not always lived up to promise of this interdisciplinary approach.&lt;/p&gt;
+&lt;p&gt;In addition, many of the thinkers of the Frankfurt School, above all Jürgen Habermas, expressed an intution that has always rung true to me: that despite its flaws, modernity is something worth saving. Habermas own theory is an attempt to show how the process of moderization has released the rationality potential embedded in human language. This same process of modernization, however, now threatens to undermine the progress it has made possible as an unteethered capitalist system wreaks havoc on the very lifeworlds from where it once emerged.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;h2 id=&#34;the-french-and-the-search-for-a-way-out&#34;&gt;The French and the search for a way out&lt;/h2&gt;
+&lt;p&gt;This approach to social criticism is of course not the only one possible. From Friedrich Nietzsche to Michel Foucault, there is a long history of genealogical critics, which attempt to drill holes in the solid concrete of taken-for-granted lifeworlds by forcing societies to look into the mirror of their own, often dark and always contingent histories.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; The point of these genealogical critics, as Foucault readily acknowledges, is no longer to put criticism on normative foundation, but to elicit a &amp;ldquo;limit-experience&amp;rdquo; that &amp;ldquo;changes us, that prevents us from always being the same, or from having the same kind of relationoship with things and others that we had before.&amp;quot;&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;This, of course, leads to a point where everything solid melts into air, as Marx once put it, even the purpuose of the genealogical critcism itself. Foucault says he does what he does so that those implicated in relations of power&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;might escape them through their actions of resistance and rebellion, might transform them in order not to be subjugated any longer. And if I don&amp;rsquo;t ever say what must be done, it isn&amp;rsquo;t because I believe that there&amp;rsquo;s nothing to be done; on the contrary, it is because I think that there are a thousand things to do, to invent, to forge, on the part of those who, recognizing the relations of power in which they&amp;rsquo;re implicated, have decided to resist or escape them. From this point of view all of my investigations rest on a postulate of absolute optimism. I do not conduct my analyses in order to say: this is how things are, look how trapped you are. I say certain things only to the extent to which I see them as capable of permitting the transformation of reality.&amp;quot;&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Foucault, then, does not want to be the one who criticizes but hopes that his genealogical descriptions might elicit rebellion in the reader. Why rebellion is better than non-rebellion, why replacing one system of power with another, is a question that Foucault does not have an answer for.&lt;/p&gt;
+&lt;p&gt;I always found this position frustrating, thought that we could &amp;lsquo;do better&amp;rsquo;, not just by developing standards that are at least better justifiable.&lt;/p&gt;
+&lt;p&gt;In a similar yet different fashion, Pierre Bourdieu has offered a&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Habermas, J. (1987) The Theory of Communicative Action: Volume 2. Lifeworld and System: A Critique of Functionalist Reason. Boston: Beacon. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Foucault, M. (1984) ‘What is Enlightenment?’ in Rabinow, P. (ed.) The Foucault Reader. New York: Vintage Books, pp. 32–50. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Foucault, M. (1991) Remarks on Marx: Conversations with Duccio Trombardori: Semiotext(e). &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>German Foreign Policy</title>
+      <link>/projects/german-foreign-policy/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/projects/german-foreign-policy/</guid>
+      <description>&lt;p&gt;The questions which are &amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Example Talk</title>
+      <link>/talk/example/</link>
+      <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
+      <guid>/talk/example/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Slides can be added in a few ways:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Create&lt;/strong&gt; slides using Academic&amp;rsquo;s 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Slides&lt;/em&gt;&lt;/a&gt; feature and link using &lt;code&gt;slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Upload&lt;/strong&gt; an existing slide deck to &lt;code&gt;static/&lt;/code&gt; and link using &lt;code&gt;url_slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Embed&lt;/strong&gt; your slides (e.g. Google Slides) or presentation video on this page using 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;shortcodes&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Further talk details can easily be added to this page using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
 </description>
     </item>
     

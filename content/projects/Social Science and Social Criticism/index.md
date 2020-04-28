@@ -1,5 +1,5 @@
 ---
-date: "2020-05-01"
+date: "2020-01-01"
 image:
   caption: 
   focal_point: Smart
@@ -7,6 +7,7 @@ summary: Can, should, must social science be critical of society?
 tags:
 - Theoretical
 title: Social Science and Social Criticism?
+weight: 30
 url_code: ""
 url_pdf: ""
 url_slides: ""

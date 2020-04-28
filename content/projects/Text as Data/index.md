@@ -3,10 +3,11 @@ date: "2020-01-01"
 image:
   caption: 
   focal_point: Smart
-summary: How does politics affect the course and character of digital capitalism?
+summary: How can measure text in meaningful ways?
 tags:
 - Methodological
 title: Text as Data
+weight: 20
 url_code: ""
 url_pdf: ""
 url_slides: ""
