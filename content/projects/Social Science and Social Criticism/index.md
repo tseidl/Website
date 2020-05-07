@@ -37,13 +37,13 @@ But what is the point of eliciting such limit-experiences if there is no normati
 
 But why subversion - and the "limit-experience" it elicits - is better than the compliance or even respect is not - and cannot be - answered. If everything solid has melted into air, we can only hope that we land softly.
 
-# Bourdieu and the freedom in determinism
+## Bourdieu and the freedom in determinism
 
 A third strand of social criticism, most eloquently developed by Pierre Bourdieu, has maneuvered itself into a similar cul-de-sac. For Bourdieu, social criticism is deeply entangled with questions of social determinism. In his sociological work, he had amply demonstrated the structuring effects of social fields and social power. For Bourdieu, communicative action was always distorted by the pernicious logic of symbolic power - the power that makes the dominated accept and internalize the reasons for their domination. 
 
 But for Bourdieu there was a way out, at least sort of. For Bourdieu, and here he agreed with Foucault, there was no going back behind the knowledge and acknowledgment of our own historicity - the fact that who we are and what we believe, as individuals and societies, is profoundly shaped by social and historical forces. But this, Bourdieu insisted, does not mean abandoning the possibility of critic but rather radicalizing it by asking about the social conditions of its possibility.
 
-> "In short, it is only through recognizing one's historicity that it becomes possible for Reason to extricate itself from it [its historicity]"[^5]
+> "In short, it is only through recognizing one's historicity that it becomes possible for Reason to extricate itself from it"[^5]
 
 What Bourdieu means here is that we can only think of escaping our historicity - the ways in which history and society shape us - if we understand and acknowledged it, much like we could only build flying airplanes after we understood and acknowledged the laws of gravity. Freedom, then, does not disappear in the face of determinism but requires us to recognize it. But our ability to uncover the laws that govern social life is of course itself a product of history. 
 
@@ -51,7 +51,7 @@ What Bourdieu means here is that we can only think of escaping our historicity -
 
 For Bourdieu, science itself is the product of contingent (and reversible) historical circumstances that have established a situation in which all actors have an interest in finding the truth - as opposed to politically convenient, economically lucrative, or morally comfortable lies. This is why science is so important; it carves out a socially constructed space for people to pursue truth - and to get something from doing so. Only under these conditions - however imperfect they may be - can we hope to understand and therefore at least somewhat escape - the iron laws of determinism. 
 
-# The social critic as a gardener
+## The social critic as a gardener
 
 It is here that my thinking on social criticism has arrived - at least for the moment. We, as (social) scientists are in the extraordinarily privileged position to be able to play a game in which we can win by pursuing the truth, at least in principle. And in doing so, we can provide individuals and societies with the knowledge to understand and accept their own complicity in historically grown and socially structured power relations. And it is this knowledge that they need to make decisions about their individual and collective fate that have at least the semblance of freedom. For me, then, the job of the social critic is much like the job of the gardener: to remove the weed of false freedom - freedom ignorant of its determination - in order to give the delicate flower of true freedom - freedom educated about its own determination - a chance to blossom.
 
