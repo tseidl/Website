@@ -124,7 +124,7 @@
 &lt;h2 id=&#34;the-uses-and-misuses-of-semantic-violence&#34;&gt;The uses and misuses of semantic violence&lt;/h2&gt;
 &lt;p&gt;Text as data approaches are characterized by a peculiar but instructive irony. As Kenneth Benoit observes,&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&amp;ldquo;generating insight from text as data is only possible once we have destroyed our ability to make sense of the texts directly. To make it useful as data, we had to obliterate the structure of the original text and turn its stylised and oversimplified features into a glorified spreadsheet that no reader can interpret directly, no matter how expert in linear algebra.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;generating insight from text as data is only possible once we have destroyed our ability to make sense of the texts directly. To make it useful as data, we had to obliterate the structure of the original text and turn its stylised and oversimplified features into a glorified spreadsheet that no reader can interpret directly, no matter how expert in linear algebra.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&amp;rdquo;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;The idea that to do certain useful things with texts, we need to subject them to a certain amount of &amp;lsquo;semantic violence&amp;rsquo; goes to the heart of current debates on treating text as data. Text as data approaches are highly and often surprisingly useful tools: tools for &amp;lsquo;reading&amp;rsquo; or summarizing large amounts of text; tools for augmenting human abilities or reproducing human efforts; tools for discovering and measuring latent traits. But they also come at a cost - a cost that is usually worth paying for but that also needs to be taken account of.&lt;/p&gt;
 &lt;p&gt;Interestingly, the cost that has to be paid seems to be roughly proportional to the amount of semantic violence being done to the texts. On one hand of the spectrum, word counts or perhaps simple keyword extraction techniques such as RAKE are relatively intutive. On the other hand, topic models or word embeddings are much less intuitive and require careful validation.&lt;/p&gt;
@@ -134,24 +134,95 @@
 &lt;p&gt;The field of text as data has seen such rapid progress in recent years that it becomes harder and harder to keep up. While I consider myself an informed consumer of the many methods and packages developed by this amazing community, I do have some thoughts on how to move things forward in the years to come.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;On promising avenue that is increasingly taken is to combine various text as data techniques to tackle the same research question with full forces. This can mean using natural language processing for pre-processing (e.g. selecting parts of speech based on theoretical considerations); mutually validating different approaches by using them in combinations (e.g. dictionary-based approaches to validate topic models or topic models to &amp;lsquo;inspire&amp;rsquo; dictionaries); or using different approaches to answer nested questions (e.g. text networks to identify coalitions and scaling approaches to map them onto a latent dimension).&lt;/p&gt;
+&lt;p&gt;One promising avenue that is increasingly taken is integrate various text as data methods. This can mean using natural language processing for pre-processing (e.g. selecting parts of speech based on theoretical considerations); mutually validating different approaches by using them in combinations (e.g. dictionary-based approaches to validate topic models or topic models to &amp;lsquo;inspire&amp;rsquo; dictionaries); or using different approaches to answer nested questions (e.g. text networks to identify coalitions and scaling approaches to map them onto a latent dimension).&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Another angle, also increasingly used, is to combine text as data approaches with more traditional methods, both quantitative and qualitative. This can mean incorporating the results of topic models with quantitative data&lt;/p&gt;
+&lt;p&gt;Another angle, also increasingly used, is to combine text as data approaches with traditional methods, both quantitative and qualitative. This can mean using topic prevalence as a dependent or independent variable in regression models&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;; to use survey experiments to establish causal links between topics identified in newspapers and public opinion&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;; or to combine text as data methods with more interpretative approaches&lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;, to give just a few examples.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;A third approach is to think more systematically about the relationship between text as data approaches and social and political theory.&lt;/p&gt;
+&lt;p&gt;A third approach is to think more systematically about the relationship between text as data approaches and social and political theory. This can mean methodologically reimagining important paradigms in the history of political thought&lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;; exploring affinities between text as data approaches and theories of culture&lt;sup id=&#34;fnref:7&#34;&gt;&lt;a href=&#34;#fn:7&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;7&lt;/a&gt;&lt;/sup&gt;&lt;sup id=&#34;fnref:8&#34;&gt;&lt;a href=&#34;#fn:8&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;8&lt;/a&gt;&lt;/sup&gt;; or using word embeddings to trace to test sociological theories about the cultural dimension of class.&lt;sup id=&#34;fnref:9&#34;&gt;&lt;a href=&#34;#fn:9&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;9&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A last approach that I would like to mention here is to use text as data methods in a comparative setting. This has become much easier with the availablity of relatively cheap but very reliable translation tools, which - in a text as data context - have been shown to yield results comparable to gold-standard human translations.&lt;sup id=&#34;fnref:10&#34;&gt;&lt;a href=&#34;#fn:10&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;10&lt;/a&gt;&lt;/sup&gt;&lt;sup id=&#34;fnref:11&#34;&gt;&lt;a href=&#34;#fn:11&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;11&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Benoit, K. (2020) ‘Text as data: An Overview’, in Curini, L. and Franzese, R.J. (eds.) The SAGE handbook of research methods in political science and international relations. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Barberá, P. et al. (2019) ‘Who Leads? Who Follows? Measuring Issue Attention and Agenda Setting by Legislators and the Mass Public Using Social Media Data’, American Political Science Review, 61, pp. 1–19. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Barnes, L. and Hicks, T. (2018) ‘Making Austerity Popular: The Media and Mass Attitudes toward Fiscal Policy’, American Journal of Political Science, 62(2), pp. 340–354. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Ferrara, F.M. et al. (2018) ‘Exports vs. Investment: How Public Discourse Shapes Support for External Imbalances’. &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:5&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Nelson, L.K. (2017) ‘Computational Grounded Theory’, Sociological Methods &amp;amp; Research, 19, pp. 1-40. &lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:6&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;London, J.A. (2016) ‘Re-imagining the Cambridge School in the Age of Digital Humanities’, Annual Review of Political Science, 19(1), pp. 351–373. &lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:7&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Bail, C.A. (2014) ‘The cultural environment: measuring culture with big data’, Theory and Society, 43(3-4), pp. 465–482. &lt;a href=&#34;#fnref:7&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:8&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;DiMaggio, P., Nag, M. and Blei, D. (2013) ‘Exploiting affinities between topic modeling and the sociological perspective on culture: Application to newspaper coverage of U.S. government arts funding’, Poetics, 41(6), pp. 570–606. &lt;a href=&#34;#fnref:8&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:9&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Kozlowski, A.C., Taddy, M. and Evans, J.A. (2019) ‘The Geometry of Culture: Analyzing the Meanings of Class through Word Embeddings’, American Sociological Review, 84(5), pp. 905–949. &lt;a href=&#34;#fnref:9&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:10&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Vries, E. de, Schoonvelde, M. and Schumacher, G. (2018) ‘No Longer Lost in Translation: Evidence that Google Translate Works for Comparative Bag-of-Words Text Applications’, Political Analysis, 5, pp. 1–14. &lt;a href=&#34;#fnref:10&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:11&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Proksch, S.-O., Wratil, C. and Wäckerle, J. (2019) ‘Testing the Validity of Automatic Speech Recognition for Political Text Analysis’, Political Analysis, 10, pp. 1–21. &lt;a href=&#34;#fnref:11&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
 </description>
     </item>
     
     <item>
-      <title>Mixing Methods, Nesting Analyses</title>
+      <title>Analytic Eclecticism, Nested Analysis</title>
       <link>/projects/mixing-methods-nesting-analyses/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
       <guid>/projects/mixing-methods-nesting-analyses/</guid>
-      <description>&lt;p&gt;It sounds an aweful lot like a cheap cliché, but I really am a believer in combining different types of methods to make a case.&lt;/p&gt;
+      <description>&lt;p&gt;It sounds an aweful lot like a cheap cliché, but I really am a believer in combining different analytical angles and empirical strategies to make a case. There are two dimensions to this: the eclectic utlization of concepts and mechanisms from different theoretical traditions, and the combination of different empirical methods in ways that one method builds upon and validates the other.&lt;/p&gt;
+&lt;h2 id=&#34;analytic-eclecticism&#34;&gt;Analytic Eclecticism&lt;/h2&gt;
+&lt;p&gt;Rudra Sil and Peter Katzenstein define analytic eclecticism as a&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;intellectual stance that supports efforts to complement, engage, and selectively utilize theoretical constructs embedded in contending research traditions to build complex arguments that bear on substantive problems of interest to both scholars and practitioners.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This conception - which strongly resonates with me - assumes a healthy division of labor between two social scientific camps (individual researchers can belong to both camps, even at the same time): first, there are the &amp;lsquo;normal scientists&amp;rsquo; that work in established research paradigms which define their questions and push them towards ever more elaborated and nuanced theories and empirical results; second, there are the analytical eclecticists which, as it were, parasitically utilize the conceptual and empirical knowledge accumulated in the paradigmatic sciences to answer questions that are defined by a research tradition but by practical concerns.&lt;/p&gt;
+&lt;p&gt;In other words, normal scientists ask questions that only really make sense only in light of certain theoretical paradigms. In doing so, they accumulate more and more knowledge about how the social world works. Analytic eclecticists ask questions that immediately make sense for practioners or lay people as well, and they provide answers by synthetically combining concepts, causal mechanisms, or even methods from competing theoretical paradigms.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;h2 id=&#34;nested-analysis&#34;&gt;Nested Analysis&lt;/h2&gt;
+&lt;p&gt;Evan Lieberman has proposed nested analysis as a mixed-method strategy for comparative and historical analyses as a way to&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;assess the plausibility of observed statistical relationships between variables, to generate theoretical insights from outlier and other cases, and to develop better measurement strategies.&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This way of thinking about mixed method research remains highly relevant and serves as an encouragment to really provide the best evidence available in order to answer a given question (which, alas, is often discouraged by the fast-moving realities of academic publishing). The methodological suggestions laid out in Lieberman&amp;rsquo;s articles provide a lodestar for the papers I would like to write but am not always able to.&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Sil, R. and Katzenstein, P.J. (2010) ‘Analytic Eclecticism in the Study of World Politics: Reconfiguring Problems and Mechanisms across Research Traditions’, Perspectives on Politics, 8(2), pp. 411–431. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;In general, there should probably be more &amp;lsquo;normal scientists&amp;rsquo; than analytic eclecticists but it sometimes feels like the career incentives in the social sciences have become overly skewed towards the former. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Lieberman, E.S. (2005) ‘Nested Analysis as a Mixed-Method Strategy for Comparative Research’, American Political Science Review, 99(3), pp. 435–452. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Lieberman, E.S. (2015) ‘Nested analysis: toward the integration of comparative-historical analysis with other social science methods’, in Mahoney, J. and Thelen, K.A. (eds.) Advances in comparative-historical analysis. Cambridge: Cambridge Univ. Press, pp. 240–263. &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
 </description>
     </item>
     
@@ -257,11 +328,40 @@ Tomasello, M. (2016) A Natural History of Human Morality. Cambridge, Mass.: Harv
     </item>
     
     <item>
+      <title>The Moral Embeddedness of Economic Action</title>
+      <link>/projects/moral-embeddness-of-economic-action/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/projects/moral-embeddness-of-economic-action/</guid>
+      <description>&lt;p&gt;One of the central tenets of economic sociology is that economic life - even in capitalist societies - is always embedded in non-economic life, be it the trust-generating social networks that grease the wheels of markets, the &amp;lsquo;reproductive&amp;rsquo; work in families that makes &amp;lsquo;productive&amp;rsquo; work possible, or the moral economies that justify the &amp;lsquo;real&amp;rsquo; ones. It is this later phenomenon, the essential and continuing moral contestedness of capitalism, and the pervasivness of (stymied) moral impulses in capitalist economic life that have aroused my interest in the moral embeddedness of economic action.&lt;/p&gt;
+&lt;h2 id=&#34;the-spirit-of-capitalism&#34;&gt;The Spirit of Capitalism&lt;/h2&gt;
+&lt;p&gt;In my empirical work, I have used the concept of the spirit of capitalism to make sense of the ways in which normative ideas motivate, legitimize, and orient the actions of capitalist actors. Drawing on a long tradition of scholarship that ranges from Sombart to Weber to Boltanski and Chiapello, I have tried to think more empirically about both, the overt strategic uses of morality, and the more subtle ways in which moral ideas influence strategic calculations.&lt;/p&gt;
+&lt;p&gt;You can read more about my thinking on the capitalist spirit in my paper(s) on the spirit of capitalism; and you can read more about my thinking about the relationship between capitalism and morality in my (overly lengthy and learned) master thesis, which you can download 
+&lt;a href=&#34;Moral_Embeddedness.pdf&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>German Foreign Policy</title>
       <link>/projects/german-foreign-policy/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
       <guid>/projects/german-foreign-policy/</guid>
-      <description>&lt;p&gt;The questions which are &amp;hellip;&lt;/p&gt;
+      <description>&lt;p&gt;As an undergraduate, I became quite interests in the drivers of Germany&amp;rsquo;s foreign policy. And while I no longer actively pursue this questions, some of the underlying debates remain very close to my heart.&lt;/p&gt;
+&lt;h2 id=&#34;state-identities&#34;&gt;State identities&lt;/h2&gt;
+&lt;p&gt;In particular, I remain fascinated by what constitutes and defines a state&amp;rsquo;s identity. In my own research projects, I found surprisingly deep ideational and organizational continuities in German foreign policy - continuities that out-lived and were partly independent of partisan politics. I also found that ideas - from a default ordoliberal view of the economy, to a vaguely felt obligation to the German national interest, to the widely shared believe that Germany is, by and large, a force for good in the world - to be important drivers of foreign policy decisions that are not straightforwardly reconcilable with a narrow definion of German interests.&lt;/p&gt;
+&lt;p&gt;In more recent work, I take up this question of state identity in the context of economic and fiscal policymaking. Howf, for example, does the way states understand themselves and their role in the economy influence their spending decisions?&lt;/p&gt;
+&lt;h2 id=&#34;the-geopolitics-of-political-economy&#34;&gt;The geopolitics of political economy&lt;/h2&gt;
+&lt;p&gt;Another way in which my thinking on German foreign policy continues to inform my current work is by making me take the geopolitical dimension of politico-economic phenomena seriously. Especially in a world of &amp;lsquo;weaponized interdependence&amp;rsquo; &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, geopolitics and the politics of economic and public policymaking are inextricably intertwined. Geopolitical concerns are crucial for innovation and innovation policy &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;; questions of internet governance are increasingly complicated by the geopolitical competition between different visions and versions of the internet; and, as I showed in my own work on Germany&amp;rsquo;s response to the euro crisis, seemingly economic decisions are in fact motivated by geopolitical ambitions as much as by economic interests.&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Farrell, H. and Newman, A.L. (2019) ‘Weaponized Interdependence: How Global Economic Networks Shape State Coercion’, International Security, 44(1), pp. 42–79. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Weiss, L.M. (2014) America inc.? Innovation and enterprise in the national security state. Ithaca, NY: Cornell University Press. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
 </description>
     </item>
     
