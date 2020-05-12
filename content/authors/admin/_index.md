@@ -33,8 +33,6 @@ In my resarch, I try to show how the current digital transformation of economies
 
 If you are here for a list of my publications or working papers, or the accompanying appendices or replication materials, you can find them [here](/publications). If you just want to throw a quick glance at my CV, you only have to click [here](files/CV_Seidl.pdf).
 
-Also and by all means, feel free to follow me on [Twitter](https://twitter.com/Timo_Seidl), check out my [Google Scholar](https://scholar.google.com/citations?user=0sdYB3AAAAAJ&hl=de) profile, or drop me an email at <timo.seidl@eui.eu>!
+Feel free to follow me on [Twitter](https://twitter.com/Timo_Seidl), check out my [Google Scholar](https://scholar.google.com/citations?user=0sdYB3AAAAAJ&hl=de) profile, or drop me an email at <timo.seidl@eui.eu>!
 
-The hardest part of any academic self-portrait is of course to offer a credible story of what one does besides thinking about politics and the like. Bismarck once quipped that his passions resemble the trout in his pond: one eats up the other until there remains only one fat old trout. Thus his passionate love for politics has devoured all his other passions. To make sure it won't come to that, I am careful to carve out some protected spaces for the smaller trouts: the passion for the mountains, vegetarian food, the daily thinking stroll, and the occasional bar or board game evening.
-
-More recently, I also made my first and still very clumsy steps in the art of aRt - the results of which you can check out [here](/aRt).
+What do I do besides thinking about politics and the like? Well, Bismarck once quipped that his passions resemble the trout in his pond: one eats up the other until all that remains is one fat old trout. Thus has his passionate love for politics devoured all his other passions. To make sure it won't come to that, I am careful to carve out some protected spaces for the smaller trout in my pond: the passion for the mountains, vegetarian food, the daily thinking stroll, and the occasional bar or board game evening.

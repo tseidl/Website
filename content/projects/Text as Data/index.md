@@ -24,13 +24,11 @@ Text as data approaches are characterized by a peculiar but instructive irony. A
 
 The idea that to do certain useful things with texts, we need to subject them to a certain amount of 'semantic violence' goes to the heart of current debates on treating text as data. Text as data approaches are highly and often surprisingly useful tools: tools for 'reading' or summarizing large amounts of text; tools for augmenting human abilities or reproducing human efforts; tools for discovering and measuring latent traits. But they also come at a cost - a cost that is usually worth paying for but that also needs to be taken account of. 
 
-Interestingly, the cost that has to be paid seems to be roughly proportional to the amount of semantic violence being done to the texts. On one hand of the spectrum, word counts or perhaps simple keyword extraction techniques such as RAKE are relatively intutive. On the other hand, topic models or word embeddings are much less intuitive and require careful validation. 
+Interestingly, the cost that has to be paid - but also the potential price - seems roughly proportional to the amount of semantic violence being done to the texts. On one hand of the spectrum, word counts or perhaps simple keyword extraction techniques are quite intuitive, and can be interpreted relatively straightforwardly. They are, however, also more limited when it comes to scaling complex analyses or discovering sophisticated concepts. Topic models or machine learning methods, on the other hand, are much less intuitive and require much more careful validation. They can, however, also produce more interesting results.
 
-For me, awarness that there is no free lunch in text analysis either is a good starting point when thinking about which methods to choose. Count-based techniques, for example, are often underrated and can be highly instructive, not least because of their simplicity and transparency. Similarly, unsupervised techniques may seem more appealing than supervised techniques at first, as they allow researchers to skip the labor-intensive and often painful process of developing and testing a coding scheme, but they pose equally labor-intensive (and painful) challenges when it comes to interpretation and validation. 
+For me, awareness of such tradeoffs is a good starting point when thinking about how to do quantitative text analysis. Text as data approaches allows us to skip labor-intensive and often painful stages of the analysis, but they pose equally labor-intensive (and painful) challenges at other stages. While none of this is news, I periodically have to remind myself that treating text as data cannot and should not make my life as a researcher any easier - but, if done correctly, it can improve my research. 
 
-While no of this is news, I have found it useful to periodically remind myself that treating text as data cannot and should not make your life as a researcher any easier - but, if done correctly, it can improve your research.
-
-## What's next?
+## Future Avenues
 
 The field of text as data has seen such rapid progress in recent years that it becomes harder and harder to keep up. While I consider myself an informed consumer of the many methods and packages developed by this amazing community, I do have some thoughts on how to move things forward in the years to come. 
 
@@ -40,7 +38,8 @@ The field of text as data has seen such rapid progress in recent years that it b
 
 * A third approach is to think more systematically about the relationship between text as data approaches and social and political theory. This can mean methodologically reimagining important paradigms in the history of political thought[^6]; exploring affinities between text as data approaches and theories of culture[^7][^8]; or using word embeddings to trace to test sociological theories about the cultural dimension of class.[^9]
 
-* A last approach that I would like to mention here is to use text as data methods in a comparative setting. This has become much easier with the availablity of relatively cheap but very reliable translation tools, which - in a text as data context - have been shown to yield results comparable to gold-standard human translations.[^10][^11]
+* A last approach that I would like to mention is to use text as data methods in a comparative setting. This has become much easier with the availability of relatively cheap but very reliable translation tools, which - in a text as data context - have been shown to yield results comparable to gold-standard human translations.[^10][^11]
+
 
 
 [^1]: Benoit, K. (2020) ‘Text as data: An Overview’, in Curini, L. and Franzese, R.J. (eds.) The SAGE handbook of research methods in political science and international relations.

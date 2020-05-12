@@ -156,17 +156,17 @@
 - id: location
   translation: Location
 
-- id: pub_uncat
-  translation: Uncategorized
+- id: pub_other
+  translation: Smaller Academic Publications & Conference Papers
 
-- id: pub_conf
-  translation: Conference paper
+- id: pub_reviews
+  translation: Book Reviews
 
 - id: pub_journal
-  translation: Journal article
+  translation: Journal articles
 
 - id: pub_preprint
-  translation: Preprint
+  translation: Preprints & Working Papers
 
 - id: pub_report
   translation: Report
@@ -175,13 +175,13 @@
   translation: Book
 
 - id: pub_book_section
-  translation: Book section
+  translation: Book Chapters
 
 - id: pub_thesis
   translation: Thesis
 
-- id: pub_patent
-  translation: Patent
+- id: pub_newspaper
+  translation: Newspaper Articles & Blog Posts
 
 # Project details
 

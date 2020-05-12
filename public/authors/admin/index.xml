@@ -5,7 +5,7 @@
     <link>/authors/admin/</link>
       <atom:link href="/authors/admin/index.xml" rel="self" type="application/rss+xml" />
     <description>Home</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 07 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 06 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/authors/admin/avatar_hu03530982cfcff1d69502035b503066d9_124060_270x270_fill_q90_lanczos_center.jpg</url>
       <title>Home</title>
@@ -13,18 +13,51 @@
     </image>
     
     <item>
-      <title>An example preprint / working paper</title>
-      <link>/publication/preprint/</link>
-      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/preprint/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Supplementary notes can be added here, including 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <title>Regulating the European Data-Driven Economy. A Case Study on the General Data Protection Regulation</title>
+      <link>/publication/gdpr/</link>
+      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/gdpr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Politics of Platform Capitalism. A Case Study on the Regulation of Uber in New York</title>
+      <link>/publication/the-politics-of-platform-capitalism/</link>
+      <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/the-politics-of-platform-capitalism/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Techlash in Times of Corona</title>
+      <link>/publication/techlash-in-times-of-corona/</link>
+      <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/techlash-in-times-of-corona/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Spirit of Digital Capitalism</title>
+      <link>/publication/spirit-of-digital-capitalism/</link>
+      <pubDate>Fri, 13 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/spirit-of-digital-capitalism/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Book Review, Appadurai, Arjun. and Alexander, Neta (2020) Failure, Cambridge. Polity Press</title>
+      <link>/publication/book-review-failure/</link>
+      <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/book-review-failure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ideologie und der Geist des digitalen Kapitalismus</title>
+      <link>/publication/ideologie-und-ethik-der-solution/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/ideologie-und-ethik-der-solution/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -74,6 +107,38 @@ date: 2019-09-01
 &lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
 &lt;p&gt;This post was created with Jupyter. The orginal files can be found at &lt;a href=&#34;https://github.com/gcushen/hugo-academic/tree/master/exampleSite/content/post/jupyter&#34;&gt;https://github.com/gcushen/hugo-academic/tree/master/exampleSite/content/post/jupyter&lt;/a&gt;&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Die Linke und der Geist des digitalen Kapitalismus</title>
+      <link>/publication/die-linke-und-der-geist-des-digitalen-kapitalismus/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/die-linke-und-der-geist-des-digitalen-kapitalismus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Die Ethik der Solution und der Geist des digitalen Kapitalismus</title>
+      <link>/publication/ethik-der-solution/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/ethik-der-solution/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kompatibilität statt Reduktion. Zur Idee einer Interdisziplinären Anthropologie als soziologischem Selbst- und Fremdver(un)sicherungsraum</title>
+      <link>/publication/kompatibilitat-statt-reduktion/</link>
+      <pubDate>Wed, 19 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/kompatibilitat-statt-reduktion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Das doppelte Ziel der deutschen Eurokrisenpolitik</title>
+      <link>/publication/eine-stabilitaes-und-wettbewerbsunion/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/eine-stabilitaes-und-wettbewerbsunion/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -221,43 +286,27 @@ date: 2019-09-01
     </item>
     
     <item>
-      <title>An example journal article</title>
-      <link>/publication/journal-article/</link>
-      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>/publication/journal-article/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Supplementary notes can be added here, including 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <title>Time to Call Things as They are</title>
+      <link>/publication/time-to-call-things-as-they-are/</link>
+      <pubDate>Tue, 14 Jul 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/time-to-call-things-as-they-are/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>An example conference paper</title>
-      <link>/publication/conference-paper/</link>
-      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
-      <guid>/publication/conference-paper/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Supplementary notes can be added here, including 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <title>Im »Südwesten« nichts Neues? Eine Analyse der deutschen Namibiapolitik als Beitrag zur Rekonstruktion der außenpolitischen Identität des deutschen Nationalstaates</title>
+      <link>/publication/im-suedwesten-nichts-neues/</link>
+      <pubDate>Mon, 01 Jun 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/im-suedwesten-nichts-neues/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Das doppelte Ziel der deutschen Eurokrisenpolitik</title>
+      <link>/publication/das-doppelte-ziel/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/das-doppelte-ziel/</guid>
+      <description></description>
     </item>
     
   </channel>
