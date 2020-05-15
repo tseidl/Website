@@ -11,7 +11,7 @@ links:
 - name: SocArXiv
   url: https://osf.io/preprints/socarxiv/up9qz/
 - name: Replication Materials
-  url: publications/the-politics-of-platform-capitalism/Replication_Material_Seidl_Politics_of_Platform_Capitalism.zip
+  url: publication/the-politics-of-platform-capitalism/Replication_Material_Seidl_Politics_of_Platform_Capitalism.zip
 projects:
 - political-economy-of-digital-capitalism
 - ideas-and-politics

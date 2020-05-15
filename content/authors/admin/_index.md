@@ -31,7 +31,7 @@ I´m a PhD Researcher at the Department of Political and Social Sciences at the 
 
 In my resarch, I try to show how the current digital transformation of economies and societies is not just a technological or economic process, but is profoundly shaped by the political and cultural environment in which it unfolds. I am also interested in how and when ideas matter in politics and social life, and how we can best measure that. You can learn about my research interests [here](/research).
 
-If you are here for a list of my publications or working papers, or the accompanying appendices or replication materials, you can find them [here](/publications). If you just want to throw a quick glance at my CV, you only have to click [here](files/CV_Seidl.pdf).
+If you are here for a list of my publications or working papers, or the accompanying appendices or replication materials, you can find them [here](/publication). If you just want to throw a quick glance at my CV, you only have to click [here](files/CV_Seidl.pdf).
 
 Feel free to follow me on [Twitter](https://twitter.com/Timo_Seidl), check out my [Google Scholar](https://scholar.google.com/citations?user=0sdYB3AAAAAJ&hl=de) profile, or drop me an email at <timo.seidl@eui.eu>!
 
