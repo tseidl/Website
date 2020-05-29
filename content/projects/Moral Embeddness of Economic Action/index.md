@@ -12,6 +12,7 @@ url_code: ""
 url_pdf: ""
 url_slides: ""
 url_video: ""
+
 ---
 
 One of the central tenets of economic sociology is that economic life - even in capitalist societies - is always embedded in non-economic life, be it the trust-generating social networks that grease the wheels of markets, the 'reproductive' work in families that makes 'productive' work possible, or the moral economies that justify the 'real' ones. It is this later phenomenon, the essential and continuing moral contestedness of capitalism, and the pervasiveness of (stymied) moral impulses in capitalist life that have aroused my interest in the moral embeddedness of economic action.

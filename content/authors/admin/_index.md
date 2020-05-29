@@ -27,7 +27,7 @@ user_groups:
 - Researchers
 - Visitors
 ---
-I´m a PhD Researcher at the Department of Political and Social Sciences at the [European University Institute](https://www.eui.eu/) in Florence, and currently a visiting researcher at [Humboldt University](https://www.hu-berlin.de/en) and the [Alexander von Humboldt Institute for Internet and Society](https://www.hiig.de/) in Berlin. I previously studied at the Universities of Augsburg, Oslo, Frankfurt and Toronto.
+I´m a PhD Researcher at the Department of Political and Social Sciences at the [European University Institute](https://www.eui.eu/) in Florence, Italy. I previously studied at the Universities of Augsburg, Oslo, Frankfurt and Toronto.
 
 In my resarch, I try to show how the current digital transformation of economies and societies is not just a technological or economic process, but is profoundly shaped by the political and cultural environment in which it unfolds. I am also interested in how and when ideas matter in politics and social life, and how we can best measure that. You can learn about my research interests [here](/research).
 

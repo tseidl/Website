@@ -194,7 +194,7 @@
 &lt;h2 id=&#34;analytic-eclecticism&#34;&gt;Analytic Eclecticism&lt;/h2&gt;
 &lt;p&gt;Rudra Sil and Peter Katzenstein define analytic eclecticism as a&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&amp;ldquo;intellectual stance that supports efforts to complement, engage, and selectively utilize theoretical constructs embedded in contending research traditions to build complex arguments that bear on substantive problems of interest to both scholars and practitioners.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;quot;intellectual stance that supports efforts to complement, engage, and selectively utilize theoretical constructs embedded in contending research traditions to build complex arguments that bear on substantive problems of interest to both scholars and practitioners.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&amp;rdquo;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;This conception - which strongly resonates with me - assumes a healthy division of labor between two social scientific camps (individual researchers can belong to both camps, even at the same time): first, there are the &amp;lsquo;normal scientists&amp;rsquo; that work in established research paradigms which define their questions and push them towards ever more elaborated and nuanced theories and empirical results; second, there are the analytical eclecticists which, as it were, parasitically utilize the conceptual and empirical knowledge accumulated in the paradigmatic sciences to answer questions that are defined less by a research tradition than by practical concerns.&lt;/p&gt;
 &lt;p&gt;In other words, normal scientists ask questions that mainly make sense in light of certain theoretical paradigms. In doing so, they accumulate ever more detailed knowledge about how the social world works. Analytic eclecticists ask questions that immediately make sense for practitioners or lay people as well, and they provide answers by synthetically combining concepts, causal mechanisms, or even methods from competing theoretical paradigms.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
@@ -588,9 +588,9 @@ Crash --&amp;gt; [*]
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;renders as&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Write math example&lt;/li&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Write diagram example&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Do something else&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt;Write math example&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt;Write diagram example&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt;Do something else&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;tables&#34;&gt;Tables&lt;/h3&gt;
 &lt;p&gt;Represent your data in tables:&lt;/p&gt;
@@ -759,7 +759,7 @@ date: 2019-09-01
 &lt;li&gt;⬆️ &lt;strong&gt;Updating?&lt;/strong&gt; View the 
 &lt;a href=&#34;https://sourcethemes.com/academic/docs/update/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Update Guide&lt;/a&gt; and 
 &lt;a href=&#34;https://sourcethemes.com/academic/updates/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Release Notes&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;❤️ &lt;strong&gt;Support development&lt;/strong&gt; of Academic:
+&lt;li&gt;❤ &lt;strong&gt;Support development&lt;/strong&gt; of Academic:
 &lt;ul&gt;
 &lt;li&gt;☕️ 
 &lt;a href=&#34;https://paypal.me/cushen&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Donate a coffee&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
