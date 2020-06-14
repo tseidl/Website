@@ -11,7 +11,7 @@ links:
 - name: SocArXiv
   url: https://osf.io/preprints/socarxiv/sgjzq/
 - name: Coding Scheme
-  url: "publications/spirit-of-digital-capitalism/Coding_Scheme.pdf"
+  url: "publication/spirit-of-digital-capitalism/Coding_Scheme.pdf"
 projects:
 publication: ""
 publication_short: ""
@@ -27,7 +27,7 @@ url_dataset:
 url_pdf:
 url_poster:
 url_project:
-url_slides:
-url_source: ""
+url_slides: "files/slides_spirit_of_capitalism/Nachtwey_Seidl_Spirit_Slides.html"
+url_source:
 url_video:
 ---
