@@ -12,7 +12,7 @@ links:
 - icon: tv
   icon_pack: fas
   name: Slides
-  url: 
+  url: files/Seidl_Slides_Intro_CPE.pdf
 summary: Undergraduate Level Introductory Course.
 tags:
 - Substantive

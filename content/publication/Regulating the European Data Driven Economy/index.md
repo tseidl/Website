@@ -9,6 +9,8 @@ featured: false
 image:
   preview_only: false
 links:
+- name: Link
+  url: https://onlinelibrary.wiley.com/doi/10.1002/poi3.246
 - name: SocArXiv
   url: https://osf.io/preprints/socarxiv/a6m8r/
 - name: Replication Materials
@@ -20,7 +22,7 @@ publication_types:
 - "2"
 publishDate: "2020-05-06"
 slides:
-summary: Accepted in Policy & Internet
+summary: Published in Policy & Internet
 tags:
 title: Regulating the European Data-Driven Economy. A Case Study on the General Data Protection Regulation
 url_code:
