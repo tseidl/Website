@@ -9,7 +9,7 @@ featured: false
 image:
   preview_only: false
 links:
-- name: Link
+- name: Link to Journal Article
   url: https://onlinelibrary.wiley.com/doi/10.1002/poi3.246
 - name: SocArXiv
   url: https://osf.io/preprints/socarxiv/a6m8r/

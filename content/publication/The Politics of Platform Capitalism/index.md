@@ -8,6 +8,8 @@ featured: false
 image:
   preview_only: false
 links:
+- name: Link to Journal Article
+  url: https://onlinelibrary.wiley.com/doi/abs/10.1111/rego.12353
 - name: SocArXiv
   url: https://osf.io/preprints/socarxiv/up9qz/
 - name: Replication Materials
@@ -21,7 +23,7 @@ publication_types:
 - "3"
 publishDate: "2020-04-23"
 slides:
-summary: Revise and Resubmit
+summary: Published in Regulation & Governance
 tags:
 title: The Politics of Platform Capitalism. A Case Study on the Regulation of Uber in New York
 url_code:
