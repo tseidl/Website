@@ -5,7 +5,7 @@
     <link>/</link>
       <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <description>Home</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 06 May 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Sep 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Home</title>
@@ -367,6 +367,14 @@ But this creates a problem: what is the point of eliciting such limit-experience
 &lt;/ol&gt;
 &lt;/section&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Talkin’ bout Digitalization</title>
+      <link>/publication/talkin-about-digitalization/</link>
+      <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/talkin-about-digitalization/</guid>
+      <description></description>
     </item>
     
     <item>
