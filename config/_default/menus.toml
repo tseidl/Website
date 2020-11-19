@@ -31,4 +31,10 @@
   name = "CV"
   url = "files/CV_Seidl.pdf"
   weight = 70
+  
+  
+[[main]]
+  name = "Blog"
+  url = "post/"
+  weight = 80
 
