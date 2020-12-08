@@ -4,7 +4,8 @@ author: Timo Seidl
 diagram: true
 image:
   placement: 3
-title: Book Review. Adrian Daub, What Tech Calls Thinking
+title: Thinking, Shallow but Powerful
+subtitle: "Book Review: Adrian Daub, What Tech Calls Thinking"
 ---
 
 When reading Adrian Daub's masterful dissection of the ideas that inform what tech is - or calls - thinking, I was reminded of the idea and practice of conceptual history or *Begriffsgeschichte*. Developed in the last third of the 20th century by a number of German historians and philosophers, *Begriffsgeschichte* is an attempt to understand, in [Hayden White's](https://www.sup.org/books/title/?id=1598#:~:text=Reinhart%20Koselleck%20is%20one%20of,of%20the%20last%20half%20century.&text=The%20eighteen%20essays%20in%20this,from%20that%20found%20in%20nature.) formulation, "the invention and development of the fundamental concepts (*Begriffe*) underlying and informing a distinctively historical (*geschichtliche*) manner of being in the world". Conceptual historians were particularly concerned with how fundamental concepts such as constitution, democracy, interest, opposition, or progress changed their meaning during the transition to modernity and therefore how people thought about and acted upon them.
