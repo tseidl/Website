@@ -16,6 +16,7 @@ links:
 - name: Replication Materials
   url: publication/regulating-the-european-data-driven-economy/Laurer_Seidl_GDPR_Replication.zip
 projects:
+- political-economy-of-digital-capitalism
 publication: ""
 publication_short: ""
 publication_types:

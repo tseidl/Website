@@ -20,7 +20,7 @@ projects:
 publication: ""
 publication_short: ""
 publication_types:
-- "3"
+- "2"
 publishDate: "2020-04-23"
 slides:
 summary: Published in Regulation & Governance
