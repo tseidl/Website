@@ -1,0 +1,316 @@
+---
+name: Timo
+surname: Seidl
+position: "PhD Student"
+address: "European University Institute"
+#phone: 
+www: timoseidl.com
+email: "timo.seidl@eui.eu"
+twitter: Timo_Seidl
+#github: tseidl
+#linkedin: 
+date: "`r format(Sys.time(), '%B %Y')`"
+output: 
+  vitae::moderncv:
+    theme: banking
+headcolor: 19448a
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+```
+
+
+# Research Interests
+
+
+ * **Disciplinary**: Comparative Political Economy, Politics of Public Policy, Economic Sociology 
+ * **Theoretical**: Ideational Approaches, Coalitional Politics, Business Power
+ * **Substantive**: Digitalization, European Integration, Capitalism and Democracy
+ * **Methodological**: Text as Data, Time-Series-Cross-Section, Discourse Network Analysis
+
+<p>&nbsp;</p>
+
+# Academic Positions & Fellowships
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "Visiting Researcher", "2020", "Alexander von Humboldt Institute for Internet and Society", "",
+  "Visiting Researcher", "2020", "Humboldt University Berlin", "",
+  "PhD Researcher", "2017-", "European University Insitute", ""
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+# Education
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "Master of Research", "2018", "European University Insitute", "",
+  "Semester abroad", "2016", "University of Toronto", "",
+  "Master of Arts, Sociology", "2017", "Goethe University of Frankfurt", "",
+  "Semester abroad", "2014", "University of Oslo", "",
+  "Bachelor of Arts, Social Sciences", "2015", "University of Augsburg", ""
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+
+# Grants & Scholarships
+
+```{r}
+tribble(
+  ~Type, ~Year, ~Desc, ~x,
+  "for studies at Humboldt University","2020", "Erasmus Scholarship", "",
+  "for studies at the European University Institute","2017-", "DAAD PhD Grant", "",
+  "for studies at the University of Toronto",  "2016", "DAAD Grant" ,"",
+  "for fieldwork in Namibia", "2015", "Young Scholar Research Grant", "",
+  "for studies at the University of Oslo","2014", "Eramus Scholarship", "",
+  "Merit-based Scholarship", "2013-2017", "German Academic Scholarship Foundation", ""
+  ) %>% 
+  detailed_entries(Type, Year, Desc, x)
+```
+
+# Teaching
+
+<p>&nbsp;</p>
+```{r}
+tibble::tribble(
+  ~Type, ~Year, ~Desc, ~x,
+  "Undergraduate Course Heinrich Heine University Düsseldorf","Summer 2020", "Introduction to Comparative Political Economy", "",
+  "Introduction to Teaching in Higher Education, European University Institute","2018-2019", "Teaching Training", "",
+  "Introduction to Sociology", "2012-2013", "Tutor", ""
+  ) %>% 
+  detailed_entries(Type, Year, Desc, x, .protect = F)
+```
+
+
+# Professional Activities & Development
+
+## Organizer
+
+<p>&nbsp;</p>
+
+```{r}
+tribble(
+  ~Year, ~Type, ~Desc,
+  "2018-2020", "Co-Chair Political Economy Working Group, European University Institute", "",
+  "2019", "Co-Organizer of the workshop What is Social Democracy and what is it good for?, European University Institute", "",
+  "2018", "Co-Organizer of the panel Max Weber and the study of 21st century capitalism, general conference German Sociological Association", ""
+  ) %>% 
+  brief_entries(Type, Year, Desc)
+```
+
+<p>&nbsp;</p>
+
+## Reviewer
+
+<p>&nbsp;</p>
+
+Journal of Common Market Studies (1x), Industrial Relations (1x), Swiss Journal of Sociology (1x)
+
+<p>&nbsp;</p>
+
+## Memberships
+
+<p>&nbsp;</p>
+
+IPSA, CES, ECPR, DGS, Young Scholar Max Weber Network
+
+<p>&nbsp;</p>
+
+## Methods Training
+
+<p>&nbsp;</p>
+
+Web Scraping and Text Mining (with Paulo Serodio), Causal Inference (with Elias Dinas), Interviewing (with Jennifer Welsh), Qualitative Comparative Analysis (with Claudius Wagemann), Network Analysis (with Paulo Serodio), Text Analysis (with Inaki Sagarzazu)
+
+<p>&nbsp;</p>
+
+## Additional Experiences & Training (Selection)
+
+<p>&nbsp;</p>
+
+```{r}
+tibble::tribble(
+  ~Type, ~Year, ~Desc, ~x,
+  "Oslo Summer School, with Christel Koop, one week","2018", "The Political Economy of Public Policy", "",
+  "Summer school, with Daniel Haun and Peter Kappeler, four weeks",  "2015-2017", "Evolutionary Anthropology" ,"",
+  "Summer school, one week", "2015", "Comparing the Cambridge School and Conceptual History", "",
+  "International aid organization","2013", "Internship Humedica", ""
+  ) %>% 
+  detailed_entries(Type, Year, Desc, x)
+```
+
+# Skills
+
+## Languages
+
+<p>&nbsp;</p>
+
+German (native), English (TOEFL: 118 of 120 points), Italian (beginner), Latin & Ancient Greek (basic reading proficiency)
+
+<p>&nbsp;</p>
+
+## Programming & Formatting Languages
+
+<p>&nbsp;</p>
+
+R, RMarkdown, Latex, Python, Stata
+
+<p>&nbsp;</p>
+
+## Software
+
+<p>&nbsp;</p>
+
+Discourse Network Analyser, MAXQDA, Gephi, Citavi
+
+
+
+# Publications
+
+
+
+## Peer-Reviewed Journal Articles
+
+<p>&nbsp;</p>
+
+* Seidl, Timo (2020) ‘The Politics of Platform Capitalism. A Case Study on the Regulation of Uber in New York’. Regulation & Governance. [**Article**](https://onlinelibrary.wiley.com/doi/abs/10.1111/rego.12353) | [**Working Paper**](https://osf.io/preprints/socarxiv/up9qz/) | [**Replication Materials**](http://127.0.0.1:4321/publication/the-politics-of-platform-capitalism/Replication_Material_Seidl_Politics_of_Platform_Capitalism.zip)
+
+* Laurer, Moritz/Seidl, Timo (2020) ‘Regulating the European Data-Driven Economy. A Case Study on the GDPR’. Policy & Internet [**Article**](https://onlinelibrary.wiley.com/doi/abs/10.1002/poi3.246) | [**Working Paper**](https://osf.io/preprints/socarxiv/a6m8r/) | [**Replication Materials**](http://127.0.0.1:4321/publication/regulating-the-european-data-driven-economy/Laurer_Seidl_GDPR_Replication.zip).
+
+* Roos, Ulrich/Seidl, Timo (2015) ‘Im »Südwesten« nichts Neues? Eine Analyse der deutschen Namibiapolitik als Beitrag zur Rekonstruktion der außenpolitischen Identität des deutschen Nationalstaates’, Zeitschrift für Friedens- und Konfliktforschung, 4(2), pp. 182–225. [**Article**](https://timoseidl.com/publications/Roos_Seidl_2015.pdf)
+
+<p>&nbsp;</p>
+
+## Preprints & Working Papers
+
+<p>&nbsp;</p>
+
+* Marenco, Matteo/Seidl, Timo ‘Talkin’ bout Digitalization. A Quantitative Comparison of Discourses on the Digitalization of Work in 8 European Countries’. Soc ArXiv Working Paper. [**Link**](https://doi.org/10.31235/osf.io/6ex7t)
+
+
+* Nachtwey, Oliver/Seidl, Timo ‘The Solutionist Ethic and the Spirit of Digital Capitalism’. Soc ArXiv Working Paper. [**Link**](https://doi.org/10.31235/osf.io/sgjzq)
+
+* Nachtwey, Oliver/Seidl, Timo (2017) 'Die Ethik der Solution und der Geist des digitalen Kapitalismus'. Institute for Social Research Working Paper (#11). [**Link**](http://www.ifs.uni-frankfurt.de/wp-content/uploads/IfS-WP-11.pdf)
+
+<p>&nbsp;</p>
+
+## Work in Progress
+
+<p>&nbsp;</p>
+
+* Schmitz, Luuk/Seidl, Timo. Weaponizing the Single Market: The Cases of the EU’s Trade Policy and Digital Agenda. Early-stage paper.
+
+* Seidl, Timo: Investing in the Digital Future.	The Comparative Political Economy of Digital Investment Policies. Unpublished Manuscript.
+
+
+<p>&nbsp;</p>
+
+## Book Chapters
+
+<p>&nbsp;</p>
+
+* Nachtwey, Oliver/Seidl, Timo: ‘Ideologie und der Geist des digitalen Kapitalismus’, in Jahrbuch Ökonomie und Gesellschaft: Ökonomie und Ideologie. Forthcoming.
+
+* Laurer, Moritz. and Seidl, Timo (2017) ‘Eine Stabilitäts- und Wettbewerbsunion der Regierungen: Zur Rekonstruktion grundlegender Handlungsregeln deutscher Eurokrisenpolitik’, in Roos, U. (ed.) Deutsche Außenpolitik: Arenen, Diskurse und grundlegende Handlungsregeln. Wiesbaden: Springer VS, pp. 13–47.
+
+* Seidl, Timo (2017) ‘Kompatibilität statt Reduktion: Zur Idee einer Interdisziplinären Anthropologie als soziologischem Selbst- und Fremdver(un)sicherungsraum’, in Wagner, G. (ed.) Die Provokation der Reduktion: Beiträge zur Wissenschaftstheorie der Soziologie. Wiesbaden: Harrassowitz, pp. 201–232.
+
+<p>&nbsp;</p>
+
+## Book Reviews & Other Publications
+
+<p>&nbsp;</p>
+
+* Seidl, Timo: ‘Book Review: Appadurai, Arjun. and Alexander, Neta (2020) Failure: Cambridge. Polity Press’, Economic Sociology: European Electronic Newsletter. [**Link**](https://econsoc.mpifg.de/40764/06_BookReviewsEconsoc-NL_21-2_March2020.pdf)
+
+* Laurer, Moritz and Seidl, Timo (2014) ‘Das doppelte Ziel der deutschen Eurokrisenpolitik’, Welttrends, 22(99), pp. 120–126.
+
+<p>&nbsp;</p>
+
+## Newspaper Articles & Blog Posts
+
+<p>&nbsp;</p>
+
+*  Seidl, Timo: The Techlash in Times of Corona. HIIG Blog. [**Link**](https://www.hiig.de/en/the-techlash-in-times-of-corona/)
+
+* Seidl, Timo (2018) Die Linke und der Geist des digitalen Kapitalismus, Oxi Magazin. 10/18, p. 5.
+
+* Roos, Ulrich/Seidl, Timo (2015) Time to Call Things as They Are, Namibian, July 14, p. 7.
+
+<p>&nbsp;</p>
+
+
+# Presentations (Selection)
+
+<p>&nbsp;</p>
+
+## Academic Conferences
+
+<p>&nbsp;</p>
+
+* **ECPR** (2020): Investing in the Digital Future, Talkin’ bout Digitalization
+
+* **GIG-ARTS** (2019): Regulating the European Data-Driven Economy
+
+* **DGS** (2018): Max Weber im Silicon Valley
+
+* **ECPR** (2018): Varieties of Platform Capitalism 
+
+* **ÖGS** (2017): Homo Moralis vs. Homo Oeconomicus 
+
+* **SGS** (2017): Neuer oder neuester Geist des Kapitalismus?
+
+<p>&nbsp;</p>
+
+## Non-Academic Conferences
+
+<p>&nbsp;</p>
+
+* **LABORA19**: The Politics of Platform Capitalism (2019)
+
+# References
+
+<p>&nbsp;</p>
+
+**Dorothee Bohle**    
+Professor of Political Sciences   
+European University Institute    
+Dept. of Political and Social Sciences   
+dorothee.bohle@eui.eu   
+
+<p>&nbsp;</p>
+
+**Oliver Nachtwey**   
+Professor of Social Structure Analysis   
+University of Basel   
+Dept. of Social Science   
+oliver.nachtwey@unibas.ch
+
+<p>&nbsp;</p>
+
+**Anton Hemerijck**   
+Professor of Political Science and Sociology   
+European University Institute   
+Dept. of Political and Social Sciences   
+anton.hemerijck@eui.eu
+
+
+
+
+
+ 
+
+
+
+
+
+
+

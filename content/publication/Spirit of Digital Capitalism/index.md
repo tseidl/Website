@@ -27,7 +27,7 @@ url_dataset:
 url_pdf:
 url_poster:
 url_project:
-url_slides: "files/slides_spirit_of_capitalism/Nachtwey_Seidl_Spirit_Slides.html"
+url_slides: "slides/slides_spirit_of_capitalism/Nachtwey_Seidl_Spirit_Slides.html"
 url_source:
 url_video:
 ---
