@@ -1,0 +1,1555 @@
+---
+title: "Ideas, Politics, and Technological Change"
+subtitle: "Thesis Defense Presentation"  
+author: 
+  - "Timo Seidl"
+date: "29 January 2021"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: [xaringan-themer.css]
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+    seal: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE, crayon.enabled = TRUE, htmltools.preserve.raw = FALSE)
+
+
+
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+
+library(xaringanthemer)
+library(crayon)
+library(tidyverse)
+library(knitr)
+library(ggthemes)
+library(kableExtra)
+library(xts)
+library(tidyquant)
+library(dygraphs)
+library(widgetframe)
+library(rDNA)
+library(igraph)
+library(networkD3)
+library(plotly)
+library(ggtext)
+library(glue)
+library(RColorBrewer)
+library(tidytext)
+library(stm)
+library(stminsights)
+library(countrycode)
+
+```
+
+
+```{r xaringan-themer}
+
+
+xaringanthemer::style_mono_light(
+  base_color = "#2A363B",
+  link_color = "#FF847C",
+  text_slide_number_color = "#FECEA8",
+  header_font_google = google_font("Lato"),
+  text_font_google   = google_font("Roboto"),
+  code_font_google   = google_font("IBM Plex Mono"),
+  text_font_size = "1.25rem",
+  colors = c(
+    red = "#f34213",
+    purple = "#3e2f5b",
+    orange = "#ff8811",
+    green = "#99B898",
+    white = "#FFFFFF"
+  )
+)
+
+
+
+# colors can be used like this:This ** .red[simple] ** .white.bg - purple[demo]
+# _.orange[shows]_ the colors .green[in action].
+```
+
+
+class: center, middle, inverse
+
+
+
+# Ideas, Politics, and Technological Change
+
+## Thesis Defense
+
+<br>
+
+### Timo Seidl
+
+### 29 January 2021
+
+---
+
+name: contents-slide
+
+## Overview
+
+.pull-left[
+
+[Background & Relevance](#part1)
+
+- What's happening and why does it matter?
+
+[A Little Bit of Theory](#part2)
+
+- How do we understand and explain this?
+
+[Selected Findings](#part3)
+
+- What do we find?
+
+[Conclusion & Outlook](#part4)
+
+- What's missing and what's next?
+
+   
+]
+
+
+
+.pull-right[
+
+<br>
+
+[Appendix A: Politics of Platform Capitalism](#part5)
+
+[Appendix B: Regulating the European Data-Driven Economy](#part6)
+
+[Appendix C: Talkin' about Digitalization](#part7)
+
+[Appendix D: Investing in the Digital Future](#part8)
+
+[Appendix E: The Spirit of Digital Capitalism](#part9)
+   
+]
+
+
+---
+name: part1
+class: inverse, center, middle
+
+# Background & Relevance
+
+.footnote[
+
+[Back to the contents slide](#contents-slide)
+
+]
+---
+## Stock Market Capitalization of the FANGMA
+
+```{r cache=TRUE}
+
+sp500 <- tq_index("SP500")
+stocks_bigtech <- tq_get(x = subset(sp500, symbol %in% c("AAPL", "MSFT", "AMZN", "FB", "GOOG", "GOOGL", "NFLX"))$symbol, get = "stock.prices", from = "2010-01-01")
+
+stocks_bigtech%<>%
+  left_join(tq_index("SP500"))%>%#join with this data to get shares held
+  mutate(market_cap = (adjusted*shares_held)/10000000000)%>% #calculate market share and divide by billion
+  select(date, company, market_cap)%>%
+  pivot_wider(names_from = company, values_from = market_cap)%>%
+  rowwise() %>% # join different google shares
+  mutate(Alphabet= sum(`Alphabet Inc. Class C`, `Alphabet Inc. Class A`))%>%
+  ungroup()%>%
+  select(-c(`Alphabet Inc. Class C`, `Alphabet Inc. Class A`))%>%
+  replace(is.na(.), 0)%>%
+  select(date, sort(current_vars()))%>%#sorting variables alphabetially
+  mutate(date = as.Date(as.character(date,"%Y-%m-%d")))# change date for xts transform
+
+
+stocks_bigtech_xts <- xts(x = stocks_bigtech[, -1], order.by = stocks_bigtech$date)
+
+ts <- dygraph(stocks_bigtech_xts, width = 515, height = 475)%>%
+    dySeries("Amazon.com Inc.", label = "Amazon", color = "#FF9900") %>%
+  dySeries("Apple Inc.", label = "Apple", color = "#A2AAAD") %>%
+  dySeries("Facebook Inc. Class A", label = "Facebook", color = "#3b5998")%>%
+    dySeries("Alphabet", label = "Google (Alphabet)", color = "#4285F4")%>%
+  dySeries("Netflix Inc.", label = "Netflix", color = "#D81F26") %>%
+  dySeries("Microsoft Corporation", label = "Microsoft", color = "#7db700") %>%
+  dyOptions(stackedGraph = TRUE,
+            fillGraph = TRUE, 
+            fillAlpha = 0.4) %>%
+  dyAxis("y", label = "Market Capitalization ($ Trillion)") %>%
+  dyRangeSelector(height = 30)%>%
+  dyShading(from = "2010-01-01", to = format(Sys.time(), '%Y-%m-%d'), color = "#E9EAEB")
+```
+
+
+```{r }
+frameWidget(ts)
+```
+
+---
+## In Recent News...
+
+.pull-left[
+
+
+
+.middle[
+
+```{r out.width="50%"}
+include_graphics("https://media.giphy.com/media/xGPy9LFlMi5X1Iarfh/giphy.gif")
+
+```
+
+.right[
+
+```{r out.width="70%"}
+include_graphics("https://miro.medium.com/max/2000/1*bfLggJ69-2gLefAaBXY26w.jpeg")
+
+```
+]
+
+]
+]
+--
+
+.pull-right[
+
+.middle[
+
+.left[
+
+```{r out.width="75%"}
+include_graphics("https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fde99625a-a09d-4cdf-b02a-85eb53456d76.jpg?fit=scale-down&source=next&width=700")
+
+```
+]
+
+.right[
+```{r out.width="70%"}
+
+include_graphics("servicesmarketact.jpg")
+
+```
+]
+]
+]
+
+
+---
+
+## Technology is not always outrunning regulators
+
+
+```{r out.width="58%", fig.align="center"}
+
+include_graphics("techreg.jpg")
+
+```
+
+
+
+
+
+---
+name: part2
+class: inverse, center, middle
+
+# A Little Bit of Theory
+
+.footnote[
+
+[Back to the contents slide](#contents-slide)
+
+]
+
+---
+exclude: true
+
+## What is Digital Capitalism?
+
+
+<br> 
+
+**cap·i·tal·ism** /ˈkæpɪ̈tl̩ˌɪzm̩/
+
+&#x25B6; **noun** a social order in which the institutionalization of profit-seeking creates an internal dynamism that not only incessantly revolutionizes the economy from within but constantly - and contestedly - runs up against, subverts, and incorporates the institutions in which the economy is embedded.
+
+**dig·it·al cap·i·tal·ism** /ˈdɪd͡ʒɪtəɫ ˈkæpɪ̈tl̩ˌɪz/
+
+&#x25B6; **noun** a form of capitalism in which platform-based, data-driven, and artificial-intelligence-powered business models are capturing an increasing share of profits, control – directly or indirectly – an increasing share of economic life, and increasingly serve as role models for start-ups as well as established companies.
+
+
+
+---
+
+
+## Two Observations on Technological Change
+
+
+.pull-left[
+
+<br>
+
+
+> *"Technology is neither good nor bad; nor is it neutral"* &mdash; Kranzberg's First Law of Technology
+
+
+<br>
+<br>
+<br>
+
+The rise of digital capitalism entails
+
+
+- **disruption**
+
+- **commodification**
+  
+
+
+
+]
+
+--
+
+
+.pull-right[
+
+
+> *"Technology might be a prime element in many public issues, nontechnical factors take precedence in technology-policy decisions"* 
+&mdash; Kranzberg's Fourth Law of Technology
+
+<br>
+<br>
+
+The politics of digital policymaking is 
+
+
+
+- **ideationally and institutionally embedded**
+
+
+]
+
+
+
+
+
+
+---
+
+name: part3
+class: inverse, center, middle
+
+# Selected Findings
+
+.footnote[
+
+[Back to the contents slide](#contents-slide)
+
+]
+
+---
+
+## New York's Car Wars: Regulating Uber
+
+```{r include=FALSE}
+# great guide on how to install rjava https://cimentadaj.github.io/blog/2018-05-25-installing-rjava-on-windows-10/installing-rjava-on-windows-10/
+
+
+dna_init()
+
+conn <- dna_connection("data/Uber_NY.dna")
+
+
+congruence <- dna_network(conn,
+                          networkType = "onemode",
+                          statementType = "DNA Statement",
+                          variable1 = "organization",
+                          variable2 = "concept",
+                          qualifier = "agreement",
+                          qualifierAggregation = "congruence",
+                          normalization = "average",
+                          duplicates = "week",
+                          start.date = "10.09.2013",
+                          stop.date = "01.08.2015",
+                          excludeValues = list("Category" = "TLC Regulation", "Category" = "State Level Regulation")) 
+
+congruence_d3 <- congruence%>%
+  graph_from_adjacency_matrix(mode = "undirected", weighted = TRUE)%>%#to igraph
+  igraph_to_networkD3(what = "both")#to networkd3
+
+
+congruence_d3$nodes$nodesize <- sqrt(degree(graph.adjacency(congruence, mode="undirected", weighted=T)))
+
+types <- dna_getAttributes(conn)%>%
+  filter(value %in% congruence_d3$nodes$name)
+
+congruence_d3$nodes$group <-types$type
+```
+
+.pull-left[
+```{r}
+forceNetwork(
+  Links = congruence_d3$links,
+  Nodes = congruence_d3$nodes,
+  Source = "source",
+  Target = "target",
+  NodeID = "name",
+  Group = "group",
+  Nodesize = "nodesize",
+  opacity = 0.9,
+  colourScale = 'd3.scaleOrdinal(["#CAB2D6","#A6CEE3", "#FB9A99","#FF7F00","#B2DF8A","#33A02C", "#6A3D9A","#FDBF6F", "#1F78B4",  "#E31A1C"])',
+  fontSize = 30
+  )
+```
+
+]
+
+```{r include=FALSE}
+congruence2 <- dna_network(conn,
+                          networkType = "onemode",
+                          statementType = "DNA Statement",
+                          variable1 = "organization",
+                          variable2 = "concept",
+                          qualifier = "agreement",
+                          qualifierAggregation = "congruence",
+                          normalization = "average",
+                          duplicates = "week",
+                          start.date = "02.08.2015",
+                          stop.date = "31.12.2018",
+                          excludeValues = list("Category" = "TLC Regulation", "Category" = "State Level Regulation"))
+
+
+congruence_d3 <- congruence2%>%
+  graph_from_adjacency_matrix(mode = "undirected", weighted = TRUE)%>%#to igraph
+  igraph_to_networkD3(what = "both")#to networkd3
+
+
+congruence_d3$nodes$nodesize <- sqrt(degree(graph.adjacency(congruence2, mode="undirected", weighted=T)))
+
+types <- dna_getAttributes(conn)%>%
+  filter(value %in% congruence_d3$nodes$name)
+
+congruence_d3$nodes$group <-types$type
+```
+
+.pull-right[
+```{r fig.align="left"}
+forceNetwork(
+  Links = congruence_d3$links,
+  Nodes = congruence_d3$nodes,
+  Source = "source",
+  Target = "target",
+  NodeID = "name",
+  Group = "group",
+  Nodesize = "nodesize",
+  opacity = 0.9,
+  colourScale = 'd3.scaleOrdinal(["#FDBF6F", "#FB9A99", "#6A3D9A", "#33A02C",   "#FF7F00",  "#E31A1C","#1F78B4","#B2DF8A","#A6CEE3",  "#CAB2D6"])',
+  fontSize = 30
+  )
+```
+]
+
+
+---
+
+## What's the Talk About the Digitalization?
+
+```{r cache=TRUE}
+
+load("data/Replication data, The discursive construction of digitalization.RData")
+
+
+source("data/estimate_effect.R")
+
+
+
+```
+
+
+```{r fig.height=7, fig.width=13.2, fig.align="center"}
+
+topic_estimates_full%>%
+  mutate(topics = fct_reorder(topics, -ratio),
+         topics = recode(topics, "taxation" = "Taxation",
+                         "industrial_policy" = "Digital Industrial Policy",
+                         "investments" = "Knowledge Investments",
+                         "status" = "Platform Worker Status",
+                         "digital_manufacturing" = "Digital Manufacturing",
+                         "automation" = "Automation & Compensation"))%>%
+  ggplot(aes(reorder_within(value, proportion,  topics), proportion, color = ratio, shape = dominance))+
+  geom_pointrange(aes(ymin = lower, ymax = upper), size = 1.1)+
+  coord_flip()+
+  scale_x_reordered()+
+  facet_wrap(~ topics, scales = "free")+
+  scale_color_gradient(low="blue", high="red")+
+  labs(x = "",
+       y= "")+
+  ggthemes::theme_tufte() +
+theme(legend.position = "none", text = element_text(size = 20), plot.background = element_rect(fill = "#E9EAEB"),  axis.text.x = element_text(angle = 90, hjust = 0.9))
+
+```
+
+---
+
+```{r cache=TRUE}
+load("data/invest_data.RData")
+
+countries.list <- c("Australia",
+                    "Austria",
+                    "Belgium",
+                    "Canada",
+                    "Czech Republic",
+                    "Denmark",
+                    "Estonia",
+                    "Finland",
+                    "France",
+                    "Germany",
+                    "Greece",
+                    "Hungary",
+                    "Ireland",
+                    "Israel",
+                    "Italy",
+                    "Japan",
+                    "Korea",
+                    "Latvia",
+                    "Lithuania",
+                    "Luxemburg",
+                    "Netherlands",
+                    "New Zealand",
+                    "Norway",
+                    "Poland",
+                    "Portugal",
+                    "Slovakia",
+                    "Slovenia",
+                    "Spain",
+                    "Sweden",
+                    "Switzerland",
+                    "United Kingdom",
+                    "United States"
+)
+
+countries.selected <- c("Australia",
+                    "Austria",
+                    "Belgium",
+                    "Canada",
+                    "Denmark",
+                    "Finland",
+                    "France",
+                    "Germany",
+                    "Greece",
+                    "Ireland",
+                    "Italy",
+                    "Luxemburg",
+                    "Netherlands",
+                    "New Zealand",
+                    "Norway",
+                    "Portugal",
+                    "Spain",
+                    "Sweden",
+                    "Switzerland",
+                    "United Kingdom",
+                    "United States"
+)
+
+
+countries.iso <- countrycode(countries.list, 'country.name', 'iso3c')
+```
+
+
+## It's Corporatism, Stupid!
+
+```{r fig.height= 7, fig.width=13, fig.align="center"}
+
+g <- melded_summary_3 %>%
+  filter(
+    term %in% c(
+      "gov_seat_share_normal",
+      "corp_index_normal",
+      "ov_mean_within_normal",
+      "ov_mean_between_normal",
+      "corp_index_within_normal",
+      "corp_index_between_normal",
+      "h_polcon5_normal",
+      "hard_debt_rule",
+      "capb_normal",
+      "eu",
+      "ratio_normal",
+      "deindustrialization_normal",
+      "deindustrialization_within_normal",
+      "deindustrialization_between_normal",
+      "trade_open_normal",
+      "unemployment_normal",
+      "small_state_binary_2",
+      "share_elderly_normal"
+    )
+  )%>%
+  mutate(type = ifelse(
+    term == "gov_seat_share_normal",
+    "Partisan",
+    ifelse(
+      term %in% c(
+        "corp_index_normal",
+        "corp_index_within_normal",
+        "corp_index_between_normal",
+        "h_polcon5_normal",
+        "hard_debt_rule",
+        "eu"),
+      "Institutional",
+      ifelse(term %in% c("ov_mean_within_normal", "ov_mean_between_normal", "ratio_normal"), "Ideational",
+                         "Structural")))) %>%
+  mutate(
+    term = dplyr::recode(
+      term,
+      "gov_seat_share_normal" = "Social Democratic Party",
+      "corp_index_normal" = "Corporatism",
+      "corp_index_within_normal" = "Corporatism (within)",
+      "corp_index_between_normal" = "Corporatism (between)",
+      "h_polcon5_normal" = "Institutional Contraints",
+     "capb_normal" = "Adjusted Deficit",
+    "eu" = "EU Member",
+      "ov_mean_within_normal" = "Sentiment (within)",
+      "ov_mean_between_normal" = "Sentiment (between)",
+      "deindustrialization_normal" = "Deindustrialization",
+      "deindustrialization_within_normal" = "Deindustrialization (within)",
+      "deindustrialization_between_normal" = "Deindustrialization (between)",
+      "trade_open_normal" = "Trade Openness",
+      "hard_debt_rule"= "Debt Rule",
+    "ratio_normal" = "State Identity", 
+      "unemployment_normal" = "Unemployment",
+      "small_state_binary_2" = "Small State",
+      "share_elderly_normal" = "Share 65+"
+    )
+  )%>%
+  mutate(significance = factor(ifelse(p.value<0.05, 1, 0)))%>%
+  arrange(desc(type), estimate)%>%   
+  mutate(term=factor(term, levels=term))%>%
+  ggplot(aes(term, estimate)) +
+  geom_pointrange(aes(ymin = conf.low , ymax = conf.high, color = type),
+                  position = position_dodge(width = 1)) +
+  geom_hline(aes(yintercept = 0), alpha = 0.2) +
+  coord_flip() +
+  labs(x = "",
+       y = "Estimated Effect",
+       color = "Explanatory\nLogic")+
+  scale_color_brewer(palette = "Set1")+
+  ggthemes::theme_tufte()+
+  theme(text = element_text(size = 13.5),
+    plot.background = element_rect(fill = "#E9EAEB"),
+    legend.title = element_blank())+
+  guides(shape=FALSE)
+
+
+style(ggplotly(g),visible="legendonly", traces = 1:4)%>%
+  config(displayModeBar = F)%>%
+  add_annotations( text="Explanatory\nLogic", xref="paper", yref="paper",
+                  x=1.03, xanchor="left",
+                  y=0.825, yanchor="right",    # Same y as legend below
+                  legendtitle=TRUE, showarrow=FALSE) %>%
+  layout(legend = list(
+      orientation = "v", x = 1, y = 0.5
+    ))
+
+```
+
+
+
+---
+
+name: part4
+
+class: inverse, center, middle
+
+# Conclusion & Outlook
+
+.footnote[
+
+[Back to the contents slide](#contents-slide)
+
+]
+---
+
+
+## Lessons Learned & Courses Charted
+
+- Lessons:
+
+  - There is no digital destiny, but a series of discursive and political fights about what digitalization is and how it should be responded to
+  - Ideas matter, and so do institutions that foster a sense of common ownership of policy problems
+  
+  
+- Directions:
+
+  - Linking qualitative and quantitative analyses more closely (e.g., nested analysis)
+  - Looking at the entire policy-cycle (e.g., from agenda-setting to regulatory afterlives)
+  - Connecting the analysis of digital capitalism to the politico-economic literature (e.g., comparative institutional advantages in the digital age)
+  - Focusing more on the multi-level nature of digital policymaking (e.g., geopolitics of digital standard-setting)
+
+
+---
+
+class: inverse, center, middle
+
+# Thank You!
+
+.footnote[
+
+[Back to the contents slide](#contents-slide)
+
+]
+
+---
+
+name: part5
+
+
+class: inverse, center, middle
+
+# Appendix A: Politics of Platform Capitalism
+
+.footnote[
+
+[Back to the contents slide](#contents-slide)
+
+]
+---
+
+
+## Politics of Platform Capitalism: Frame Use I
+
+
+```{r}
+frames <- readxl::read_excel("data/Frames.xlsx", 
+    col_types = c("text", "numeric", "numeric", 
+        "numeric", "numeric", "text"))
+
+
+
+#first period
+
+frames_one <- frames %>%
+  filter(period == "first") %>%
+  select(-period) %>%
+  filter(
+    Frame %in% c(
+      "Exclusion/Discrimination",
+      "Collusion/Corruption",
+      "Working Conditions/Drivers’ Interests",
+      "Consumer Interests",
+      "Congestion",
+      "Economy/Jobs/Innovation",
+      "Public Interest",
+      "Disability Rights",
+      "Environment",
+      "Safety"
+    )
+  )%>%
+  mutate(Pro_de_Blasio = Pro_de_Blasio - Statements_de_Blasio) %>% #here just subtract deBlasio's statements from the statments by the de Blasio camp
+  mutate(Pro_Uber = Pro_Uber - Statements_Uber) %>% #same for Uber (allows for easier visualization as one can just take for groups)
+  mutate(Pro_de_Blasio = Pro_de_Blasio * -1) %>% #so that they are negative, again for plotting
+  mutate(Statements_de_Blasio = Statements_de_Blasio * -1) %>%
+  gather(pro, value, Pro_Uber:Statements_de_Blasio, factor_key = TRUE)%>%#make wide too long
+  mutate(pro = ordered(pro, c(
+    "Pro_de_Blasio",  
+    "Statements_de_Blasio",
+    "Pro_Uber",
+      "Statements_Uber"
+    )
+  ))
+
+
+
+frames_two <- frames %>%
+  filter(period == "second") %>%
+  select(-period) %>%
+  filter(
+    Frame %in% c(
+      "Exclusion/Discrimination",
+      "Collusion/Corruption",
+      "Working Conditions/Drivers’ Interests",
+      "Consumer Interests",
+      "Congestion",
+      "Economy/Jobs/Innovation",
+      "Public Interest",
+      "Disability Rights",
+      "Environment",
+      "Safety",
+      "Congestion Pricing"
+    )
+  )%>%
+  mutate(Pro_de_Blasio = Pro_de_Blasio-Statements_de_Blasio)%>%#here just subtract deBlasio's statements from the statments by the de Blasio camp
+  mutate(Pro_Uber = Pro_Uber-Statements_Uber)%>%#same for Uber (allows for easier visualization as one can just take for groups)
+  mutate(Pro_de_Blasio = Pro_de_Blasio*-1)%>%#so that they are negative, again for plotting
+  mutate(Statements_de_Blasio = Statements_de_Blasio*-1)%>%
+  gather(pro, value, Pro_Uber:Statements_de_Blasio, factor_key=TRUE)%>%#make wide too long
+  mutate(pro = ordered(pro, c(
+    "Pro_de_Blasio",  
+    "Statements_de_Blasio",
+    "Pro_Uber",
+    "Statements_Uber"
+  )
+  ))
+```
+
+
+```{r fig.height= 7, fig.width=14, fig.align="center"}
+#plotting
+
+#extract colors red and blue from the "paired" palette
+
+custom_color <- c("#A6CEE3", "#1F78B4", "#FB9A99", "#E31A1C")
+
+
+
+ggplot(frames_one, aes(x = reorder(Frame, value), value, fill = pro)) +
+  geom_col(show.legend = T, width = 0.7) +
+  coord_flip() +
+  labs(x = "",
+       y = "Number of Statements") +
+  scale_y_continuous(labels = abs, limits = c(-35, 35))+ #absolute values not minus
+  geom_hline(yintercept = 0) +
+  ggthemes::theme_tufte() +
+  theme(legend.position = "bottom") +
+  scale_fill_manual(
+    values = custom_color,
+    name = "",
+    labels = c(
+      "Statements de Blasio Coalition",
+      "Statments de Blasio",
+      "Statements Uber Coalition",
+      "Statements Uber"
+    )
+  ) +
+  ggtitle("Statements pro de Blasio/pro cap                Statements pro Uber/against cap") +
+  theme(plot.title = element_text(hjust = 0.5, size = 16, face = "bold.italic" ))+
+  theme(text = element_text(size = 18), plot.background = element_rect(fill = "#E9EAEB"))+
+  guides(fill=guide_legend(nrow=2,byrow=TRUE))
+```
+
+---
+## Politics of Platform Capitalism: Frame Use II
+
+```{r fig.height= 7, fig.width=14, fig.align="center"}
+
+
+custom_color <- c("#A6CEE3", "#1F78B4", "#FB9A99", "#E31A1C")
+
+
+ggplot(frames_two, aes(x = reorder(Frame, value), value, fill = pro)) +
+  geom_col(show.legend = T, width = 0.7) +
+  coord_flip() +
+  labs(x = "",
+       y = "Number of Statements") +
+  scale_y_continuous(labels = abs, limits = c(-70, 70), breaks = c(-60, -40, -20, 0, 20, 40, 60)) + #absolute values not minus
+  geom_hline(yintercept = 0) +
+  ggthemes::theme_tufte() +
+  theme(legend.position = "bottom") +
+  scale_fill_manual(
+    values = custom_color,
+    name = "",
+    labels = c(
+      "Statements de Blasio Coalition",
+      "Statments de Blasio",
+      "Statements Uber Coalition",
+      "Statements Uber"
+    )
+  ) +
+  ggtitle("Statements pro de Blasio/pro cap        Statements pro Uber/against cap") +
+  theme(plot.title = element_text(hjust = 0.5, size = 16, face = "bold.italic" ))+
+  theme(text = element_text(size = 18), plot.background = element_rect(fill = "#E9EAEB"))+
+  guides(fill=guide_legend(nrow=2,byrow=TRUE))
+
+
+
+```
+
+---
+
+## Alternative Explanation: Sentiment Analysis
+
+```{r fig.height= 7, fig.width=14, fig.align="center"}
+load("data/sentiment_uber.RData")
+
+
+p1 <- sentiment_cohen %>%
+  mutate(cohen_des = paste(format(round(estimate, 2), nsmall = 2), assertive.base::parenthesize(magnitude))) %>%
+  ggplot(aes(method, estimate, fill = method, label = cohen_des)) +
+  geom_col(alpha = 0.8) +
+  geom_text(size = 3.5, position = position_stack(vjust = .25)) +
+  geom_errorbar(aes(ymin = lower, ymax = upper)) +
+  labs(x = "",
+       y = "") +
+  scale_fill_brewer(palette = "Set1") +
+  ggthemes::theme_tufte() +
+theme(legend.position = "none", text = element_text(size = 20), plot.background = element_rect(fill = "#E9EAEB"))
+
+
+
+p2 <- ggplot(sentiment_score, aes(Date, sentiment_polarity, fill = method)) +
+  geom_col(show.legend = FALSE) +
+  scale_x_date(breaks = "1 year", date_labels = "%Y") +
+  facet_wrap(~ method, ncol = 1) +
+  labs(
+    x = "",
+    y = "Sentiment"
+  )+
+  geom_vline(xintercept = as.numeric(as.Date("2015-07-22")),
+             linetype = 4) +
+  geom_vline(xintercept = as.numeric(as.Date("2018-08-08")),
+             linetype = 4) +
+  scale_fill_brewer(palette = "Set1")+
+  ggthemes::theme_tufte() +
+theme(legend.position = "none", text = element_text(size = 20), plot.background = element_rect(fill = "#E9EAEB"))
+
+
+
+p3 <- sentiment_score_boot %>%
+  mutate(sentiment = Mean,
+         upper = Bca.upper,
+         lower = Bca.lower)%>%
+  ggplot(aes(factor(period, levels = c("2nd Period", "1st Period")), sentiment, fill = method)) +
+  geom_col(alpha = 0.8) +
+  coord_flip()+
+  facet_wrap(~method)+
+  geom_errorbar(aes(ymin = lower, ymax = upper))+
+  labs(x = "",
+       y = "") +
+  scale_fill_brewer(palette = "Set1")+
+  ggthemes::theme_tufte() +
+theme(legend.position = "none", text = element_text(size = 20), plot.background = element_rect(fill = "#E9EAEB"))
+
+
+library(patchwork)
+
+#patch together
+
+(p2 | (p3 / p1)) + 
+  plot_annotation(tag_levels = 'A') +
+  plot_layout(widths = c(3, 2))
+```
+
+---
+
+name: part6
+
+class: inverse, center, middle
+
+# Appendix B: Regulating the European Data-Driven Economy
+
+.footnote[
+
+[Back to the contents slide](#contents-slide)
+
+]
+
+
+---
+## The Politics of the GDPR Before/After Snowden
+
+
+```{r include=FALSE}
+
+
+conn <- dna_connection("data/GDPR_DNA.dna") 
+
+
+
+
+congruence <- dna_network(
+  conn,
+  networkType = "onemode",
+  statementType = "DNA Statement",
+  variable1 = "organization",
+  variable2 = "concept",
+  qualifier = "agreement",
+  qualifierAggregation = "congruence",
+  normalization = "average",
+  duplicates = "week",
+  start.date = "21.01.2012",
+  stop.date = "08.06.2013",
+  excludeValues = list("concept" = "Harmonization is good")
+)
+
+
+
+congruence2 <- dna_network(
+  conn,
+  networkType = "onemode",
+  statementType = "DNA Statement",
+  variable1 = "organization",
+  variable2 = "concept",
+  qualifier = "agreement",
+  qualifierAggregation = "congruence",
+  normalization = "average",
+  duplicates = "week",
+  start.date = "09.06.2013",
+  stop.date = "30.04.2016",
+  excludeValues = list("concept" = "Harmonization is good")
+  )
+
+  
+
+congruence_d3 <- congruence%>%
+  graph_from_adjacency_matrix(mode = "undirected", weighted = TRUE)%>%#to igraph
+  igraph_to_networkD3(what = "both")#to networkd3
+
+
+congruence_d3$nodes$nodesize <- sqrt(degree(graph.adjacency(congruence, mode="undirected", weighted=T)))
+
+types <- dna_getAttributes(conn)%>%
+  filter(value %in% congruence_d3$nodes$name)
+
+congruence_d3$nodes$group <-types$type
+```
+
+.pull-left[
+```{r}
+forceNetwork(
+  Links = congruence_d3$links,
+  Nodes = congruence_d3$nodes,
+  Source = "source",
+  Target = "target",
+  NodeID = "name",
+  Group = "group",
+  Nodesize = "nodesize",
+  opacity = 0.9,
+  colourScale = 'd3.scaleOrdinal(["#CAB2D6","#A6CEE3", "#FB9A99","#FF7F00","#B2DF8A","#33A02C", "#6A3D9A","#FDBF6F", "#1F78B4",  "#E31A1C"])',
+  fontSize = 30)
+```
+
+]
+
+.pull-right[
+```{r include=FALSE}
+congruence_d3 <- congruence2%>%
+  graph_from_adjacency_matrix(mode = "undirected", weighted = TRUE)%>%#to igraph
+  igraph_to_networkD3(what = "both")#to networkd3
+
+
+congruence_d3$nodes$nodesize <- sqrt(degree(graph.adjacency(congruence2, mode="undirected", weighted=T)))
+
+types <- dna_getAttributes(conn)%>%
+  filter(value %in% congruence_d3$nodes$name)
+
+congruence_d3$nodes$group <-types$type
+```
+
+
+
+
+```{r fig.align="left"}
+forceNetwork(
+  Links = congruence_d3$links,
+  Nodes = congruence_d3$nodes,
+  Source = "source",
+  Target = "target",
+  NodeID = "name",
+  Group = "group",
+  Nodesize = "nodesize",
+  opacity = 0.9,
+  colourScale = 'd3.scaleOrdinal(["#A6CEE3","#CAB2D6","#6A3D9A","#B2DF8A","#FB9A99", "#E31A1C",  "#1F78B4", "#FF7F00", "#33A02C","#FDBF6F"])',
+  fontSize = 30
+  )
+
+```
+
+]
+
+---
+
+## The WP29 Working Paper and the Final GDPR
+
+```{r}
+ 
+data.frame (
+  first_column = c(
+    "Introduce a new ‘Privacy by Design’ principle (pp. 12-15)",
+    "Introduce a new ‘accountability’ principle (p. 20)",
+    "Increase data controllers’ responsibilities; introduce data protection impact assessments; reinforce the role of data protection officers (p. 20)",
+    "Improve redress mechanisms and introduce class action lawsuits (p. 16)",
+    "Improve transparency; introduce data breach notifications (for high risk breaches) (p. 16, 21)",
+    "Strengthen consent requirements (p. 17)",
+    "Give clear institutional, functional and material independence to the DPAs, as the 1995 directive´s Art. 28 was unclear (pp. 21-22)",
+    "Clarify DPA´s enforcement powers, as the 1995 directive’s Art. 28 only contain 3 subparagraphs on enforcement (p. 22)",
+    "Extend legislative advisory powers. WP29 opinions should be addressable more actors (e.g. national parliaments) and treat more issues than ‘administrative measures and regulations’ (p.22)",
+    "Strengthen the WP29",
+    "Ensure more harmonization in an ‘unambiguous and unequivocal legal framework’ (p. 9)"
+  ),
+  second_column = c("Introduces a new ‘Privacy by Default and by Design’ principle (GDPR Art. 25)",
+"Introduces a new ‘accountability’ principle (Art. 5§2)",
+"Increases data controllers´ responsibilities; data protection impact assessments are introduced; reinforces the role of data protection officers (GDPR Art. 35-39)",
+"Improves redress mechanisms and strengthens the role of public interest groups for the enforcement of rights (GDPR Chapter VIII, particularly Art. 80)",
+"Improves transparency; data breach notifications become obligatory (for high risk breaches) (GDPR Section 1 and Art. 34)",
+"Strengthens consent requirements (GDPR Art. 7)",
+"Strengthens functional (Art. 52§1), institutional (Art. 52§2,5) and material (Art. 52§3,4,6) independence of DPAs",
+"Contains 16 subparagraphs on investigative and corrective powers (Art. 58§1,2)",
+"Extends the scope of the DPA’s opinions to more actors (e.g. national parliaments) and to ‘any issue related to the protection of personal data’ (Art. 58§3b)",
+"Renames WP29 to ‘European Data Protection Board’ with broadened task description (Art. 68 & 70)",
+"Directive becomes a regulation")
+)%>%
+  rename("WP29 Position Paper (2009)" = first_column,
+         "GDPR 2016" = second_column )%>%
+  kable(booktabs = TRUE, linesep = "\\addlinespace") %>%
+  kable_styling(font_size = 12)%>%
+  column_spec(1, width = "41em")%>%
+  column_spec(2, width = "41em")
+```
+
+---
+## Frame Use Before/After Snowden
+
+
+```{r}
+
+frames <- readxl::read_excel("data/Frames_gdpr.xlsx", 
+    col_types = c("text", "numeric", "numeric", 
+        "text"))
+
+
+
+frames_one <- frames %>%
+  dplyr::filter(period == "first") %>%
+  dplyr::select(-period) %>%
+  filter(
+    Frame %in% c(
+      "Innovation/Growth",
+      "Fundamental Rights",
+      "Market-Creation",
+      "Consumer Issues",
+      "Restrictiveness/Flexibility",
+      "Restrictiveness/Scope",
+      "Geo-economics"
+    )
+  ) %>%
+  dplyr::mutate(Anti_GDPR = Anti_GDPR * -1) %>%
+  tidyr::gather(pro, value, Pro_GDPR:Anti_GDPR, factor_key = T)%>%
+  dplyr::mutate(pro = factor(pro, levels = c("Anti_GDPR", 
+                                                   "Pro_GDPR")))
+
+
+
+#second period
+
+frames_two <- frames %>%
+  dplyr::filter(period == "second") %>%
+  dplyr::select(-period) %>%
+  filter(
+    Frame %in% c(
+      "Innovation/Growth",
+      "Fundamental Rights",
+      "Market-Creation",
+      "Consumer Issues",
+      "Restrictiveness/Flexibility",
+      "Restrictiveness/Scope",
+      "Geo-economics"
+    )
+  ) %>%
+  dplyr::mutate(Anti_GDPR = Anti_GDPR * -1) %>%
+  tidyr::gather(pro, value, Pro_GDPR:Anti_GDPR, factor_key = T)%>%
+  dplyr::mutate(pro = factor(pro, levels = c("Anti_GDPR", 
+                                             "Pro_GDPR")))%>%
+  dplyr::mutate(Frame = factor(Frame, levels = c(
+    "Fundamental Rights",
+    "Market-Creation",
+    "Geo-economics",
+    "Consumer Issues",
+    "Restrictiveness/Scope",
+    "Innovation/Growth",
+    "Restrictiveness/Flexibility"
+  )))#to have the same order as in first period
+
+```
+
+
+.pull-left[
+
+```{r fig.height=6.5, fig.width=7}
+#plotting
+
+
+ggplot(frames_one, aes(x = reorder(Frame, -value), value, fill = pro)) +
+  geom_col(show.legend = F, width = 0.9, alpha = 0.9) +
+  coord_flip() +
+    labs(x = "",
+       y = "") +
+  scale_y_continuous(
+    labels = abs,
+    limits = c(-65, 65),
+    breaks = c(-60, -40, -20, 0, 20, 40, 60)
+  ) + #absolute values not minus
+  geom_hline(yintercept = 0) +
+  theme_tufte() +
+  theme(text = element_text(size = 20), plot.background = element_rect(fill = "#E9EAEB"))+
+    scale_fill_manual(
+      values = c("#FC8D62", "#66C2A5"))
+```
+]
+.pull-right[
+```{r fig.height=6.5, fig.width=7}
+ggplot(frames_two, aes(x = Frame, value, fill = pro)) +
+  geom_col(show.legend = F, width = 0.9, alpha = 0.9) +
+  coord_flip() +
+  labs(x = "",
+       y = "Number of Statements") +
+  scale_y_continuous(
+    labels = abs,
+    limits = c(-120, 120),
+    breaks = c(-100,-80, -60, -40, -20, 0, 20, 40, 60, 80, 100)
+  ) + #absolute values not minus
+  geom_hline(yintercept = 0) +
+  theme_tufte() +
+  theme(text = element_text(size = 20), plot.background = element_rect(fill = "#E9EAEB"))+
+  scale_fill_manual(
+    values = c("#FC8D62", "#66C2A5"))
+```
+
+]
+---
+
+
+name: part7
+class: inverse, center, middle
+
+# Appendix C: Talkin' About Digitalization
+
+.footnote[
+
+[Back to the contents slide](#contents-slide)
+
+]
+
+---
+
+## Sentiment Across Countries and Dictionaries
+
+
+```{r fig.height= 7, fig.width=14, fig.align="center"}
+sentiment_score_countries_boot %>%
+  group_by(method, discourse)%>%
+  mutate(sentiment = scale(Mean),
+         upper = scale(Bca.upper),
+         lower = scale(Bca.lower))%>%
+  group_by(country, method)%>%
+  summarise(sentiment = sum(sentiment),
+         upper = sum(upper),
+         lower = sum(lower))%>%
+  mutate(method2 = as.character(
+    glue("{method}<br><span> dictionary")
+  ))%>%
+  ggplot(aes(reorder_within(country, sentiment, method), sentiment, fill = method)) +
+  scale_x_reordered()+
+  geom_col() +
+  #geom_errorbar(aes(ymin = lower, ymax = upper))+
+  coord_flip() +
+  facet_wrap( ~ method2, scales = "free", ncol = 2) +
+  labs(x = "",
+       y = "") +
+  scale_fill_brewer(palette = "Set1")+
+  ggthemes::theme_tufte() +
+  theme(legend.position = "none",
+        strip.background=element_rect( color=NA),
+        strip.text=element_markdown(size = 12, lineheight = 1.1),
+        text = element_text(size = 20), 
+        plot.background = element_rect(fill = "#E9EAEB"))
+ 
+ 
+
+
+
+```
+
+---
+
+
+## Sentiment Across Countries and Discourses
+
+
+```{r fig.height= 7, fig.width=14, fig.align="center"}
+
+sentiment_score_countries_boot_discourse %>%
+  mutate(sentiment = Mean,
+         upper = Bca.upper,
+         lower = Bca.lower)%>%
+  mutate(discourse = as.character(
+      glue("{discourse}<br><span> discourse")
+    ))%>%
+  ggplot(aes(
+    reorder_within(country, sentiment, discourse),
+    sentiment,
+    fill = discourse
+  ))+
+  scale_x_reordered() +
+  geom_bar(stat = "identity", position = "dodge") +
+  geom_errorbar(aes(ymin = lower, ymax = upper))+
+  facet_wrap( ~ discourse, ncol = 1, scales = "free") +
+  coord_flip() +
+  labs(x = "",
+    y = "") +
+  scale_fill_manual(values = brewer.pal(name = "Set1", 9)[5:6])+
+  ggthemes::theme_tufte() +
+  theme(legend.position = "none",
+        strip.background=element_rect( color=NA),
+        strip.text=element_markdown(size = 12, lineheight = 1.1),
+        text = element_text(size = 20), 
+        plot.background = element_rect(fill = "#E9EAEB"))
+
+```
+
+
+
+---
+
+name: part8
+
+class: inverse, center, middle
+
+# Appendix D: Investing in the Digital Future
+
+.footnote[
+
+[Back to the contents slide](#contents-slide)
+
+]
+
+
+
+---
+
+
+## Investing in the Digital Future
+
+```{r fig.height= 7, fig.width=12, fig.align="center"}
+full_data_imp %>%
+  filter(!is.na(dii_score_gdp)) %>%
+  mutate(Period = ifelse(
+    Year %in% (1980:1989),
+    "1980s",
+    ifelse(
+      Year %in% (1990:1999),
+      "1990s",
+      ifelse(Year %in% (2000:2009), "2000s", "2010s")
+    )
+  )) %>%
+  group_by(Period, Country) %>%
+  dplyr::summarise(dii_score_gdp = mean(dii_score_gdp)) %>%
+  ungroup() %>%
+  ggplot() +
+  geom_col(
+    aes(reorder(Country, -dii_score_gdp), dii_score_gdp),
+    data = . %>% filter(Period == "2010s"),
+    show.legend = F,
+    alpha = 0.4,
+    fill = "#377eb8"
+  ) +
+  geom_point(
+    aes(
+      x = reorder(Country, -dii_score_gdp),
+      y = dii_score_gdp,
+      shape = Period,
+      color = Period
+    ),
+    data = . %>% filter(Period %in% c("1980s", "1990s", "2000s", "2010s"))
+  ) +
+  ggthemes::theme_tufte() +
+  scale_color_brewer(palette = "Set2")+
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 0.9),
+    text = element_text(size = 20),
+    plot.background = element_rect(fill = "#E9EAEB"),
+    legend.position = "top"
+  ) +
+  labs(
+    x = "",
+    y = "Normalized Digital Investment Index",
+    color = "",
+    shape = ""
+    #caption = "Data: OECD"
+  )
+
+
+```
+
+---
+
+
+## Interaction Effect
+
+```{r fig.height= 7, fig.width=13, fig.align="center"}
+interaction%>%
+  ggplot()+
+  geom_line(aes(x = fake, y = coef1))+
+  geom_ribbon(aes(x = fake, y = coef1, ymin=lb, ymax=ub), linetype=2, alpha=0.1)+
+  # Add a horizontal line at y = 0
+    geom_hline(yintercept = 0, linetype = "dashed")+
+  labs(x = "Corporatism Index", y = "Estimated Coefficeint of Deindustrialization")+
+  ggthemes::theme_tufte()+
+  theme(text = element_text(size = 20), 
+        plot.background = element_rect(fill = "#E9EAEB"))
+```
+
+
+---
+
+
+name: part9
+class: inverse, center, middle
+
+# Appendix E: The Spirit of Capitalism
+
+.footnote[
+
+[Back to the contents slide](#contents-slide)
+
+]
+
+
+---
+
+## A Brief Conceptual History of the Spirit of Capitalism
+
+
+<br>
+
+```{r out.width="90%"}
+include_graphics("data/spirit_books.PNG")
+```
+
+
+&nbsp; &nbsp; ***ideational* factors** &nbsp; &rArr; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ***normative* ideas** &nbsp;  &rArr; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ***dynamic* values**
+
+
+
+---
+
+## A Technological Hammer for Every Social Nail
+
+
+.pull-left[
+
+
+- Technological solutions to social problems
+  
+  + Recasting of social problems
+  
+  + Extrapolation of 'computational thinking'
+
+
+- Doing well by doing good
+
+  + Not just an inventor, but an innovator
+  
+  + Belief in the proportionality of profit opportunities and social problems
+  
+
+
+
+]
+
+--
+
+.pull-right[
+```{r fig.height=6.5, fig.width=7}
+load("data/only_results.RData")
+
+
+
+p3 <- readme_elites%>%
+  filter(category != "Other",
+         method == "with_matching")%>%
+  ggplot(aes(reorder(category, -Percentage), Percentage, group = method, text =  paste0(round(Percentage*100, 2), "%")))+
+  geom_bar(aes(), fill = "black", stat="identity", width=.5, position = "dodge")+
+  scale_y_continuous(labels = scales::percent)+
+  labs(x = "",
+       y = "Percentage",
+       fill = "") +
+ ggthemes::theme_tufte() +
+theme(legend.position = "none", text = element_text(size = 20), plot.background = element_rect(fill = "#E9EAEB"),  axis.text.x = element_text(angle = 90, hjust = 0.9))
+
+
+ggplotly(p3, tooltip = c("text")) %>%
+  layout(hovermode = "x",
+         legend = list(
+      orientation = "h",
+      y = -0.5
+    )
+  )%>%
+  config(displayModeBar = F)
+
+```
+]
+
+
+---
+
+
+
+## Wired
+
+```{r fig.height=7, fig.width=13, fig.align="center"}
+
+
+p4 <- output_readme_wired%>%
+  ungroup()%>%
+  filter(method == "with_matching")%>%
+  filter(category != "Other")%>%
+  mutate(year = as.numeric(year))%>%
+  ggplot(aes(x = year, y = value, group = category, text =  paste0(round(value*100, 2), "%")))+
+  geom_line(aes(linetype = category, color = category))+
+  scale_y_continuous(labels = scales::percent)+
+  scale_x_continuous(breaks = seq(from = 1985, to = 2020, by = 5))+
+  scale_color_brewer(palette = "Set1")+
+  labs(x = "",
+       y = "Percentage")+
+ ggthemes::theme_tufte() +
+theme( text = element_text(size = 20), plot.background = element_rect(fill = "#E9EAEB"),  axis.text.x = element_text(angle = 90, hjust = 0.9))
+
+
+ggplotly(p4, tooltip = c("text")) %>%
+  layout(hovermode = "x",
+         legend = list(
+      orientation = "h",
+      y = -0.5
+    )
+  )%>%
+  config(displayModeBar = F)
+```
+
+
+---
+
+
+
+## Harvard Business Review
+
+```{r fig.height=7, fig.width=13, fig.align="center"}
+
+p5 <- output_readme_hbr%>%
+  ungroup()%>%
+  filter(method == "with_matching")%>%
+  filter(category != "Other")%>%
+  mutate(year = as.numeric(year))%>%
+  ggplot(aes(x = year, y = value, group = category, text =  paste0( round(value*100, 2), "%")))+
+  geom_line(aes(linetype = category, color = category))+
+  scale_y_continuous(labels = scales::percent)+
+  scale_x_continuous(breaks = seq(from = 1985, to = 2020, by = 5))+
+  scale_color_brewer(palette = "Set1")+
+  labs(x = "",
+       y = "Percentage")+
+ ggthemes::theme_tufte() +
+theme( text = element_text(size = 20), plot.background = element_rect(fill = "#E9EAEB"),  axis.text.x = element_text(angle = 90, hjust = 0.9))
+
+
+ggplotly(p5, tooltip = c("text")) %>%
+  layout(hovermode = "x",
+         legend = list(
+      orientation = "h",
+      y = -0.5
+    )
+  )%>%
+  config(displayModeBar = F)
+```

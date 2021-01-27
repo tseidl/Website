@@ -1,0 +1,141 @@
+---
+title: "Manuscript Defense"
+author: "Timo Seidl"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+- pdf_document
+subtitle: 'Wordcount: `r wordcountaddin::word_count()`'
+geometry: margin=3cm
+fontsize: 12pt
+header-includes:
+- \usepackage{setspace}
+- \onehalfspacing
+- \addtolength{\skip\footins}{2pc}
+---
+
+\vspace{0.5cm}
+
+
+Good morning everybody,
+
+there is this quote that a presentation is a chance to share, not an oral exam. It is in this spirit that I'm very happy to have the chance today to share some of my research with so many of you - friends old and new.
+
+&sect;
+
+When preparing this presentation, I realized that it is not easy to squeeze 5 quite diverse papers into a 20 minutes presentation, and I think it would be a mistake to try. What I will do instead is to paint a rather broad picture of the thinking behind my research. I will only then use selected empirical findings from some of papers to illustrate my argument, leaving the empirical details to the interested reader or the discussion. 
+
+
+&sect;
+
+
+The starting point for my dissertation is the observation that digital technologies, designed and offered by private companies, are mediating more and more of what we say, think, and do - from the news we consume to how we get around to, I guess, how we defend our dissertations. There are many ways to illustrate that point, but perhaps the most straightforward is to look at the market valuations of major tech companies over the last 10 years.
+
+&sect;
+
+
+We not only see that their stocks have been soaring, making them the richest companies in the world and arguably in history. We also see that, when we zoom in on just the last few years, this trend has only been accelerating. It also has been further boosted by the pandemic, which has so painfully exposed our reliance on tech companies. 
+
+&sect;
+
+Another way to look at this is to just recount some of the things that happened in the short time since I submitted my thesis. Many of us saw this guy dancing on our Twitter feeds, powerfully illustrating the rapid advances in AI and robotics that will only continue to transform labor markets. We also saw Amazon announce its plan to go into the pharmacy business, foreshadowing a new wave of disruption as Big Tech moves into health care. 
+
+But we have also seen developments that underscore the contested nature of digitalization. For example, many of us have seen a pop-up notification a few weeks ago in which Whatsapp informed us about changes in how it shares data with Facebook, leading to an outcry that forced Facebook to delay the changes. This not only points to the unabated desire of tech companies to collect and use more and more data about and against us, but also to how contested this commodification of personal data has become. We have also seen the EU unveil its digital services and markets acts, which was just the latest example in a long list of important internet policies unveiled or implemented in the last years.
+
+
+&sect;
+
+The point here is that technology is not always, as in this picture, outrunning regulators. To the contrary, politics and policy are already essential to understand the course and character of the digital transformation, and will only become more so. This is what my dissertation is about: understanding how digitalization is regulated and responded to and why these responses differ over time and across contexts. 
+
+&sect;
+
+But let's start with a little bit of theory, and the question: how should we think about technological change?
+
+&sect;
+
+And here I want to make two observations, for which economic historian Melvin Kranzberg's first and fourth law of technology offer good starting points. The first law states that technology is neither good nor bad, nor is it neutral. That is to say not only that the effects of technology depend on how societies react to them - so they are not in themselves good or bad; but also that there is a certain direction to technological change - which is why it is not neutral. And I argue that in capitalist societies, the effects of digital technologies have a disruptive and a commodifying thrust, reflecting capitalism's internal dynamism and system-extending character. This is the sense in which they are not neutral.
+
+Digital technologies are *disruptive* to the extent that they shake up existing industries, changing what is required for success at the individual, firm, and societal level. We have seen this with the dancing robot, but also Amazon's move into health care. 
+
+Digital technologies are *commodifying* to the extent that they push market logics ever deeper into the social fabric, while also putting pressure on institutions that protect individuals from cut-throat competition on markets. An example of the former are the ever-more intrusive ways in which data are captured and used for commercial purposes. An example for the latter is platform companies' almost famous disregard for labor market regulations, which they want to avoid by branding their employees as independent contractors instead of workers. 
+
+This is the first observation. The second observation builds on Kranzberg's fourth law of technology, which states that nontechnical factors take precedence in technology-policy decisions. That is, the responses to technological change are not determined by the technologies themselves but depend on non-technical factors like politics or culture. 
+
+Here, I want to stress that the politics of digital policymaking is shaped by ideas and institutions. Given the uncertainty surrounding digitalization, actors can use ideas to change how other actors understand this novel phenomenon and therefore their own interests towards it. Similarly, institutions shape the way in which digitalization is viewed and responded to. But this is all very abstract, so let's put some empirical mead to these bones and look at some examples from the papers.
+
+
+```{r include=FALSE}
+
+"First, let me say a bit more about what I mean by both, capitalism and then digital capitalism. So there are two things about capitalism that matter here: First, it is inherently dynamic, there are always incentives for creative and sometimes also destructive destruction as entrepreneurs look for new ways of making profit. This is Joseph Schumpeter's great insight. Second, capitalism is not just a economic order, it is a social order. 
+
+On the one hand, capitalism relies on social trust, law enforcement, government investments, broad-based support for its functioning and dynamism. On the other hand, it constantly expands into society, finding new markets in areas that were previously walled off from commercial exploitation. This, in turn, can create social counter-movements that aim to protect societies from unfettered markets. It was Karl Polanyi who gave us the language to describe this contested process of embedding and disembedding. 
+
+
+The important argument now is that this double dynamic of disruption and commodification is amplified by digital technologies. These technologies give rise to a novel historical form of capitalism - one that is centered around platform-based business models, heavily relies on artificial intelligence which in turn spurs a hunger for ever larger amounts of data."
+```
+
+
+&sect;
+\newpage
+
+
+The first example concerns the regulation of Uber in New York. It's an interesting case because mayor Bill de Blasio tried to regulate Uber twice, once in 2015 and then again in 2018. While the first attempt failed, the second one succeeded. It´s the same city the same mayor, only 3 years apart. Why do we get these different outcomes, and what can we learn from this about the politics of platform capitalism more generally? 
+
+First, a few words about Uber. Uber is a good example for a company whose business model relies on ignoring or changing the law, for example: labor law or transport regulations. So when de Blasio wanted to put a cap on the growth of Uber, citing congestion concerns, this was an existential threat to its business model, which is build on that form of regulatory arbitrage. But Uber had a problem. It was up against a powerful mayor that had a strong democratic majority behind him. Nonetheless, Uber managed to fight off the regulation. How? 
+
+Let's look at some discourse networks. The little nodes here are actors, the colors indicate different actor types, and the connections indicate agreement over policy beliefs. Two actors are connected, for example, when they both think that Uber is good for workers. So we can think of clusters in these networks as coalitions that share policy beliefs. On the left we have the discourse network before the first, failed regulation; on the right before the second, successful regulation. The most important difference is that in the first network, de Blasio's government, which is here, is part of a relatively small coalition consisting mainly of representatives of the taxi industry, here in yellow and orange. Uber, on the other hand, which is here, has a much more diverse coalition and, crucially, was able to sway many government actors themselves, which are in green here. 
+
+My argument now is - and I defend this in various ways in the paper - that it was Uber's clever framing and storytelling that allowed it to drive a wedge between de Blasio's democratic coalition. Uber used a powerful narrative of collusion and exclusion. It convinced many New Yorkers that de Blasio was in bed with the taxi industry, which he protected in exchange for political donations. De Blasio had a hard time denying it, as the taxi industry indeed made up most of his very homogeneous support coalition.
+
+At the same time, Uber put forward a narrative according to which the taxi industry is an antiquated industry that has long discriminated against people of color and people living in the outer boroughs. Now they were using their political connections to shut down an innovative company like Uber. The narrative is clear, New Yorker's are the victims, de Blasio and his taxi buddies the villains and Uber the hero. 
+
+The second time it was de Blasio, who is here, who had a much bigger and more diverse coalition. Uber, on the other hand, which is here, still had some of its allies from the first regulatory battle, but now has not only the smaller coalition, but was unable to drive a wedge between the New York City Democrats (in light green).
+
+Crucially, this time, de Blasio had a powerful narrative of his own, focusing not just on the rather abstract problem of congestion, as he had done the first time, but convincingly linking this to the problem of workers' rights. 
+
+De Blasio argued that the growth of Uber was simultaneously responsible for congestion and the dire working conditions of drivers. In this narrative, Uber was the villain by luring too many drivers on the street because it could afford not to pay them properly. This came at the expense of drivers, many of which belong to minorities, and New Yorkers generally, who suffer from slow traffic. They were the victims, and de Blasio was the hero saving the day by forcing Uber to use its drivers more efficiently, which meant better pay *and* less congestion at the same time.
+
+By killing the two birds of congestion and worker protection with one narrative stone, de Blasio managed to mobilize a much broader array of actors than in 2015. With all this support, De Blasio was able to introduce a cap on the growth of Uber as well as, for the first time in the United States, a minimum pay rate for drivers. This example shows how important regulation is to many platform companies, how flexible coalitions can be, and how ideas can make a difference in the politics of digital policymaking.
+
+&sect;
+
+Another way to look at the role of ideas and institutions in digital policymaking is to compare how digitalization is framed and fought about in different countries. Here, we see some of the most prominent topics - derived from a structural topic model - in public and social partner discourse on the digital future of work in eight European countries. Ignore the colors, what is important here is that there are clear differences in the topics that are most prominent in different countries, showing that digitalization is not only not the same everywhere, it is not even the same problem everywhere. 
+
+In Sweden, for example, with its tax-based welfare states, taxation issues are much more important, while in the the more precarious UK labor market, there is a lot more debate about the status and the working conditions of platform workers. Likewise, Sweden has also a much more positive, forward-looking discourse, which is not only evident from the much more positive overall sentiment of the discourse (which you can't see here); but also from its focus on investments in knowledge and skills as opposed to concerns over automation and how workers can be compensated for it. Here, we see that underlying institutions shape how novel problems are viewed, which in turn shapes how the range of possible and plausible policy responses.
+
+&sect;
+
+This brings me to a last empirical example, and that concerns the determinants of investments in knowledge-based capital such as skills or R&D themselves. Such investments are only getting more important the more digital technologies put a premium on skills and intellectual property while putting pressure on those that lack them. There are, however, big differences in the extent to which governments invest in such knowledge-based capital. This has to do with the redistributive and intertemporal tradeoffs that come with such investments: they require the conflictual (re-)allocation of resources between groups and from present to future consumption.
+
+So what explains why some countries are much better at making such investments than others? Here we see the result of a mixed-effects model on a time-series-cross-sectional dataset of advanced democracies over the last decades. The existing literature has argued that the partisan composition of government or structural variables are important. I find support for structural factors like deindustrialization which does lead to more investments, but no support for partisan explanations. 
+
+More importantly, however, I argue that corporatist institutions are a crucial and overlooked factors when it comes to explaining public investment in knowledge-based capital. And I indeed find that more corporatist countries invest a lot more in knowledge-based capital. In fact, even the effect of deindustrialization depends on the level of corporatism, with deindustrialization only leading to higher investments in highly corporatist countries. 
+
+This seems puzzling since many argue that social partner involvement in policymaking would lead to passive compensation instead of active investments. I argue that this view is mistaken. Instead, I argue that the ideology of social partnership on which corporatism both rests and which it feeds into; makes it easier for actors to adopt a positive view of technological change, perceive it as less threatening, and focus on the opportunities that spring from investments in complementary assets instead of fighting for compensation. 
+
+Corporatism creates what Anton has called a sense of common ownership of policy problems, which I think is an overlooked but crucial ingredient in implementing policies that cost now but more than make up for it in the future.
+
+&sect;
+
+Okay, with that, let us now briefly wrap up. 
+
+&sect;
+
+I have argued that technological change is not social destiny, but that the course and character of digitalization depends on how it is responded to - and these responses differ across time and geography. 
+
+I have also argued that ideas and institutions matter a lot in that process, shaping how actors perceive digitalization and their own role in it. 
+
+There are a few things that the papers are lacking and/or that should be done next, and I'm looking forward to discussing this in more depth in the discussion. 
+
+- First, there is the issue of linking the quantitative analysis much more closely to qualitative ones, and thus letting them come to live, but also fleshing out the mechanisms that I theorize about. 
+
+- Second, there is the issue of looking at policies more comprehensively, following them from the agenda-setting to the implementation phase. 
+
+- Third, there is the issue of really spelling out the implications of the rise of platform companies for traditional theories of comparative political economy such as the idea of comparative institutional advantages. I know that Andrea is already working on this.
+
+- Finally, there is the issue of really incorporating the global, often geo-political dimension of digital policymaking into the analysis, situating political responses against the background of a broader debate about how the internet should be regulated, with an American, a Chinese, and a European models being the most promising candidates.
+
+&sect;
+
+I think I'll end on this note, thank you for listening, and I look forward to the discussion!
+
+ 
