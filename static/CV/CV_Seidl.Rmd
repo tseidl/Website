@@ -1,11 +1,11 @@
 ---
 name: Timo
 surname: Seidl
-position: "PhD Student"
-address: "European University Institute"
+position: "Post-Doc"
+address: "Centre for European Integration Research, University of Vienna"
 #phone: 
 www: timoseidl.com
-email: "timo.seidl@eui.eu"
+email: "timo.seidl@univie.ac.at"
 twitter: Timo_Seidl
 #github: tseidl
 #linkedin: 
@@ -38,9 +38,9 @@ library(vitae)
 library(tibble)
 tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "Post-Doc", "2021-", "University of Vienna, Centre for European Integration Research", "",
   "Visiting Researcher", "2020", "Alexander von Humboldt Institute for Internet and Society", "",
-  "Visiting Researcher", "2020", "Humboldt University Berlin", "",
-  "PhD Researcher", "2017-", "European University Insitute", ""
+  "Visiting Researcher", "2020", "Humboldt University Berlin", ""
 ) %>% 
   detailed_entries(Degree, Year, Institution, Where)
 ```
@@ -51,6 +51,7 @@ tribble(
 library(tibble)
 tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "Doctor of Political and Social Sciences", "2021", "European University Insitute", "",
   "Master of Research", "2018", "European University Insitute", "",
   "Semester abroad", "2016", "University of Toronto", "",
   "Master of Arts, Sociology", "2017", "Goethe University of Frankfurt", "",
@@ -175,6 +176,12 @@ Discourse Network Analyser, MAXQDA, Gephi, Citavi
 
 # Publications
 
+
+## Thesis
+
+<p>&nbsp;</p>
+
+Seidl, T. (2020) Ideas, Politics, and Technological Change: Essays on the Comparative Political Economy of Digital Capitalism. Dissertation European University Institute. | [**PDF**](https://cadmus.eui.eu/handle/1814/69757).
 
 
 ## Peer-Reviewed Journal Articles
