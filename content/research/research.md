@@ -1,8 +1,3 @@
----
-output:
-  pdf_document: default
-  html_document: default
----
 +++
 # A Projects section created with the Portfolio widget.
 widget = "portfolio"  # See https://sourcethemes.com/academic/docs/page-builder/
