@@ -16,7 +16,7 @@ publication_short: ""
 publication_types:
 - "7"
 publishDate: "2020-09-01T00:00:00Z"
-slides: Defense Slides
+slides: 
 summary: Doctoral Thesis
 tags:
 title: Ideas, politics, and technological change. Essays on the comparative political economy of digital capitalism

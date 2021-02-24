@@ -1,8 +1,7 @@
 ---
 authors:
 - admin
-bio: I am a PhD Researcher at the Department of Political and Social Science at the European University Institute
-  matter.
+bio: I am a Post-Doc at the University of Vienna's Centre for European Integration Research (EIF).
 email: "timo.seidl@univie.ac.at"
 name: Timo Seidl
 organizations:
