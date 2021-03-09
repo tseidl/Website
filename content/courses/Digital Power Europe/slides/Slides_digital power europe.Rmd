@@ -1,0 +1,196 @@
+---
+output:
+  xaringan::moon_reader:
+    includes:
+      after_body: insert-logo.Rhtml
+    lib_dir: libs
+    css: [xaringan-themer.css]
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+    seal: false
+---
+
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE, crayon.enabled = TRUE, htmltools.preserve.raw = FALSE)
+
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+
+
+library(xaringanthemer)
+library(crayon)
+library(tidyverse)
+library(knitr)
+library(ggthemes)
+library(kableExtra)
+library(xts)
+library(tidyquant)
+library(dygraphs)
+library(widgetframe)
+library(rDNA)
+library(igraph)
+library(networkD3)
+library(plotly)
+library(ggtext)
+library(glue)
+library(RColorBrewer)
+library(countrycode)
+library(cowplot)
+library(grid)
+
+
+```
+
+
+```{r xaringan-themer}
+
+
+xaringanthemer::style_mono_light(
+  base_color = "#2A363B",
+  link_color = "#FF847C",
+  text_slide_number_color = "#FECEA8",
+  header_font_google = google_font("Lato"),
+  text_font_google   = google_font("Roboto"),
+  code_font_google   = google_font("IBM Plex Mono"),
+  text_font_size = "1.25rem",
+  colors = c(
+    red = "#f34213",
+    purple = "#3e2f5b",
+    orange = "#ff8811",
+    green = "#99B898",
+    white = "#FFFFFF"
+  )
+)
+
+
+
+# colors can be used like this:This ** .red[simple] ** .white.bg - purple[demo]
+# _.orange[shows]_ the colors .green[in action].
+```
+
+
+class: inverse, center, middle
+
+
+# Digital Power Europe
+
+## Spring/Summer Term 2021
+
+<br>
+
+### Anke Obendiek & Timo Seidl
+
+### Centre for European Integration Research
+
+---
+
+
+
+name: contents-slide
+
+## Overview
+
+.pull-left[
+
+
+[Session 1: Introduction](#part1)
+
+#### Part I: Foundations of Digitalization
+
+[Session 2: The Rise of the Platform Society](#part2)
+
+[Session 3: Artifical Intelligence & Big Data](#part3)
+
+
+#### Part II: The European Union in the World
+
+
+[Session 4: Normative Power Europe](#part4)
+
+
+[Session 5: Market Power Europe](#part5)
+
+[Session 6: The Brussels Effect](#part6)
+
+]
+
+
+.pull-right[
+
+
+#### Part III: Models of Digitalization
+
+[Session 7: The US: All hail the Market?](#part7)
+
+[Session 8: China: State Surveillance Capitalism?](#part8)
+
+[Session 9: The European Union: A Third Way?](#part9)
+
+
+#### Part IV: The EU's Digital Agenda
+
+[Session 10: Data Protection](#part10)
+
+[Session 11: Taxation](#part11)
+
+[Session 12 Policy Session: DSA and DMA](#part12)
+   
+]
+
+---
+
+
+name: part1
+class: inverse, center, middle
+
+# Session 1: Introduction
+
+.footnote[
+
+[Back to the contents slide](#contents-slide)
+
+]
+
+---
+
+## Views on the European Union
+
+```{r fig.width=16, fig.height=7}
+
+cucumbers <- "img/cucumbers.jpg"
+roaming <- "img/roaming.jpg"
+papertiger <- "img/papertiger.jpg"
+superpower <- "img/superpower.jpg"
+
+
+eu_df <- data.frame()
+
+
+p <- eu_df%>%
+  ggplot()+
+  # geom_vline(aes(xintercept = 0, color = "red"))+
+  # # geom_hline(yintercept = 0)+
+  theme_void()+
+  theme(plot.background = element_rect(fill = "#E9EAEB"))
+
+
+ggdraw(p)+
+  draw_image(cucumbers, scale = 0.15, hjust = 0.425)+
+  draw_image(roaming, scale = 0.15, hjust = -0.42)+
+  draw_image(papertiger, scale = 0.15, vjust = 0.42)+
+  draw_image(superpower, scale = 0.15, vjust = -0.42)+
+  annotation_custom(grobTree(textGrob("Bureaucratic nuisance",  hjust=1.35, vjust = 7,
+                                      gp=gpar(col="#2A363B", fontsize=25, fontface="italic"))))+
+  annotation_custom(grobTree(textGrob("Benign but in decline",  hjust=-.55, vjust = 7,
+                                      gp=gpar(col="#2A363B", fontsize=25, fontface="italic"))))+
+  annotation_custom(grobTree(textGrob("Totalitarian superstate",  hjust=1.4, vjust = -6,
+                                      gp=gpar(col="#2A363B", fontsize=25, fontface="italic"))))+
+  annotation_custom(grobTree(textGrob("'Brussels Effect'",  hjust=-.75, vjust = -6,
+                                      gp=gpar(col="#2A363B", fontsize=25, fontface="italic"))))
+```
+
+---

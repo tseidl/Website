@@ -4,15 +4,15 @@ links:
 - icon: bookmark
   icon_pack: fas
   name: Syllabus
-  url: Syllabus_The-Politics-of-Digital-Capitalism---Europe-and-Beyond.pdf
+  url: Syllabus_Digital-Power-Europe.pdf
 - icon: tv
   icon_pack: fas
   name: Slides (continuously updated)
-  url: slides/Slides_politics-of-platform-capitalism.html
+  url: slides/
 summary: Master Level Course.
 tags:
 - Substantive
-title: The Politics of Digital Capitalism - Europe and Beyond
+title: Digital Power Europe? The EU in a Digitalizing World
 url_code: ""
 url_pdf: ""
 url_slides: ""
