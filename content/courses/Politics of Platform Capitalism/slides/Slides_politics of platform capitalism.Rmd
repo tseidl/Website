@@ -334,9 +334,9 @@ What about you?
 
 class: hide-logo
 
-<object data="C:/Users/timos/OneDrive/Dokumente/GitHub/politics-of-digital-capitalism/Syllabus_The-Politics-of-Digital-Capitalism---Europe-and-Beyond.pdf" type="application/pdf" width="1000px" height="600px">
-    <embed src="C:/Users/timos/OneDrive/Dokumente/GitHub/politics-of-digital-capitalism/Syllabus_The-Politics-of-Digital-Capitalism---Europe-and-Beyond.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="C:/Users/timos/OneDrive/Dokumente/GitHub/politics-of-digital-capitalism/Syllabus_The-Politics-of-Digital-Capitalism---Europe-and-Beyond.pdf">Download PDF</a>.</p>
+<object data="https://www.timoseidl.com/courses/politics-of-platform-capitalism/Syllabus_The-Politics-of-Digital-Capitalism---Europe-and-Beyond.pdf" type="application/pdf" width="1000px" height="600px">
+    <embed src="https://www.timoseidl.com/courses/politics-of-platform-capitalism/Syllabus_The-Politics-of-Digital-Capitalism---Europe-and-Beyond.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://www.timoseidl.com/courses/politics-of-platform-capitalism/Syllabus_The-Politics-of-Digital-Capitalism---Europe-and-Beyond.pdf">Download PDF</a>.</p>
     </embed>
 </object>
 
