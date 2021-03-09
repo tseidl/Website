@@ -1,0 +1,343 @@
+---
+output:
+  xaringan::moon_reader:
+    includes:
+      after_body: insert-logo.Rhtml
+    lib_dir: libs
+    css: [xaringan-themer.css]
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+    seal: false
+---
+
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE, crayon.enabled = TRUE, htmltools.preserve.raw = FALSE)
+
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+
+
+library(xaringanthemer)
+library(crayon)
+library(tidyverse)
+library(knitr)
+library(ggthemes)
+library(xts)
+library(tidyquant)
+library(dygraphs)
+library(widgetframe)
+library(rDNA)
+library(igraph)
+library(networkD3)
+library(plotly)
+library(ggtext)
+library(glue)
+library(RColorBrewer)
+library(countrycode)
+library(cowplot)
+library(grid)
+
+
+```
+
+
+```{r xaringan-themer}
+
+
+xaringanthemer::style_mono_light(
+  base_color = "#2A363B",
+  link_color = "#FF847C",
+  text_slide_number_color = "#FECEA8",
+  header_font_google = google_font("Lato"),
+  text_font_google   = google_font("Roboto"),
+  code_font_google   = google_font("IBM Plex Mono"),
+  text_font_size = "1.25rem",
+  colors = c(
+    red = "#f34213",
+    purple = "#3e2f5b",
+    orange = "#ff8811",
+    green = "#99B898",
+    white = "#FFFFFF"
+  )
+)
+
+
+
+# colors can be used like this:This ** .red[simple] ** .white.bg - purple[demo]
+# _.orange[shows]_ the colors .green[in action].
+```
+
+
+class: inverse, center, middle
+
+
+# The Politics of Digital Capitalism
+
+## Spring/Summer Term 2021
+
+<br>
+
+### Anke Obendiek & Timo Seidl
+
+### Centre for European Integration Research
+
+---
+
+
+
+name: contents-slide
+
+## Overview
+
+.pull-left[
+
+
+[Session 1: Introduction](#part1)
+
+#### Part I: Digitalization as Commodification
+
+[Session 2:  Surveillance Capitalism](#part2)
+
+[Session 3:  Data Imperatives](#part3)
+
+#### Part II: The Politics of Platform Capitalism
+
+[Session 4: The Business of Platforms](#part4)
+
+[Session 5:  Law & Digital Capitalism](#part5)
+
+[Session 6: Platform Power](#part6)
+
+]
+
+
+.pull-right[
+
+
+
+[Session 7: The Normative Politics of Data Governance](#part7)
+
+[Session 8: Explaining the GDPR](#part8)
+
+[Session 9:  Data Protection Beyond Europe](#part9)
+
+
+#### Part III: Critical Perspectives
+
+[Session 10: Polanyi and the Platform Economy](#part10)
+
+[Session 11: Not just Breaking but also Making the Law](#part11)
+
+[Session 12: Knowledge and Digital Capitalism](#part12)
+   
+]
+
+---
+
+
+name: part1
+class: inverse, center, middle
+
+# Session 1: Introduction
+
+.footnote[
+
+[Back to the contents slide](#contents-slide)
+
+]
+
+---
+
+## The Rise of the FANGMA
+
+```{r cache=TRUE}
+
+sp500 <- tq_index("SP500")
+stocks_bigtech <- tq_get(x = subset(sp500, symbol %in% c("AAPL", "MSFT", "AMZN", "FB", "GOOG", "GOOGL", "NFLX"))$symbol, get = "stock.prices", from = "2010-01-01")
+
+stocks_bigtech%<>%
+  left_join(tq_index("SP500"))%>%#join with this data to get shares held
+  mutate(market_cap = (adjusted*shares_held)/10000000000)%>% #calculate market share and divide by billion
+  select(date, company, market_cap)%>%
+  pivot_wider(names_from = company, values_from = market_cap)%>%
+  rowwise() %>% # join different google shares
+  mutate(Alphabet= sum(`Alphabet Inc. Class C`, `Alphabet Inc. Class A`))%>%
+  ungroup()%>%
+  select(-c(`Alphabet Inc. Class C`, `Alphabet Inc. Class A`))%>%
+  replace(is.na(.), 0)%>%
+  select(date, sort(current_vars()))%>%#sorting variables alphabetially
+  mutate(date = as.Date(as.character(date,"%Y-%m-%d")))# change date for xts transform
+
+
+stocks_bigtech_xts <- xts(x = stocks_bigtech[, -1], order.by = stocks_bigtech$date)
+
+ts <- dygraph(stocks_bigtech_xts, width = 515, height = 475)%>%
+    dySeries("Amazon.com Inc.", label = "Amazon", color = "#FF9900") %>%
+  dySeries("Apple Inc.", label = "Apple", color = "#A2AAAD") %>%
+  dySeries("Facebook Inc. Class A", label = "Facebook", color = "#3b5998")%>%
+    dySeries("Alphabet", label = "Google (Alphabet)", color = "#4285F4")%>%
+  dySeries("Netflix Inc.", label = "Netflix", color = "#D81F26") %>%
+  dySeries("Microsoft Corporation", label = "Microsoft", color = "#7db700") %>%
+  dyOptions(stackedGraph = TRUE,
+            fillGraph = TRUE, 
+            fillAlpha = 0.4) %>%
+  dyAxis("y", label = "Market Capitalization ($ Trillion)") %>%
+  dyRangeSelector(height = 30)%>%
+  dyShading(from = "2010-01-01", to = format(Sys.time(), '%Y-%m-%d'), color = "#E9EAEB")
+```
+
+
+```{r }
+frameWidget(ts)
+```
+
+
+---
+
+## How to think about digitalization?
+
+.pull-left[
+
+<br>
+
+
+> *"Technology is neither good nor bad; nor is it neutral"* &mdash; Kranzberg's First Law of Technology
+
+
+<br>
+
+
+> *"Technology might be a prime element in many public issues, nontechnical factors take precedence in technology-policy decisions"* 
+&mdash; Kranzberg's Fourth Law of Technology
+
+  
+
+
+
+]
+
+
+
+.pull-right[
+
+
+<br>
+<br>
+
+&rArr; Digitalization has a disruptive and a **commodifying** thrust
+
+
+<br>
+<br>
+<br>
+
+
+
+&rArr; Digitalization is a politically contested and politically shaped process
+
+
+]
+
+---
+
+## Example: The Contested  <br> Commodification of Personal Data
+
+.pull-left[
+
+```{r out.width= '70%'}
+knitr::include_graphics("data_food.png")
+```
+
+]
+
+
+--
+
+.pull-right[
+
+
+```{r out.width= '100%'}
+knitr::include_graphics("GDPR.jpg")
+```
+
+
+]
+
+
+
+---
+
+## About Us & About You
+
+.pull-left[
+
+<br>
+
+Who we are
+
+- We are newly minted post-docs (Universitätsassistent) at the [Centre for European Integration Research (EIF)](https://eif.univie.ac.at/)
+
+- We work on the EU's role and ambitions in the digital transformation
+
+]
+
+.pull-right[
+
+<br>
+
+What about you?
+
+- What's your name?
+
+- What do you study?
+
+- Why did you pick this course?
+
+- If you had to stop using the products of all but one digital giant, which one would you choose?
+
+
+]
+
+
+---
+
+## Course Policy
+
+<br>
+
+- *Zoom*: Please don't make us speak to a black wall!
+
+- *Response Papers*: Please upload them until 18:00 two days before the seminar (i.e. on Monday evening)
+
+- *Grading*: For individual assignments, we use a 15 point scale (with 15 being the highest and 0 being the lowest score), which we'll later convert into your grade. 
+
+- *Feedback*: If you want more extensive feedback on any of your assignments, just reach out to us!
+
+
+---
+## Any Questions?
+
+<iframe src="https://pollev-embeds.com/discourses/cgKMtGiscBN4hTwQtxtP9/respond" width="900px" height="500px"></iframe>
+
+---
+
+## Any Questions?
+
+<iframe src="https://embed.polleverywhere.com/discourses/oTsbkrBxEB7AlDQH9lj5u?controls=none&short_poll=true" width="900px" height="500px"></iframe>
+
+
+---
+
+class: hide-logo
+
+<object data="C:/Users/timos/OneDrive/Dokumente/GitHub/politics-of-digital-capitalism/Syllabus_The-Politics-of-Digital-Capitalism---Europe-and-Beyond.pdf" type="application/pdf" width="1000px" height="600px">
+    <embed src="C:/Users/timos/OneDrive/Dokumente/GitHub/politics-of-digital-capitalism/Syllabus_The-Politics-of-Digital-Capitalism---Europe-and-Beyond.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="C:/Users/timos/OneDrive/Dokumente/GitHub/politics-of-digital-capitalism/Syllabus_The-Politics-of-Digital-Capitalism---Europe-and-Beyond.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
+

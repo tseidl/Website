@@ -4,15 +4,15 @@ links:
 - icon: bookmark
   icon_pack: fas
   name: Syllabus
-  url: files/Syllabus_CPE_Seidl.pdf
+  url: Syllabus_The-Politics-of-Digital-Capitalism---Europe-and-Beyond.pdf
 - icon: tv
   icon_pack: fas
   name: Slides
-  url: files/Seidl_Slides_Intro_CPE.pdf
-summary: Undergraduate Level Introductory Course.
+  url: slides/Slides_politics-of-platform-capitalism.html
+summary: Master Level Course.
 tags:
 - Substantive
-title: Introduction to Comparative Political Economy
+title: The Politics of Digital Capitalism - Europe and Beyond
 url_code: ""
 url_pdf: ""
 url_slides: ""

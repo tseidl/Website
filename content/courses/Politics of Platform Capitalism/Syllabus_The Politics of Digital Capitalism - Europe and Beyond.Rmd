@@ -1,0 +1,362 @@
+---
+title: "The Politics of Digital Capitalism - Europe and Beyond"
+author: "Anke Obendiek, Timo Seidl"
+date: "Summer 2021"
+output:
+  pdf_document:
+    fig_caption: yes
+    latex_engine: pdflatex
+    template: syllabus_template.tex
+  word_document: default
+email: 'timo.seidl@univie.ac.at'
+fontfamily: helvet
+fontsize: 12pt
+geometry: margin=1in
+header-includes: \linespread{1.05}
+office: '*online*'
+officehours: 'By appointment'
+classroom: '*online*/Hörsaal 42 Hauptgebäude, 2.Stock, Stiege 7'
+classhours: Wednesday, 09:45-11:15
+web: ''
+---
+
+```{r setup, include=FALSE, cache=F, message=F, warning=F, results="hide"}
+knitr::opts_chunk$set(cache=TRUE)
+knitr::opts_chunk$set(fig.path='figs/')
+knitr::opts_chunk$set(cache.path='_cache/')
+knitr::opts_chunk$set(warning=F, message=F)
+# knitr::opts_knit$get(kable.force.latex = TRUE)
+```
+
+```{r dates, include = FALSE}
+library(tidyverse)
+library(lubridate)
+
+firstday <- "2021-03-10"
+    
+meetings <- ymd(firstday) + c(0:18) * weeks(1)
+
+meeting_headers <- paste0("Week ", 1:19, ", ", months(meetings), " ", day(meetings))
+
+weekday <- "Tuesday"
+
+# one can use this like this for example Students are expected to finish readings before `r paste0(weekday, "\'s")` class session
+
+easter_start <- "2021-03-29"
+
+easter_end <- "2021-04-11"
+
+easter <- interval(easter_start, easter_end)
+
+pentecost_start <- "2021-05-22"
+pentecost_end <- "2021-05-25"
+pentecost <- interval(pentecost_start, pentecost_end)
+
+holiday1 <- "2021-05-13"
+
+holiday2 <- "2021-06-03"
+
+holiday3 <- "2021-06-03"
+
+
+
+```
+
+
+```{r include=FALSE}
+library(RefManageR)
+bib <- ReadBib("literature.bib")
+myopts <- BibOptions(bib.style = "authoryear", style="latex", first.inits=FALSE, max.names = 20, no.print.fields = "isbn")
+```
+
+# Course Description
+
+
+Digital technologies are rapidly transforming the way we live our lives and organize our societies and economies. This process of digitalization, whereby more and more of what we think, say, and do becomes mediated by digital technologies, confronts societies with a number of challenges ranging from questions of competition policy to content moderation to welfare state adjustment. Technology, however, is not social destiny. Societies can - and do - respond to these challenges very differently, which in turn changes the nature and trajectory of digitalization itself. The question then becomes: why do countries react different to digitalization, why do some deregulate while other re-regulate, why do digital platforms win some political battles but lose others? In this course, we will look at political responses to a particular set of challenges posed by digitalization: those that stem from its commodifying thrust. Commodification has two dimensions here. First, digitalization creates markets for things that were previously walled off from commercial exploitation, with the commodification of personal data and the emergence of markets for human attention being the most important example. Second, digitalization allows actors to circumvent decommodifying institutions that are meant to protect individuals from the vagaries of the market. The systematic violation of labor law by companies like Uber - who insist that their drivers are independent contractors in order to avoid labor regulations - is the most important example here. Throughout the course, we try to understand digital capitalism as well as the political responses to it, drawing on recent theoretical and empirical studies covering not just Europe but other countries as well.
+
+
+
+
+# Learning Outcomes
+
+The course aims to familiarize students with central theoretical insights and empirical findings from the emerging literature on the (comparative) politics and political economy of digitalization. At the end of the course, students should be able to
+
+-	describe and understand how digitalization is commodifying, but also how it is not just a technologically but a deeply political and politically contested process;
+
+- explain why digital companies are sometimes regulated and sometimes not and summarize the key theoretical insights and empirical findings of the literature on the comparative politics of digitalization;
+
+- apply these insights to empirical projects of their own.
+
+
+# Requirements
+
+Students are required to attend classes and come prepared (i.e., having done and thought about the readings). In addition, there will be three types of assignments that together make up the final grade.
+
+- First, for **three** sessions of their choosing, students need to write short response papers (half a page) that reflect on the readings and end with a question for the class (25%). And remember, questions end with a question mark. 
+
+- Second, they are required to deliver a very short input presentation (around 5-10 minutes) for **one** session as well as prepare discussion points for the class (e.g., questions, empirical examples) (25%). The former is meant to quickly summarize the main points of the reading(s) and the latter is meant to kick off and organize the discussion.^[We will see how exactly we do this in the first session, after we know how many participants there are. But the idea is that no one person should talk for more than 5 minutes.] 
+
+- Lastly, students need to write a relatively short term paper on a topic related to the course (up to 4000 words) (50%). The paper can be theoretical or empirical and is meant to hone in on one particular question that the students can pick themselves (although they should briefly discuss this with us in advance).
+
+
+# Prerequisites
+
+Students need no prior knowledge of academic debates on digitalization to successfully participate in the course. A general interest in the topic, basic English language skills, and a broad familiarity with the European Union are sufficient.
+
+# Course Policy
+
+Basically, don't cheat and try to learn stuff, details follow below.
+
+## Grading Policy
+
+You need to submit all the required assignments to pass the course. Your final grade will be the weighted average of these assignments. What is important to us when it comes to grading are two things. First, stick to the task at hand. If your response paper is meant to end with a question, end with a question. If your presentation is meant to be 5 minutes, make it no more than 6. If your term paper is meant to discuss one question in around 4000 words, don't try to answer half a dozen in 8000 words. It's almost a dad thing to say, but these skills are important not just at a university, but in every type of job. Second, put a bit of effort into it, or at least make it look that way. Have some decent formatting. But also, try to be clear and crisp, which is often harder than writing long and convoluted sentences. Try to prepare a presentation that you yourself would like to listen to: short, clear points, that highlight anything that you found confusing or unclear. You don't need to understand everything, have read a ton of additional literature, or write in the most elaborate way to get a very good grade. Just stick to the task and try to make sense. 
+
+## E-mail Policy
+
+You can always email us if you have an idea for a term paper, if you want to learn more about a certain topic and don't know where to start, or if you have a question that you really don't want to ask in class. Please don't email us with questions that you could easily find the answer to in the syllabus or in previous emails. We might take it badly. 
+
+This is a tough time for many, so if you feel like you struggle to cope or just need to get an outside perspective, please get in touch with the Psychological Counseling Center: https://www.studierendenberatung.at/en 
+
+
+## Attendance Policy
+
+You are required to attend each session, and we encourage you to prepare for and actively participate in them. However, if you really can't make it, just reach out to us, these things happen once or twice a term. 
+
+
+
+
+\newpage
+
+\begingroup\huge
+**Course Outline**
+\endgroup
+
+\vspace{0.25cm}
+
+
+
+##  `r meeting_headers[1]` : Introduction
+
+
+*No readings for this session*
+```{r, echo = FALSE, results="asis"} 
+if(meetings[1]%within%easter | meetings[1]%within%pentecost | meetings[1] == holiday1 | meetings[1] == holiday2 | meetings[1] == holiday3){
+  cat(noquote("*We do not have class this week due to public holidays*"))
+}
+``` 
+
+# \textcolor{Blue}{\textsc{Part I: Digitalization as Commodification}}
+\vspace{0.5cm}
+
+##  `r meeting_headers[2]` : Surveillance Capitalism
+
+```{r, echo = FALSE, results="asis"} 
+if(meetings[2]%within%easter | meetings[2]%within%pentecost | meetings[2] == holiday1 | meetings[2] == holiday2 | meetings[2] == holiday3){
+  cat(noquote("*We do not have class this week due to public holidays*"))
+}
+``` 
+Zuboff, S. (2019) The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power: Public Affairs, pp. 3-24
+
+Morozov, E. (2019, February 4). Capitalism’s New Clothes. The Baffler. https://thebaffler.com/latest/capitalisms-new-clothes-morozov
+
+
+##  `r meeting_headers[3]` : Data Imperatives
+
+```{r, echo = FALSE, results="asis"} 
+if(meetings[3]%within%easter | meetings[3]%within%pentecost | meetings[3] == holiday1 | meetings[3] == holiday2 | meetings[3] == holiday3){
+  cat(noquote("*We do not have class this week due to public holidays*"))
+}
+``` 
+
+Couldry, N., & Mejias, U. A. (2019). 'Data Colonialism: Rethinking Big Data’s Relation to the Contemporary Subject', Television & New Media, 20(4), pp. 336–349.
+
+Fourcade, M. and Healy, K. (2017) ‘Seeing like a market’, Socio-Economic Review, 15, pp. 9-29. 
+
+
+
+
+##  `r meeting_headers[4]` : Spring holiday
+```{r, echo = FALSE, results="asis"} 
+if(meetings[4]%within%easter | meetings[4]%within%pentecost | meetings[4] == holiday1 | meetings[4] == holiday2 | meetings[4] == holiday3){
+  cat(noquote("*We do not have class this week due to public holidays*"))
+}
+``` 
+
+
+
+
+##  `r meeting_headers[5]` : Spring holiday
+
+```{r, echo = FALSE, results="asis"} 
+if(meetings[5]%within%easter | meetings[5]%within%pentecost | meetings[5] == holiday1 | meetings[5] == holiday2 | meetings[5] == holiday3){
+  cat(noquote("*We do not have class this week due to public holidays*"))
+}
+``` 
+
+
+
+
+
+# \textcolor{Blue}{\textsc{Part II: The Politics of Platform Capitalism}}
+
+\vspace{0.5cm}
+
+##  `r meeting_headers[6]` :  The Business of Platforms
+
+
+DeNardis, L., & Hackl, A. M. (2015). Internet governance by social media platforms. Telecommunications Policy, 39(9), pp. 761-770.
+
+Lobel, O. (2016) ‘The Law of the Platform’, Minnesota Law Review, 101, pp. 87-166.
+
+
+```{r, echo = FALSE, results="asis"} 
+if(meetings[6]%within%easter | meetings[6]%within%pentecost | meetings[6] == holiday1 | meetings[6] == holiday2 | meetings[6] == holiday3){
+  cat(noquote("*We do not have class this week due to public holidays*"))
+}
+``` 
+
+
+
+##  `r meeting_headers[7]` : Law & Digital Capitalism 
+
+
+```{r, echo = FALSE, results="asis"} 
+if(meetings[7]%within%easter | meetings[7]%within%pentecost | meetings[7] == holiday1 | meetings[7] == holiday2 | meetings[7] == holiday3){
+  cat(noquote("*We do not have class this week due to public holidays*"))
+}
+``` 
+
+Cohen, J. E. (2019). Internet Utopianism and the Practical Inevitability of Law. Duke Law & Technology Review, 18(1).
+
+
+Cohen, J. E. (2019). Between Truth and Power: The Legal Constructions of Informational Capitalism. Oxford University Press. Introduction, pp. 1-10. 
+
+
+
+##  `r meeting_headers[8]` :  Platform Power
+
+
+
+```{r, echo = FALSE, results="asis"} 
+if(meetings[8]%within%easter | meetings[8]%within%pentecost | meetings[8] == holiday1 | meetings[8] == holiday2 | meetings[8] == holiday3){
+  cat(noquote("*We do not have class this week due to public holidays*"))
+}
+``` 
+
+Culpepper, P. D., & Thelen, K. (2019). Are We All Amazon Primed? Consumers and the Politics of Platform Power. Comparative Political Studies, 53(2), 288–318.
+
+Gorwa, R. (2019). The platform governance triangle: conceptualising the informal regulation of online content. Internet Policy Review, 8(2). 
+
+
+
+
+##  `r meeting_headers[9]` : Power and Ideas in the Politics of Uber
+
+```{r, echo = FALSE, results="asis"} 
+if(meetings[9]%within%easter | meetings[9]%within%pentecost | meetings[9] == holiday1 | meetings[9] == holiday2 | meetings[9] == holiday3){
+  cat(noquote("*We do not have class this week due to public holidays*"))
+}
+``` 
+Seidl, T. (2020) ‘The Politics of Platform Capitalism: A case Study on the Regulation of Uber in New York’, Regulation & Governance. 
+ 
+Vallas, S., & Schor, J. B. (2020). What do platforms do? Understanding the gig economy. Annual Review of Sociology, 46, pp. 273–294.
+
+##  `r meeting_headers[10]` :  The Comparative Politics of Uber
+
+```{r, echo = FALSE, results="asis"} 
+if(meetings[10]%within%easter | meetings[10]%within%pentecost | meetings[10] == holiday1 | meetings[10] == holiday2 | meetings[10] == holiday3){
+  cat(noquote("*We do not have class this week due to public holidays*"))
+}
+``` 
+
+Thelen, K. (2018) ‘Regulating Uber: Comparative Perspectives on Work and Welfare in the “Gig” Economy’, Perspectives on Politics, 16(4), pp. 938–953.
+
+Uzunca, B., Rigtering, J.P.C. and Ozcan, P. (2018) ‘Sharing and Shaping: A Cross-Country Comparison of How Sharing Economy Firms Shape Their Institutional Environment to Gain Legitimacy’, Academy of Management Discoveries, 4(3), pp. 248–272. 
+
+
+
+##  `r meeting_headers[11]` : The Normative Politics of Data Governance
+
+```{r, echo = FALSE, results="asis"} 
+if(meetings[11]%within%easter | meetings[11]%within%pentecost | meetings[11] == holiday1 | meetings[11] == holiday2 | meetings[11] == holiday3){
+  cat(noquote("*We do not have class this week due to public holidays*"))
+}
+``` 
+de Goede, M. (2018). The chain of security. Review of International Studies, 44(1), pp. 24–42.
+
+Obendiek, A. S. (2021) What are we actually talking about? Conceptualizing data as a governable object in overlapping jurisdictions. Working Paper. 
+
+
+##  `r meeting_headers[12]` : Explaining the GDPR
+
+```{r, echo = FALSE, results="asis"} 
+if(meetings[12]%within%easter | meetings[12]%within%pentecost | meetings[12] == holiday1 | meetings[12] == holiday2 | meetings[12] == holiday3){
+  cat(noquote("*We do not have class this week due to public holidays*"))
+}
+``` 
+
+Kalyanpur, N. and Newman, A.L. (2019) ‘The MNC-Coalition Paradox: Issue Salience, Foreign Firms and the General Data Protection Regulation’, Journal of Common Market Studies, 57(3), pp. 448–467. 
+
+Laurer, M. and Seidl, T. (2020) ‘Regulating the European Data-Driven Economy: A Case Study on the General Data Protection Regulation’, Policy & Internet.
+
+
+##  `r meeting_headers[13]` : The Politics of Data Protection Beyond Europe
+
+```{r, echo = FALSE, results="asis"} 
+if(meetings[13]%within%easter | meetings[13]%within%pentecost | meetings[13] == holiday1 | meetings[13] == holiday2 | meetings[13] == holiday3){
+  cat(noquote("*We do not have class this week due to public holidays*"))
+}
+``` 
+Arora, K. (2020) ‘Privacy and data protection in India and Germany: A comparative analysis’, WZB Discussion Paper. Available at: https://bibliothek.wzb.eu/pdf/2020/iii20-501.pdf.
+
+Confessore, N. (2018) The Unlikely Activists Who Took on Silicon Valley - and Won. Available at: https://www.nytimes.com/2018/08/14/magazine/facebook-google-privacy-data.html.
+
+# \textcolor{Blue}{\textsc{Part III: Critical Perspectives}}
+
+\vspace{0.5cm}
+
+
+##  `r meeting_headers[14]` : Polanyi and the Platform Economy
+
+```{r, echo = FALSE, results="asis"} 
+if(meetings[14]%within%easter | meetings[14]%within%pentecost | meetings[14] == holiday1 | meetings[14] == holiday2 | meetings[14] == holiday3){
+  cat(noquote("*We do not have class this week due to public holidays*"))
+}
+``` 
+Grabher, G., & König, J. (2020). Disruption, embedded. A Polanyian framing of the platform economy. Sociologica, 14(1), 95–118.
+
+Kenney, M., Zysman, J. and Bearson, D. (2021) ‘Transformation or Structural Change? What Polanyi Can Teach Us about the Platform Economy’, Sociologica, 14, pp. 227–240.
+
+
+##  `r meeting_headers[15]` : Not just Breaking but also Making the Law
+
+```{r, echo = FALSE, results="asis"} 
+if(meetings[15]%within%easter | meetings[15]%within%pentecost | meetings[15] == holiday1 | meetings[15] == holiday2 | meetings[15] == holiday3){
+  cat(noquote("*We do not have class this week due to public holidays*"))
+}
+``` 
+
+Kapczynski, A. (2020) ‘The Law of Informational Capitalism’, The Yale Law Journal, 129(5), pp. 1460–1515.
+
+
+##  `r meeting_headers[16]` : Knowledge and Digital Capitalism
+
+```{r, echo = FALSE, results="asis"} 
+if(meetings[16]%within%easter | meetings[16]%within%pentecost | meetings[16] == holiday1 | meetings[16] == holiday2 | meetings[16] == holiday3){
+  cat(noquote("*We do not have class this week due to public holidays*"))
+}
+``` 
+Haggart, B. (2019). Taking Knowledge Seriously: Towards an International Political Economy Theory of Knowledge Governance. In Information, Technology and Control in a Changing World (pp. 25–51). Springer.
+
+Mager, A. & Katzenbach, C. (2020). Future imaginaries in the making and governing of digital technology: Multiple, Contested, Commodified. New Media & Society. Online First.
+
+##  `r meeting_headers[17]` :  Conclusion & Final Discussion
+
+*No readings for this session*
+
+```{r, echo = FALSE, results="asis"} 
+if(meetings[17]%within%easter | meetings[17]%within%pentecost | meetings[17] == holiday1 | meetings[17] == holiday2 | meetings[17] == holiday3){
+  cat(noquote("*We do not have class this week due to public holidays*"))
+}
+``` 
+
