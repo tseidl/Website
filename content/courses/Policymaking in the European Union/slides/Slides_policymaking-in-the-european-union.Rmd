@@ -1,0 +1,489 @@
+---
+output:
+  xaringan::moon_reader:
+    includes:
+      after_body: insert-logo.Rhtml
+    lib_dir: libs
+    css: [xaringan-themer.css]
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+    seal: false
+---
+
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE, crayon.enabled = TRUE, htmltools.preserve.raw = FALSE)
+
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+
+
+library(xaringanthemer)
+library(crayon)
+library(tidyverse)
+library(knitr)
+library(ggthemes)
+library(kableExtra)
+library(xts)
+library(tidyquant)
+library(dygraphs)
+library(widgetframe)
+library(rDNA)
+library(igraph)
+library(networkD3)
+library(plotly)
+library(ggtext)
+library(glue)
+library(RColorBrewer)
+library(countrycode)
+library(cowplot)
+library(grid)
+
+
+```
+
+
+```{r xaringan-themer}
+
+
+xaringanthemer::style_mono_light(
+  base_color = "#2A363B",
+  link_color = "#FF847C",
+  text_slide_number_color = "#FECEA8",
+  header_font_google = google_font("Lato"),
+  text_font_google   = google_font("Roboto"),
+  code_font_google   = google_font("IBM Plex Mono"),
+  text_font_size = "1.25rem",
+  colors = c(
+    red = "#f34213",
+    purple = "#3e2f5b",
+    orange = "#ff8811",
+    green = "#99B898",
+    white = "#FFFFFF"
+  )
+)
+
+
+
+# colors can be used like this:This ** .red[simple] ** .white.bg - purple[demo]
+# _.orange[shows]_ the colors .green[in action].
+```
+
+
+```{r xaringan-tile-view, echo=FALSE}
+xaringanExtra::use_tile_view()
+```
+
+
+```{r xaringan-scribble, echo=FALSE}
+xaringanExtra::use_scribble(pen_color ="#2A363B")
+```
+
+
+```{r broadcast, echo=FALSE}
+xaringanExtra::use_broadcast()
+```
+
+class: inverse, center, middle
+
+
+# Policymaking in the European Union
+
+## Spring/Summer Term 2021
+
+<br>
+
+### Timo Seidl
+
+### Centre for European Integration Research
+
+---
+
+
+
+name: contents-slide
+
+## Overview
+
+.pull-left[
+
+
+[Session 1: Introduction](#part1)
+
+#### Part I: Theories of European Integration
+
+[Session 2: Neofunctionalism](#part2)
+
+[Session 3: Intergovernmentalism](#part3)
+
+[Session 4: Postfunctionalism](#part4)
+
+#### Part II: The European Union as a Polity
+
+
+[Session 5: An Institutional Anatomy of the EU](#part5)
+
+[Session 6: Interest Groups in the EU](#part6)
+
+]
+
+
+.pull-right[
+
+
+
+[Session 7: Agenda-Setting and Policy-Formulation](#part7)
+
+[Session 8: Decision-Making](#part8)
+
+[Session 9: Implementation](#part9)
+
+
+#### Part III: Selected Policy Areas
+
+[Session 10: Competition Policy](#part10)
+
+[Session 11: Trade Policy](#part11)
+
+[Session 12 Digital Policy](#part12)
+   
+]
+
+
+
+
+---
+
+
+name: part1
+class: inverse, center, middle
+
+# Session 1: Introduction
+
+.footnote[
+
+[Back to the contents slide](#contents-slide)
+
+]
+
+---
+
+## Narratives on the European Union
+
+```{r fig.width=16, fig.height=7}
+
+cucumbers <- "img/cucumbers.jpg"
+roaming <- "img/roaming.jpg"
+papertiger <- "img/papertiger.jpg"
+superpower <- "img/superpower.jpg"
+
+
+eu_df <- data.frame()
+
+
+p <- eu_df%>%
+  ggplot()+
+  # geom_vline(aes(xintercept = 0, color = "red"))+
+  # # geom_hline(yintercept = 0)+
+  theme_void()+
+  theme(plot.background = element_rect(fill = "#E9EAEB"))
+
+
+ggdraw(p)+
+  draw_image(cucumbers, scale = 0.15, hjust = 0.425)+
+  draw_image(roaming, scale = 0.15, hjust = -0.42)+
+  draw_image(papertiger, scale = 0.15, vjust = 0.42)+
+  draw_image(superpower, scale = 0.15, vjust = -0.42)+
+  annotation_custom(grobTree(textGrob("Bureaucratic nuisance",  hjust=1.35, vjust = 7,
+                                      gp=gpar(col="#2A363B", fontsize=25, fontface="italic"))))+
+  annotation_custom(grobTree(textGrob("Benign but in decline",  hjust=-.55, vjust = 7,
+                                      gp=gpar(col="#2A363B", fontsize=25, fontface="italic"))))+
+  annotation_custom(grobTree(textGrob("Totalitarian superstate",  hjust=1.4, vjust = -6,
+                                      gp=gpar(col="#2A363B", fontsize=25, fontface="italic"))))+
+  annotation_custom(grobTree(textGrob("'Brussels Effect'",  hjust=-.75, vjust = -6,
+                                      gp=gpar(col="#2A363B", fontsize=25, fontface="italic"))))
+```
+
+
+???
+
+Paper tiger-superhero dimension:  
+  - ineffectual vs overpowered
+  
+cucumber-roaming dimension:
+  - unresponsive, removed bureaucrats vs. sensible policymakers
+
+
+
+General consensus that EU policies matter, from large (economic rules, privacy rights) to small (color of passports, labeling of potato crisps)
+
+
+---
+
+## About this Course
+
+ 
+<br>
+
+- EU policies matter, but how can we explain them?
+
+> This course is about understanding "the processes that produce EU policies; that is, the decision (or non-decisions) by EU public authorities facing choices between alternative courses of public action" (Wallace et al. 2020, p. 6-7).
+
+<br>
+
+- This course is divided into **three** parts:
+
+  - Theories of European integration (*EU as a process*)
+  - Theories of EU policymaking (*EU as a polity*)
+  - Case studies on specific policy areas
+
+
+
+???
+
+EU Integration theories: 
+
+  - from IR, causes and direction of EU integration as a process, is it driven by member states or supranational actors?
+
+
+Theories of EU policymaking: 
+
+  - from comparative politics: treat EU as a political system, akin to domestic political systems
+  
+
+---
+
+## The 'Polycrisis' & Integration Theories
+
+
+.pull-left[
+
+
+```{r out.width='90%', fig.align='center'}
+
+knitr::include_graphics("img/polycrisis.jpg")
+```
+
+]
+
+
+.pull-right[
+
+<br>
+
+
+```{r out.width='100%', fig.align='center'}
+
+knitr::include_graphics("img/elephant.jpeg")
+```
+
+
+]
+
+???
+
+Two arguments:
+
+- Europe forged in crisis, crises pivotal moments in European integration and therefore also for European integration theory, who are the important actors, what drives integration or disintegration?
+Foil against which we will look at these theories
+
+- Integration theories are partial, focus on specific things
+
+
+---
+
+## Institutional Landscapes & Policy Cycles
+
+
+
+
+.pull-left[
+
+
+```{r out.width= "85%", fig.align="center"}
+
+#use frameablewidget instead of framewidget (for better embedding and also for pdf printing)
+
+widgetframe::frameableWidget(DiagrammeR::grViz("
+
+graph{
+
+graph[layout = circo, rankdir = BT, fontsize = 35]
+
+node[shape = box, fontname = Helvetica, fontcolor = '#2A363B']
+
+
+
+'European Parliament'[label=<European Parliament<BR />
+        <FONT POINT-SIZE='10'>'Voice of the People'</FONT>>]
+'Council of the European Union' [label=<Council of the European Union<BR />
+        <FONT POINT-SIZE='10'>'Voice of the Member States'</FONT>>]
+'European Commission' [label=<European Commission<BR />
+        <FONT POINT-SIZE='10'>'Promoting the Common Interest'</FONT>>]
+        
+'Interest Groups (firms, trade unions, NGOs)'
+
+'Other EU Institutions (e.g., ECB, ECJ, WP29)'
+
+
+edge[color = '#2A363B']
+
+
+'European Parliament' -- 'Council of the European Union'
+'European Commission' -- 'Council of the European Union'
+'European Commission' -- 'European Parliament'
+}
+
+"))
+```
+
+]
+
+
+.pull-right[
+
+
+```{r out.width= "85%", fig.align="center"}
+
+#use frameablewidget instead of framewidget (for better embedding and also for pdf printing)
+
+widgetframe::frameableWidget(DiagrammeR::grViz("
+digraph {
+
+  # a 'graph' statement
+  graph [overlap = false, fontsize = 35, layout = circo, rankdir = RL]
+
+  # several 'node' statements
+
+
+  node[shape = plaintext, fontname = Helvetica, fontcolor = '#2A363B']
+
+ 'Implementation (Session 9)'
+        
+  'Feedback' 
+        
+  'Agenda Setting (Session 7)' 
+
+ 'Policy Formulation (Session 7)'
+        
+ 'Decision Making (Session 8)' 
+        
+  # several 'edge' statements
+
+  edge[arrowhead = normal, minlen=15, color = '#2A363B']
+  
+  'Feedback'  -> 'Agenda Setting (Session 7)' 
+  'Agenda Setting (Session 7)'  -> 'Policy Formulation (Session 7)'
+  'Policy Formulation (Session 7)' -> 'Decision Making (Session 8)'
+ 'Decision Making (Session 8)'  ->  'Implementation (Session 9)'
+   'Implementation (Session 9)' -> 'Feedback'
+
+}
+"))
+```
+
+
+]
+
+???
+
+"institutional triangle", but also other actors
+
+
+Policy cycles as an analytic instrument rather than a causal theory
+
+Agenda-Setting:
+
+  - Deciding what to decide as crucial part of policymaking
+  
+
+Policy-Formulation:
+
+  - formulation of policy alternatives
+  
+Decision-Making:
+
+Who decides? (Delegation/Executive Decision-making vs. legislative politics (normal in EP, bargaining in council, inter-institutional?))
+
+Implementation:
+
+vague language, directives, political will
+
+
+Feedback:
+
+evaluations of effectiveness, political feedback loops (path-dependencies), spill-over (e.g. elimination of border controls requires cross-border cooperation in policing)
+
+---
+
+## About Me & About You
+
+.pull-left[
+
+What did I do before?
+
+- I got my PhD from the European University Institute in Florence
+
+- My thesis is on the comparative political economy of digital capitalism
+
+
+What do I do now?
+
+- I am a post-doc (Universitätsassistent) at the [Centre for European Integration Research (EIF)](https://eif.univie.ac.at/) at the University of Vienna
+
+- I work on the EU's role in the digital transformation
+
+
+
+]
+
+.pull-right[
+
+
+What about you?
+
+- What's your name?
+
+- What do you study?
+
+- Why did you pick this course?
+
+- What is your favorite smell?
+
+
+]
+
+
+---
+
+## Course Policy
+
+<br>
+
+- *Zoom*: Please don't make me speak to a black wall!
+
+- *Response Papers*: Please upload them until 18:00 two days before the seminar (i.e. on Tuesday evening)
+
+- *Grading*: For individual assignments, I use a 15 point scale (with 15 being the highest and 0 being the lowest score), which I'll later convert into your grade. 
+
+- *Feedback*: If you want more extensive feedback on any of your assignments, just reach out to me!
+
+
+---
+## Any Questions?
+
+<iframe src="https://pollev-embeds.com/discourses/gXDSBuPOCuX0kxkmolfp1/respond" width="900px" height="500px"></iframe>
+
+---
+
+
+class: hide-logo
+
+<object data="https://www.timoseidl.com/courses/policymaking-in-the-european-union/Syllabus_Policymaking-in-the-European-Union.pdf" type="application/pdf" width="1000px" height="600px">
+    <embed src="https://www.timoseidl.com/courses/policymaking-in-the-european-union/Syllabus_Policymaking-in-the-European-Union.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://www.timoseidl.com/courses/policymaking-in-the-european-union/Syllabus_Policymaking-in-the-European-Union.pdf">Download PDF</a>.</p>
+    </embed>
+</object>

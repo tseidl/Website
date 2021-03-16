@@ -8,7 +8,7 @@ links:
 - icon: tv
   icon_pack: fas
   name: Slides (continuously updated)
-  url: slides/
+  url: slides/Slides_policymaking-in-the-european-union.html
 summary: Bachelor Level Course.
 tags:
 - Substantive
