@@ -18,7 +18,7 @@ output:
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE, crayon.enabled = TRUE, htmltools.preserve.raw = FALSE)
 
-knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, fig.align = 'center')
 
 
 library(xaringanthemer)
@@ -26,12 +26,10 @@ library(crayon)
 library(tidyverse)
 library(knitr)
 library(ggthemes)
-library(kableExtra)
 library(xts)
 library(tidyquant)
 library(dygraphs)
 library(widgetframe)
-library(rDNA)
 library(igraph)
 library(networkD3)
 library(plotly)
@@ -73,6 +71,18 @@ xaringanthemer::style_mono_light(
 ```
 
 
+
+```{r xaringan-tile-view, echo=FALSE}
+xaringanExtra::use_tile_view()
+```
+
+
+```{r xaringan-scribble, echo=FALSE}
+xaringanExtra::use_scribble(pen_color ="#2A363B")
+```
+
+
+
 class: inverse, center, middle
 
 
@@ -86,6 +96,7 @@ class: inverse, center, middle
 
 ### Centre for European Integration Research
 
+
 ---
 
 
@@ -98,6 +109,7 @@ name: contents-slide
 
 
 [Session 1: Introduction](#part1)
+
 
 #### Part I: Foundations of Digitalization
 
@@ -147,20 +159,19 @@ name: contents-slide
 name: part1
 class: inverse, center, middle
 
-# Session 1: Introduction
-
-.footnote[
-
-[Back to the contents slide](#contents-slide)
-
-]
+# Session 1: Introduction: Digital power Europe 
 
 ---
 
-## Views on the European Union
+## Mobile Tracing Apps and the Sorrows <br> of EU Digital Policy
+
+[Mobile contact tracing apps in EU Member States](https://ec.europa.eu/info/live-work-travel-eu/coronavirus-response/travel-during-coronavirus-pandemic/mobile-contact-tracing-apps-eu-member-states_en)
+
+
+---
+## What kind of digital power is the EU? 
 
 ```{r fig.width=16, fig.height=7}
-
 cucumbers <- "img/cucumbers.jpg"
 roaming <- "img/roaming.jpg"
 papertiger <- "img/papertiger.jpg"
@@ -192,5 +203,339 @@ ggdraw(p)+
   annotation_custom(grobTree(textGrob("'Brussels Effect'",  hjust=-.75, vjust = -6,
                                       gp=gpar(col="#2A363B", fontsize=25, fontface="italic"))))
 ```
+---
+## Where should we go from here?
+
+
+.pull-left[
+
+```{r out.width= "35%", hjust = 5.5}
+
+knitr::include_graphics("https://www.handelsblatt.com/images/ursula-von-der-leyen-bei-der-vorstellung-ihres-teams/25009826/5-format2020.jpg")
+
+```
+
+<br>
+
+"But Europe must now lead the way on digital – or it will have to follow the way of others, who are setting these standards for us. This is why we must move fast." (2020)
+]
+
+
+.pull-right[
+
+
+```{r out.width= "25%", hjust = 2.5}
+
+knitr::include_graphics("https://www.wilmerhale.com/-/media/images/people/barshefsky_charlene.jpg?h=760&w=760&la=en&hash=905D332C340F253FCE2E618FE0C3A091")
+
+```
+
+"Over recent months, EU leaders have unveiled an ambitious agenda aimed at limiting US technology under the banner of securing European “digital sovereignty”. This incipient techno-nationalism threatens both US and European interests and must be stopped."(2020)
+]
+
+
+---
+##Introduction round 
+
+<br>
+
+- What's your name?
+ 
+- What do you study?
+ 
+- What aspect of digital power Europe are you particularly interested in?
+ 
+- Which platform/service by tech giants do you feel most conflicted about using – but use anyway?
+
+---
+## Course Policy
+
+<br>
+
+- *Zoom*: Please don't make us speak to a black wall!
+
+- *Response Papers*: Please upload them until 18:00 two days before the seminar (i.e. on Tuesday evening)
+
+- *Grading*: For individual assignments, we use a 15 point scale (with 15 being the highest and 0 being the lowest score), which we'll later convert into your grade. 
+
+- *Feedback*: If you want more extensive feedback on any of your assignments, just reach out to us!
+
+---
+## Requirements
+Students are required to attend classes and come prepared (i.e., having finished and thought about the readings). In addition, there will be three types of assignments that together make up the final grade.
+
+-	First, for three sessions of their choosing, students need to write short response papers (half a page) that reflect on the readings and end with a question for the class (25%). And remember, questions end with a question mark.
+
+-	Second, they are required to deliver a very short input presentation (around 5-10 minutes) for one session as well as prepare discussion points for the class (e.g., questions, empirical examples) (25%). The former is meant to quickly summarize the main points of the reading(s) and the latter is meant to kick off and organize the discussion.
+
+-	Lastly, students need to write a relatively short term paper on a topic related to the course (up to 4000 words) (50%). The paper can be theoretical or empirical and is meant to hone in on one particular question that the students can pick themselves (although they should briefly discuss this with us in advance).
+
+
+---
+
+
+
+name: part2
+class: inverse, center, middle
+
+# Session 2: The Rise of the Platform Society
+
+
+---
+class: inverse, center, middle
+
+# Exercise I
+
+<br>
+
+
+### What makes a platform a platform? What are (positive or negative) characteristics that the term suggests? 
+
+---
+
+## A Definition & A Provokation
+
+
+
+<br>
+
+<br>
+
+>Platforms as "digital services that facilitate interactions via the internet between two or more distinct but interdependent sets of users (whether firms or individuals)." <br> &mdash; Gawer & Srnicek 2021, p.1
+
+
+
+<br><br>
+
+
+
+> "Competition is for Losers." <br> &mdash; Peter Thiel
+
+
+---
+class: inverse, center, middle
+
+
+# Exercise II
+
+<br>
+
+
+### What are the challenges for regulation and governance that emerge in the platform society? Write down one major challenge in the tool and share with the group! 
+
+
+
+---
+
+
+name: part3
+class: inverse, center, middle
+
+# Session 3: Artifical Intelligence & Big Data
+
+---
+
+
+## Capitalism without (Physical) Capital
+
+.pull-left[
+
+
+```{r out.width= "125%", fig.align="center"}
+
+#use frameablewidget instead of framewidget (for better embedding and also for pdf printing)
+
+widgetframe::frameableWidget(DiagrammeR::grViz("
+
+graph{
+
+graph[layout = circo, rankdir=RL]
+
+node[shape = plaintext, fontname = Helvetica, fontcolor = '#2A363B', fontsize = 35]
+
+
+
+'A'[label= Buildings]
+'B'[label= 'ICT Equipment']
+'C'[label= 'Noncomputer machinery']
+'D'[label= Vehicles]
+'E'[label= Databases, fontcolor = '#8B0000', color = '#8B0000', fontsize = 55, shape = box, penwidth = 4]
+'F'[label= Software]
+'G'[label= 'Business processes']
+'H'[label= 'Organizational culture']
+'I'[label= Designs]
+'J'[label= 'Firm-Specific Human Capital']
+'K'[label= 'Intellectual property']
+
+'M'[label = 'Tangible Assets', shape = circle, style = filled, fillcolor = '#add8e6']
+'N'[label = 'Intangible Assets', shape = circle, style = filled, fillcolor = '#CBC3E3' ]
+        
+edge[color = '#2A363B']
+
+
+'A' -- 'M'
+'B' -- 'M'
+'C' -- 'M'
+'D' -- 'M'
+'E' -- 'N'[style = bold, color = '#8B0000']
+'F' -- 'N'
+'G' -- 'N'
+'H' -- 'N'
+'I' -- 'N'
+'J' -- 'N'
+'K' -- 'N'
+
+}
+
+"))
+```
+
+
+
+]
+
+.pull-right[
+
+<br>
+
+```{r out.width="45%", fig.align='right'}
+knitr::include_graphics("https://images-na.ssl-images-amazon.com/images/I/61DeBIJn5wL.jpg")
+```
+
+
+]
+
+---
+
+
+## Big-Data Mindsets
+
+.pull-left[
+
+<br>
+
+> For many of today's sucessful companies, "the data and the know-how are not the main reasons for their success. What sets them apart is that their founders and employees have unique ideas about ways to tap data to unlock new forms of value. [This is what we call a] big-data mindset. " <br>	&mdash; Mayer-Schönberger & Cuckier 2013
+
+]
+
+.pull-right[
+
+<br>
+
+```{r out.width="43%"}
+knitr::include_graphics("https://diariodenoor.files.wordpress.com/2014/05/big-data_book-cukier.jpg")
+```
+
+]
+
+---
+
+class:inverse, center, middle
+
+# Exercise I
+
+<br>
+
+### What characterises a big-data mindset? Read the case study on *Decide.com* and identify core characteristics.
+
+
+
+---
+
+## Case Study: *Decide.com*
+
+<br>
+
+<font size="4.9"> 
+
+IN 2011 A CLEVER STARTUP in Seattle called Decide.com opened its online doors with fantastically bold ambitions. It wanted to be a price-prediction engine for zillions of consumer products. But it planned to start relatively modestly: with every possible tech gadget, from mobile phones and flat-screen televisions to digital cameras. Its computers sucked down data feeds from e-commerce sites and scoured the Web for any other price and product information they could find.
+
+Prices on the Web constantly change throughout the day, dynamically updating based on countless, intricate factors. So the company needed to collect pricing data at all times. It isn’t just big data but “big text” too, since the system had to analyze words to recognize when a product was being discontinued or a newer model was about to launch, information that consumers ought to know and that affects prices.
+
+A year later, Decide.com was analyzing four million products using over 25 billion price observations. It identified oddities about retailing that people had never been able to “see” before, like the fact that prices might temporarily increase for older models once new ones are introduced. Most people would purchase the older one figuring it would be cheaper, but depending on when they clicked “buy,” they might pay more. As online stores increasingly use automated pricing systems, Decide.com can spot unnatural, algorithmic price spikes and warn consumers to wait. The company’s predictions, according to its internal measurements, are accurate 77 percent of the time and provide buyers with average potential savings of around $100 per product. So confident is the company, that in cases where its predictions prove incorrect, Decide.com will reimburse the price difference to paying members of the service.
+
+<br>
+<font size="3">
+
+**Exzerpt from Mayer-Schönberger & Cuckier, Big Data**
+
+---
+
+## Methapors we live by
+
+
+
+>“Our ordinary conceptual system, in terms of which we both think and act, is fundamentally metaphorical in nature. (...) New metaphors are capable of creating new understandings and, therefore, new realities." <br>	&mdash; George Lakoff, Metaphors We Live By
+
+<br>
+
+Data as
+
+- oil
+
+- capital
+
+- water
+
+- a tool
+
+---
+
+class:inverse, center, middle
+
+# Exercise II
+
+<br>
+
+### What do the different methaphors imply for what data is and how it should be treated?
+
+---
+
+## Two Paradoxes of AI
+
+<br>
+
+- **Polanyi's Paradox**: States that humans constantly draw on tacit knowledge that they struggle to articulate and define even to themselves, making it very hard to specify it in computer code.
+
+<br>
+
+<br>
+
+- **Moravec’s Paradox**: States that it is hard for computers to do many tasks that are easy for humans, and conversely, computers can do many things that we find exceedingly difficult.
+
+
+
+???
+
+"We know more than we can tell.”
+
+Example: To illustrate Polanyi’s point, it is helpful to contrast the task of repetitive assembly with that of designing a new car, writing a piece of music, or giving a galvanizing speech. The rules for what makes a good song or a great speech are hard to define because there are none.
+
+
+*Example*: “It is comparatively easy to make computers exhibit adult level performance in solving problems on intelligence tests or playing checkers, and difficult or impossible to give them the skills
+of a one- year- old when it comes to perception and mobility."
+
+
+---
+
+
+## Three Observations by the MIT <br> Work of the Future Task Force
+
+<br>
+
+1. Momentous impacts of technological change are unfolding gradually.
+
+2. Rising labor productivity has not translated into broad increases in incomes because labor market institutions and policies have fallen into disrepair.
+
+3. Improving the quality of jobs requires innovation in labor market institutions.
+
+
+
+
+**&rArr; There is time to react, but also the necessity!**
+
+???
+
+Example central power loom, general purpose technology
 
 ---

@@ -4,13 +4,30 @@
     <title>Slides_politics-of-platform-capitalism.utf8</title>
     <meta charset="utf-8" />
     <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <script src="libs/fabric/fabric.min.js"></script>
+    <link href="libs/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-scribble/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#2A363B"],"pen_size":3,"eraser_size":30}) })</script>
     <script src="libs/htmlwidgets/htmlwidgets.js"></script>
     <script src="libs/pymjs/pym.v1.js"></script>
     <script src="libs/widgetframe-binding/widgetframe.js"></script>
+    <script src="libs/viz/viz.js"></script>
+    <link href="libs/DiagrammeR-styles/styles.css" rel="stylesheet" />
+    <script src="libs/grViz-binding/grViz.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
+
+
+
+
+
+
+
+
 
 
 
@@ -33,6 +50,7 @@ class: inverse, center, middle
 ### Anke Obendiek &amp; Timo Seidl
 
 ### Centre for European Integration Research
+
 
 ---
 
@@ -128,11 +146,9 @@ class: inverse, center, middle
 &gt; *"Technology might be a prime element in many public issues, nontechnical factors take precedence in technology-policy decisions"* 
 &amp;mdash; Kranzberg's Fourth Law of Technology
 
-  
-
-
 
 ]
+
 
 
 
@@ -156,6 +172,23 @@ class: inverse, center, middle
 
 ]
 
+
+???
+
+- Direction to technological change
+
+- Commodification:
+  - new areas of social life are opened for commercial exploitation
+  - existing de-commodifying institutions are put under pressure
+
+- Disruption: skills become obsolete, business models become nonviable, competitive advantages disappear
+
+- Digitalization as politically contested
+
+-&gt; Technological Change not just a technological phenomenon, shaped by political decisions
+
+-&gt; How can we understand these political decisions?
+
 ---
 
 ## Example: The Contested  &lt;br&gt; Commodification of Personal Data
@@ -177,8 +210,17 @@ class: inverse, center, middle
 
 ]
 
+???
 
+Data as a valuable asset: training data, advertising, product experience, but also behavioral manipulation. 
 
+Deal at the heart of the internet: data in exchange for free stuff. Problem: data hunger lets companies colonize ever more areas of our lives, collecting data which can then be commercialized about all kinds of things (e.g. smart hairbrushes).
+
+This in turn leads to follow-up problems: privacy comes at a price; there is a large information asymmetry; data can be used for manipulative purposes.
+
+**But: ** Also a counter-movement against this commodification: political movements and powerful actors have pushed for greater data protection, trying to rebalance the tradeoffs between the fundamental right to data protection and commercial motives.
+
+But when and how are such regulations adopted, and which explains the shape they take?
 ---
 
 ## About Us &amp; About You
@@ -249,8 +291,251 @@ class: hide-logo
         &lt;p&gt;This browser does not support PDFs. Please download the PDF to view it: &lt;a href="https://www.timoseidl.com/courses/politics-of-platform-capitalism/Syllabus_The-Politics-of-Digital-Capitalism---Europe-and-Beyond.pdf"&gt;Download PDF&lt;/a&gt;.&lt;/p&gt;
     &lt;/embed&gt;
 &lt;/object&gt;
+---
+name: part2
+class: inverse, center, middle
+
+# Session 2: Surveillance capitalism 
+
+---
+
+# Today's readings 
+
+.pull-left[
 
 
+&lt;img src="https://i.guim.co.uk/img/media/7aa4960f0f1a23dfc432accea08f7b80fc41be7c/0_224_6720_4032/master/6720.jpg?width=620&amp;quality=45&amp;auto=format&amp;fit=max&amp;dpr=2&amp;s=b7e6a18777dbc4b93acc92aee1d74100" width="70%" /&gt;
+
+
+
+
+
+
+
+&lt;font size="2"&gt; Photograph: David Levene/The Guardian &lt;/font&gt;]
+
+.pull-right[
+
+
+&lt;img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Wer_kann_die_neue_Zukunft_machen%3F_%2817333061348%29.jpg" width="70%" /&gt;
+
+
+
+
+
+
+
+&lt;font size="2"&gt; Author: Peter Ostholt - RLS &lt;/font&gt;]
+---
+##Discussion questions 
+
+###In general 
+What questions came up when reading the articles / hearing the presentations? 
+What would you suggest as main take away points? Did you miss some in the presentations?
+
+
+Morozov: What would have been the Copernican revolution in Zuboff’s thought? Why has it, however, failed? 
+
+###For further discussion
+When thinking about the seminar title: how can we properly describe digital capitalism (considering both Zuboff’s surveillance-capitalism-theory and Morozov’s critique)?
+
+---
+
+##Conceptualizing forms of capitalism 
+
+&lt;br/&gt;
+
+
+.pull-left[
+**•	Managerial capitalism** 
+
+**•	Distributed capitalism / advocacy capitalism**
+
+**•	Surveillance capitalism **
+]
+
+.pull-right[
+Write down in shared Etherpad: 
+
+**1.	Time of emergence**
+
+**2.	Characteristics **
+
+**3.	Exemplary firm **
+
+**4.	Advantages **
+
+**5.	Criticism**]
+
+---
+# Who's right? 
+.pull-left[
+####Zuboff
+&gt;[...] **surveillance capitalism departs from the history** of market capitalism in surprising ways, demanding both unimpeded freedom and total knowledge, **abandoning capitalism’s reciprocities with people and society**, and imposing a **totalizing collectivist vision** of life in the hive, with surveillance capitalists and their data priesthood in charge of oversight and control.
+
+]
+
+.pull-right[
+####Morozov 
+&gt;To view surveillance capitalism as our new invisible Leviathan is to **miss how power, under capitalism, has been operating for several centuries**: the invisible Leviathan has been with us for quite some time.
+
+]
+
+
+
+---
+
+
+name: part3
+class: inverse, center, middle
+
+# Session 3: Data Imperatives
+
+.footnote[
+
+[Back to the contents slide](#contents-slide)
+
+]
+
+---
+
+
+
+## Colonization of the Lifeworld &lt;br&gt; by Digital Imperatives
+
+
+
+
+.pull-left[
+
+
+&lt;font size="4.2"&gt; 
+
+&gt;"In place of "false consciousness" we today have a "fragmented consciousness" that blocks enlightenment by the mechanism of reification. It is only with this that the conditions for a colonization of the lifeworld are met. **When stripped of their ideological veils, the imperatives of autonomous subsystems make their way into the lifeworld from the outside—like colonial masters coming into a tribal society—and force a process of assimilation upon it. The diffused perspectives of the local culture cannot be sufficiently coordinated to permit the play of the metropolis and the world market to be grasped from the periphery**." &lt;br&gt; 	&amp;mdash; Jürgen Habermas, Theory of Communicative Action - Volume 2
+
+]
+
+.pull-right[
+
+&lt;img src="https://foreignpolicy.com/wp-content/uploads/2021/02/Juergen-Habermas-philosopher-BEELDUNIE_00054019-article.jpg?w=683" width="45%" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+class:inverse, center, middle
+
+# Exercise I
+
+&lt;br&gt;
+
+### What, do you think, have tech companies such easy time collecting data from and about us?
+
+
+???
+
+Regardless of how literal we take the diagnosis of a colonization of our lives by tech companies, it seems that they do indeed have a rather easy time collecting data about us.
+
+
+
+---
+
+
+
+class: hide-logo
+
+
+
+.pull-left[
+
+## Example: Gamification
+
+&lt;br&gt;
+&lt;br&gt;
+
+&gt; "Games are the only force in the known universe that can get people to take actions against their self-interest, in a predictable way, without using force." &lt;br&gt; &amp;mdash; Gabe Zichermann
+
+]
+
+.pull-right[
+
+
+&lt;br&gt;
+
+&lt;img src="sisyphus_gamification.jpg" width="80%" style="display: block; margin: auto;" /&gt;
+
+]
+
+
+
+
+
+---
+
+class: hide-logo
+
+
+
+.pull-left[
+
+## Compulsive Hoarding?
+
+&lt;br&gt;
+
+&gt; "It does not matter that the amounts collected may vastly exceed a firm’s imaginative reach or analytic grasp. The assumption is that it will eventually be useful, i.e.
+valuable." &lt;br&gt;	&amp;mdash; Fourcade &amp; Healy 2017
+
+
+&lt;br&gt;
+
+#### To what extent does data collection follow from economic versus 'ceremonial' imperatives?
+
+
+]
+
+
+.pull-right[
+
+
+
+
+
+&lt;blockquote class="twitter-tweet"&gt;&lt;p lang="en" width="20" dir="ltr" &gt;“We have big data, can you help us?”&lt;br&gt;&lt;br&gt;The data: &lt;a href="https://t.co/xqGDMNa2cN"&gt;pic.twitter.com/xqGDMNa2cN&lt;/a&gt;&lt;/p&gt;&amp;mdash; TJ Murphy (@teej_m) &lt;a href="https://twitter.com/teej_m/status/1372983145130201089?ref_src=twsrc%5Etfw"&gt;March 19, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt; &lt;/script&gt;
+
+
+]
+
+---
+
+## Valuation and Value Extraction
+
+
+
+<div id="htmlwidget-11240b0b37d86ff38600" style="width:85%;height:504px;" class="grViz html-widget"></div>
+<script>HTMLWidgets.pymChild = new pym.Child();HTMLWidgets.addPostRenderHandler(function(){
+                                setTimeout(function(){HTMLWidgets.pymChild.sendHeight();},100);
+                            });</script>
+<script type="application/json" data-for="htmlwidget-11240b0b37d86ff38600">{"x":{"diagram":"\n\ndigraph{\n\ngraph[ rankdir =LR, fontsize = 35]\n\nnode[shape = box, fontname = Helvetica, fontcolor = \"#2A363B\"]\n\n\n\n\"A\"[width = 2.8, label=<\"Pro-Social\" Behavior<BR />\n        <FONT POINT-SIZE=\"10\">(e.g., donating blood or money)<\/FONT>>]\n\"B\"[width = 2.8, label=<Self-Discipline<BR />\n        <FONT POINT-SIZE=\"10\">(e.g., exercising regularly)<\/FONT>>]\n\"C\"[width = 2.8,label=<Virtues<BR />\n        <FONT POINT-SIZE=\"10\">(e.g., reliably paying bills)<\/FONT>>]\n\"D\"[width = 2.8,label=\"...\"]\n\"E\"[width = 2.8,label=<\"Anti-Social\" Behavior<BR />\n        <FONT POINT-SIZE=\"10\">(e.g., spreading rumors, jaywalking)<\/FONT>>]\n\"F\"[width = 2.8,label=<Selfishness<BR />\n        <FONT POINT-SIZE=\"10\">(e.g., cheating in online games)<\/FONT>>]\n\"G\"[width = 2.8,label=<Vices<BR />\n        <FONT POINT-SIZE=\"10\">(e.g., buying cigarettes, alcohol\"<\/FONT>>]\n\"H\"[width = 2.8,label=\"...\"]\n\n\n\"I\"[width = 3.8, label=<Financial Benefits<BR />\n        <FONT POINT-SIZE=\"10\">(e.g., cheaper credit, cheaper insurance)<\/FONT>>]\n\"J\"[width = 3.8,label=<Reputational Benefits<BR />\n        <FONT POINT-SIZE=\"10\">(e.g., social status)<\/FONT>>]\n\"K\"[width = 3.8, label=<Professional Benefits<BR />\n        <FONT POINT-SIZE=\"10\">(e.g., faster promotion, access to jobs)<\/FONT>>]\n\"L\"[width = 3.8,label=<Public Benefits<BR />\n        <FONT POINT-SIZE=\"10\">(e.g., school admission, access to public services)<\/FONT>>]\n\"M\"[width = 3.8,label=\"...\"]\n\n        \n\"Übercapital\"[shape = circle, style = filled, fillcolor = \"#FECEA8\"]\n\n\nedge[color = \"#2A363B\"]\n\n\n\"A\" -> \"Übercapital\"[ label = \"+\", color = \"green\", fontcolor = \"green\"]\n\"B\" -> \"Übercapital\"[ label = \"+\", color = \"green\", fontcolor = \"green\"]\n\"C\" -> \"Übercapital\"[ label = \"+\", color = \"green\", fontcolor = \"green\"]\n\"D\" -> \"Übercapital\"[ label = \"+\", color = \"green\", fontcolor = \"green\"]\n\"E\" -> \"Übercapital\"[ label = \"-\", color = \"red\", fontcolor = \"red\"]\n\"F\" -> \"Übercapital\"[ label = \"-\", color = \"red\", fontcolor = \"red\"]\n\"G\" -> \"Übercapital\"[ label = \"-\", color = \"red\", fontcolor = \"red\"]\n\"H\" -> \"Übercapital\"[ label = \"-\", color = \"red\", fontcolor = \"red\"]\n\n\n\"Übercapital\" -> I \n\"Übercapital\" -> J\n\n\"Übercapital\" -> K[style = dashed]\n\"Übercapital\" -> L[style = dashed]\n\"Übercapital\" -> M[style = dashed]\n}\n\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+
+
+
+
+???
+Just as the other forms of capital discussed by the French sociologist Pierre Bourdieu, namely, economic capital, social capital (i.e. good connections) and cultural capital (e.g. good manners, education, etc.), übercapital has an input and an output dimension. On the one hand, it is accumulated over an individual´s biography, built up from the countless digital traces left behind on social media and shopping websites, fidelity and fitness programs. On the other hand, übercapital conveys advantages such as better credit ratings or reputational gains that can themselves be reconverted into other forms of capital. 
+
+---
+
+class:inverse, center, middle
+
+# Exercise II
+
+&lt;br&gt;
+
+### Why, do you think, are the advantages and disadvantages of algorithmic forms of ranking (e.g. digitally enhanced credit scores)?
+
+
+
+---
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
