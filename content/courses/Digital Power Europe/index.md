@@ -8,7 +8,7 @@ links:
 - icon: tv
   icon_pack: fas
   name: Slides (continuously updated)
-  url: slides/
+  url: slides/Slides_digital-power-europe.html
 summary: Master Level Course.
 tags:
 - Substantive

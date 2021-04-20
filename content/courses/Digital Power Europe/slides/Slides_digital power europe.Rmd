@@ -39,6 +39,7 @@ library(RColorBrewer)
 library(countrycode)
 library(cowplot)
 library(grid)
+library(kableExtra)
 
 
 ```
@@ -81,7 +82,9 @@ xaringanExtra::use_tile_view()
 xaringanExtra::use_scribble(pen_color ="#2A363B")
 ```
 
-
+```{r xaringan-editable, echo=FALSE}
+xaringanExtra::use_editable(expires = 1)
+```
 
 class: inverse, center, middle
 
@@ -539,3 +542,145 @@ of a one- year- old when it comes to perception and mobility."
 Example central power loom, general purpose technology
 
 ---
+
+
+name: part4
+class: inverse, center, middle
+
+# Session 4: Normative Power Europe 
+
+---
+
+
+## Three Faces of Power
+
+.pull-left[
+
+<br>
+
+**Steven Lukes: Power. A Radical View**
+
+<br>
+
+1. Decision-making power
+
+2. Non-decision-making power ('agenda-setting power')
+
+3. Ideological power
+
+
+]
+
+.pull-right[
+
+<br>
+
+```{r out.width="60%"}
+knitr::include_graphics("https://i.pinimg.com/474x/87/7c/31/877c312fa4ee41196c6087ee6f5b1f4f.jpg")
+```
+
+]
+
+---
+
+
+## Powers Compared
+
+<br>
+
+.can-edit[
+
+```{r}
+data.frame (
+  first_column = c("Great Power",
+                   "Civilian Power",
+                   "Normative Power"
+  ),
+  second_column = c("",
+                    "",
+                    ""),
+  third_column = c("",
+                   "",
+                   "")
+)%>%
+  rename("Type of Power" = first_column,
+         "Means" = second_column,
+         "Ends" = third_column)%>%
+  kable(booktabs = TRUE, linesep = "\\addlinespace") %>%
+  kable_minimal()%>%
+  column_spec(1, italic = TRUE)
+```
+]
+
+---
+
+## Powers Compared
+
+<br>
+
+```{r}
+data.frame (
+  first_column = c("Great Power",
+                   "Civilian Power",
+                   "Normative Power"
+  ),
+  second_column = c("Military (e.g., military coercion, threats)",
+                    "Economic (e.g., trade and cooperation agreements, technical and financial assistance, market power)",
+                    "Ideational (e.g., cooperation agreements, political dialogue, technical assistance, discourse/narrative, symbolic representations)"),
+  third_column = c("Self-Interest",
+                   "Self-Interest",
+                   "Norm Promotion")
+)%>%
+  rename("Type of Power" = first_column,
+         "Means" = second_column,
+         "Ends" = third_column)%>%
+  kable(booktabs = TRUE, linesep = "\\addlinespace") %>%
+  kable_minimal()%>%
+  column_spec(1, italic = TRUE)
+```
+
+
+???
+
+This focuses on how the EU acts and why, not on the effectivness of its action, i.e. the extent to which it actually sucessfully influences norms
+
+
+---
+class: inverse, center, middle
+
+# Exercise I
+
+<br>
+
+
+### To what extent is Europe a Normative Power? 
+
+### Group 1 and Group 2 make the case that it is, focusing on means and ends respectively. 
+
+### Group 3 and Group 4 make the case against it, again focusing on means and ends respectively.  
+
+---
+
+## Problems with the <br> Normative Power Europe Argument
+
+
+<br>
+
+- Can we really separate norms and interests that easily?
+
+- Are European values not also contested *within* Europe?
+
+- Is Normative Power Europe a descriptive/explanatory or a normative/critical argument?
+
+- Is it plausible to assume that its history, its nature as a hybrid polity, and its political and legal framework "predisposes it [the EU] to act in a normative way" (Manners 2002, p. 242)?
+
+- How do we deal with the 'performativity' of the theory, i.e., that actors use Normative Power Europe as a discursive tool to create an identity but also an Other?
+
+
+
+
+???
+
+Take EU policy towards the Maghreb, for instance. The insistence on migration control in ENP agreements may well be in the interest of Member States, yet its normative assessment is much more problematic, as there is no undisputed norm in favour of migration. The judgement on this issue will therefore always be essentially a political one, and depend on the analyst’s normative views, however honourable they may be (Diez, 2013)
+
+Also, one could argue for dropping the against one's interest part but retain the shaping what is normal part of the argument in some sort of *strategic constructivism*
