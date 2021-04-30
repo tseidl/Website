@@ -1202,3 +1202,215 @@ class: inverse, center, middle
 ]
 
 ---
+
+
+## Business Lobbying in the EU
+
+
+- Contrary to common wisdom, business do not always get what it wants in European politics (e.g. Dür et al. 2019, Klüver 2013)
+
+- Two questions: 
+
+  - Why are business interests not more successful in EU policymaking?
+  - What are the conditions under which they are successful?
+  
+  
+- Two partial answers: 
+
+  - Businesses are not always successful because the EU increasingly regulates markets beyond the regulation required to establish these markets in the first place (Dür et al. 2019, p. 6)
+  - Businesses are more successful under conditions of low salience, unity, and when dealing with the right DGs or committees (Rasmussen 2015); under high salience, the benefits of diverse coalitions outweigh the cooperation costs of building such coalitions (Junk 2019)
+
+
+
+
+---
+
+## Example: The Snowden Salience Shock
+
+```{r include=FALSE}
+
+dna_init()
+
+conn <- dna_connection("data/GDPR_DNA.dna") 
+
+
+
+
+congruence <- dna_network(
+  conn,
+  networkType = "onemode",
+  statementType = "DNA Statement",
+  variable1 = "organization",
+  variable2 = "concept",
+  qualifier = "agreement",
+  qualifierAggregation = "congruence",
+  normalization = "average",
+  duplicates = "week",
+  start.date = "21.01.2012",
+  stop.date = "08.06.2013",
+  excludeValues = list("concept" = "Harmonization is good")
+)
+
+
+
+congruence2 <- dna_network(
+  conn,
+  networkType = "onemode",
+  statementType = "DNA Statement",
+  variable1 = "organization",
+  variable2 = "concept",
+  qualifier = "agreement",
+  qualifierAggregation = "congruence",
+  normalization = "average",
+  duplicates = "week",
+  start.date = "09.06.2013",
+  stop.date = "30.04.2016",
+  excludeValues = list("concept" = "Harmonization is good")
+  )
+
+  
+
+congruence_d3 <- congruence%>%
+  graph_from_adjacency_matrix(mode = "undirected", weighted = TRUE)%>%#to igraph
+  igraph_to_networkD3(what = "both")#to networkd3
+
+
+congruence_d3$nodes$nodesize <- sqrt(degree(graph.adjacency(congruence, mode="undirected", weighted=T)))
+
+types <- dna_getAttributes(conn)%>%
+  filter(value %in% congruence_d3$nodes$name)
+
+congruence_d3$nodes$group <-types$type
+```
+
+.pull-left[
+```{r}
+forceNetwork(
+  Links = congruence_d3$links,
+  Nodes = congruence_d3$nodes,
+  Source = "source",
+  Target = "target",
+  NodeID = "name",
+  Group = "group",
+  Nodesize = "nodesize",
+  opacity = 0.9,
+  colourScale = 'd3.scaleOrdinal(["#CAB2D6","#A6CEE3", "#FB9A99","#FF7F00","#B2DF8A","#33A02C", "#6A3D9A","#FDBF6F", "#1F78B4",  "#E31A1C"])',
+  fontSize = 30)
+```
+
+]
+
+.pull-right[
+```{r include=FALSE}
+congruence_d3 <- congruence2%>%
+  graph_from_adjacency_matrix(mode = "undirected", weighted = TRUE)%>%#to igraph
+  igraph_to_networkD3(what = "both")#to networkd3
+
+
+congruence_d3$nodes$nodesize <- sqrt(degree(graph.adjacency(congruence2, mode="undirected", weighted=T)))
+
+types <- dna_getAttributes(conn)%>%
+  filter(value %in% congruence_d3$nodes$name)
+
+congruence_d3$nodes$group <-types$type
+```
+
+
+```{r fig.align="left"}
+forceNetwork(
+  Links = congruence_d3$links,
+  Nodes = congruence_d3$nodes,
+  Source = "source",
+  Target = "target",
+  NodeID = "name",
+  Group = "group",
+  Nodesize = "nodesize",
+  opacity = 0.9,
+  colourScale = 'd3.scaleOrdinal(["#A6CEE3","#CAB2D6","#6A3D9A","#B2DF8A","#FB9A99", "#E31A1C",  "#1F78B4", "#FF7F00", "#33A02C","#FDBF6F"])',
+  fontSize = 30
+  )
+
+```
+
+]
+
+---
+
+
+## Astroturfing
+
+
+
+.pull-left[
+
+<br>
+
+
+```{r out.width='90%', fig.align='center'}
+
+knitr::include_graphics("https://i.ytimg.com/vi/Fmh4RdIwswE/maxresdefault.jpg")
+```
+]
+
+--
+
+.pull-right[
+
+
+<br>
+<br>
+
+
+> "Astroturfing is the attempt to create an impression of widespread grassroots support for a policy, individual, or product, where little such support exists." <br> &mdash; Adam Bienkov
+
+
+]
+
+
+---
+
+class: inverse, center, middle
+
+# Exercise I
+
+<br>
+
+### Imagine your work as a lobbyist for Google.
+
+
+#### Group 1 & Group 2: Your job ist to make sure all things Google don't get too much public attention - which strategies would you use to keep the politics of digital policymaking quiet?
+
+#### Group 3 & Group 4: Group 1 & 2 have failed. The public spotlight is on you: What would you do to still win the political battle?
+
+
+
+---
+
+
+
+class: inverse, center, middle
+
+# Exercise II
+
+<br>
+
+### Use https://lobbyfacts.eu/
+
+#### Which three companies spend most on lobbying/have the most lobbyists right now? 
+
+#### How does that compare to the biggest spenders in 2012?
+
+#### Are the companies that spend the most money today also the companies that get the most meetings with EU officials?
+
+#### Browse the data and identify one thing that you find interesting/surprising/shocking?
+
+
+
+---
+
+
+## A Washingtonization of Brussels?
+
+<br>
+
+> In the first half of 2020, Google, Facebook, Amazon, Apple and Microsoft declared spending a combined 19 million euros, or about $23 million, equal to what they had declared for all of 2019 and up from €6.8 million in 2014. (...) “The budgets are really unrivaled — we’ve never seen this kind of money being spent by companies directly,” said Margarida Silva, a researcher at Corporate Europe Observatory, a group that tracks lobbying in Brussels. The totals are probably much higher, she noted, because disclosure rules do not capture all the spending on law firms, academic partnerships and activities in individual countries." <br> &mdash; New York Times, 2020: Big Tech Turns Its Lobbyists Loose on Europe, Alarming Regulators
