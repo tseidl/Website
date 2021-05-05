@@ -39,6 +39,7 @@ library(RColorBrewer)
 library(countrycode)
 library(cowplot)
 library(grid)
+library(kableExtra)
 
 
 ```
@@ -82,6 +83,10 @@ xaringanExtra::use_scribble(pen_color ="#2A363B")
 ```
 
 
+```{r xaringan-editable, echo=FALSE}
+xaringanExtra::use_editable(expires = 1)
+```
+
 
 class: inverse, center, middle
 
@@ -105,6 +110,9 @@ name: contents-slide
 
 ## Overview
 
+
+<font size="4">  
+
 .pull-left[
 
 
@@ -124,29 +132,40 @@ name: contents-slide
 
 [Session 6: Platform Power](#part6)
 
+[Session 7: Power and Ideas in the Politics of Uber](#part7)
+
+[Session 8: The Comparative Politics of Uber](#part8)
+
+
+
+
+
 ]
 
 
 .pull-right[
 
 
+[Session 9: The Normative Politics of Data Governance](#part9)
 
-[Session 7: The Normative Politics of Data Governance](#part7)
+[Session 10: Explaining the GDPR](#part10)
 
-[Session 8: Explaining the GDPR](#part8)
-
-[Session 9:  Data Protection Beyond Europe](#part9)
+[Session 11:  Data Protection Beyond Europe](#part11)
 
 
 #### Part III: Critical Perspectives
 
-[Session 10: Polanyi and the Platform Economy](#part10)
+[Session 12: Polanyi and the Platform Economy](#part12)
 
-[Session 11: Not just Breaking but also Making the Law](#part11)
+[Session 13: Not just Breaking but also Making the Law](#part13)
 
-[Session 12: Knowledge and Digital Capitalism](#part12)
+[Session 14: Knowledge and Digital Capitalism](#part14)
+
+[Session 15: Conclusion & Final Discussion](#part15)
    
 ]
+
+</font>
 
 ---
 
@@ -694,3 +713,337 @@ class:inverse, center, middle
 
 
 ---
+
+
+name: part4
+class: inverse, center, middle
+
+# Session 4: The Business of Platforms
+
+.footnote[
+
+[Back to the contents slide](#contents-slide)
+
+]
+
+---
+class:inverse, center, middle
+# Exercise
+
+<br>
+
+###As a group, discuss one key example in which a platform’s decision has majorly shaped political or societal processes with regard to the exercise of individual or collective rights and be ready to present it to the others (bonus points if this example is not mentioned in the readings).  
+
+
+---
+
+####SIRIUS EU Digital Evidence Situation Report 2019
+<br>
+```{r fig.align='center', out.width="60%"}
+knitr::include_graphics("EUlawrequests.png")
+```
+
+
+---
+
+
+
+
+name: part5
+class: inverse, center, middle
+
+# Session 5: Law & Digital Capitalism
+
+.footnote[
+
+[Back to the contents slide](#contents-slide)
+
+]
+
+
+---
+
+
+
+## Why Care about the Law?
+
+.pull-left[
+
+- Because we cannot talk about the economy without talking about "the (mostly legal) rules of the game where business is conducted" (Pistor 2019, 7).
+
+
+
+- Because law is "the very cloth from which capital is cut" (Pistor 2019, 4) and capitalism is a "market economy in which some assets are placed on legal steroids" (Pistor 2019, 11).
+
+
+- Because questions of economic inequality are unseparable from the power *of* the law and the power *over* the law, and therefore require a detailed understanding of the inner workings of the law.
+
+]
+
+.pull-right[
+
+
+```{r fig.align='center', out.width="60%"}
+knitr::include_graphics("https://images-na.ssl-images-amazon.com/images/I/514e3rk9LiL._SX327_BO1,204,203,200_.jpg")
+```
+
+
+]
+
+
+---
+
+## The Enclosure of the Genetic Commons
+
+.pull-left[
+```{r out.width='80%', fig.align="center"}
+
+knitr::include_graphics("jolie.png")
+
+```
+]
+
+--
+
+.pull-right[
+
+<br>
+
+- For there to be a market in genetic testing, property rights in genetic sequences need to be recognized and enforced by the state.
+
+<br>
+
+- Markets do not simply exist or emerge from the interplay of self-interested actors but are created legally, which often implies a legal enclose of the commons.
+
+]
+
+
+---
+
+## The Legal *Construction* of <br> Informational Capitalism
+
+
+
+.can-edit[
+
+**Law is not only reactive, it can also be constructive:**
+  
+- 
+- 
+
+
+**Legal Entrepreneurship is not only about changing the law, but also changing legal ideas:**
+
+- 
+- 
+ 
+]
+---
+
+## Legal *Constructions* 
+
+
+
+
+**Law is not only reactive, it can also be constructive:**
+  
+- Existing digital markets strongly rely on
+  - the legality of access-for-data-arrangements
+  - wide legal understandings of proprietary information (Intellectual property, trade secrecy)
+  
+- Platform companies rely on 
+  - broad exemptions from accountability (Section 230)
+  - legal doctrines of productive appropriation (from patent law)
+  
+  
+**Legal Entrepreneurship is not only about changing the law, but also changing legal ideas:**
+
+- Conceptions of data as out there, available for the taking
+
+- the legitimacy of legal privilege and extreme power and information asymmetries
+ 
+
+---
+name: part6
+class: inverse, center, middle
+
+# Session 6: Platform power
+
+---
+
+class: inverse, center, middle
+
+What can we learn from Culpepper and Thelen's idea of platform power 
+concerning the Facebook Oversight Board? 
+
+---
+
+### UK Online Harms White Paper 2019
+16. The government will establish a new *statutory duty of care* to make companies take more responsibility for the safety of their users and tackle harm caused by content or activity on their services.
+
+17. Compliance with this duty of care will be overseen and *enforced by an independent regulator*.
+
+18. All companies in scope of the regulatory framework will need to be able to show that they are fulfilling their duty of care. Relevant terms and conditions will be required to be sufficiently clear and accessible, including to children and other vulnerable users. The regulator will assess how effectively these terms are enforced as part of any regulatory action.
+
+19. The *regulator will have a suite of powers to take effective enforcement* action against companies that have breached their statutory duty of care. This may include the powers to issue substantial fines and to *impose liability on individual members* of senior management.
+
+20. Companies must fulfil the new legal duty. The regulator will set out how to do this in codes of practice. If companies want to fulfil this duty in a manner not set out in the codes, they will have to explain and justify to the regulator how their alternative approach will effectively deliver the same or greater level of impact.
+---
+#### Content removal requests: Flonk (forthcoming)
+
+```{r fig.align='center', out.width="60%"}
+knitr::include_graphics("FlonkContentremoval.png")
+```
+
+---
+
+https://oversightboard.com/governance/
+
+https://the-citizens.com/real-facebook-oversight/
+
+
+
+
+---
+name: part7
+class: inverse, center, middle
+
+# Session 7: Power and Ideas in the Politics of Uber
+
+---
+## Rival Narratives of Platforms
+
+
+
+.can-edit[
+
+```{r}
+data.frame (
+  first_column = c("Incubators of Entrepreneurialism",
+                   "The Digital Cage",
+                   "Accelerants of Precarity",
+                   "Institutional Chameleons",
+                   "Permissive Potentates"
+  ),
+  second_column = c("",
+                   "",
+                   "",
+                   "",
+                   ""),
+  third_column = c("",
+                   "",
+                   "",
+                   "",
+                   ""),
+  fourth_column = c("",
+                   "",
+                   "",
+                   "",
+                   "")
+)%>%
+  rename("Image" = first_column,
+         "Hero" = second_column,
+         "Villain" = third_column,
+         "Victim" = fourth_column)%>%
+  kable(booktabs = TRUE, linesep = "\\addlinespace") %>%
+  kable_minimal()%>%
+  column_spec(1, italic = TRUE)
+```
+]
+
+---
+
+## Rival Narratives of Platforms
+
+
+
+.can-edit[
+
+```{r}
+data.frame (
+  first_column = c("Incubators of Entrepreneurialism",
+                   "The Digital Cage",
+                   "Accelerants of Precarity",
+                   "Institutional Chameleons",
+                   "Permissive Potentates"
+  ),
+  second_column = c("Platforms",
+                    "Regulators",
+                    "Unions, Labor-friendly regulators",
+                   "Institutional Adapters?",
+                   "?"),
+  third_column = c("Conventional Firms, Regulators",
+                   "Platforms, Platform-friendly regulators",
+                   "Neoliberals",
+                   "Those who ignore national models?",
+                   "?"),
+  fourth_column = c("Consumers who can't afford products, Workers who can't access the labor market",
+                   "Gig-workers who are exploited",
+                   "Workers who are exploited",
+                   "Those benefitting from national models?",
+                   "?")
+)%>%
+  rename("Image" = first_column,
+         "Hero" = second_column,
+         "Villain" = third_column,
+         "Victim" = fourth_column)%>%
+  kable(booktabs = TRUE, linesep = "\\addlinespace") %>%
+  kable_minimal(font_size = 18)%>%
+  column_spec(1, italic = TRUE)
+```
+]
+
+---
+
+# Seeing and not Seeing I
+
+
+.pull-left[
+
+
+
+
+> “Before the Internet, it would be really difficult to find someone, sit them down for ten minutes and get them to work for you, and then fire them after those ten minutes. But with technology, you can actually find them, pay them the tiny amount of money, and then get rid of them when you don’t need them anymore.” <br>	&mdash; Lukas Biewald, CEO CrowdFlower
+
+
+]
+
+.pull-right[
+
+
+```{r out.width= '50%' , fig.align='center'}
+knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Lukas_Biewald_Poptech.jpg/800px-Lukas_Biewald_Poptech.jpg")
+```
+
+]
+
+
+
+---
+
+
+# Seeing and not Seeing II
+
+
+<br>
+
+>"Well, you know, I think the non-intuitive thing about our business is that the cheaper the service gets, the more luxurious it gets. Let me explain. (...) Well, when the price goes down, you have more riders because more riders can afford it. But if you have more riders that means you have more drivers, and if you have more drivers that means that your pick up times are shorter. It also means that wherever you go in a city, you're more likely to get a ride back. And so it just so happens in our business non-intuitively, when the price goes down, the system or the product or the service becomes more luxurious. And so this isn't a race to the bottom in sort of the traditional sense, it's that the lower we go, the better the service gets. And that's why we do what we do." <br>	&mdash; Travis Kalanick, CEO Uber
+
+
+
+---
+
+class:inverse, center, middle
+
+# Exercise
+
+<br>
+
+### Views, Narratives, Images of platforms are powerful tools in the poltics of platform capitalism. Your task is to develop a view of your own, centered around a key metaphor. Focus here on social media platforms. 
+
+#### Either come up with a metaphor of your own and develop it
+
+#### Or use the metaphor of social media platforms as public parks and see how far you get
+
+---
+
