@@ -43,6 +43,7 @@ library(countrycode)
 library(cowplot)
 library(grid)
 library(directlabels)
+library(kableExtra)
 
 
 ```
@@ -1414,3 +1415,188 @@ class: inverse, center, middle
 <br>
 
 > In the first half of 2020, Google, Facebook, Amazon, Apple and Microsoft declared spending a combined 19 million euros, or about $23 million, equal to what they had declared for all of 2019 and up from €6.8 million in 2014. (...) “The budgets are really unrivaled — we’ve never seen this kind of money being spent by companies directly,” said Margarida Silva, a researcher at Corporate Europe Observatory, a group that tracks lobbying in Brussels. The totals are probably much higher, she noted, because disclosure rules do not capture all the spending on law firms, academic partnerships and activities in individual countries." <br> &mdash; New York Times, 2020: Big Tech Turns Its Lobbyists Loose on Europe, Alarming Regulators
+
+
+---
+
+name: part7
+class: inverse, center, middle
+
+# Session 7: Agenda-Setting in the European Union
+
+.footnote[
+
+[Back to the contents slide](#contents-slide)
+
+]
+
+---
+
+
+
+
+```{r out.width='31%', fig.align='center'}
+knitr::include_graphics("img/student_papers.jpg")
+```
+
+---
+
+## Term Paper
+
+<iframe src="https://pollev-embeds.com/discourses/y5BlZb75HOeKgpIHiP6hU/respond" width="900px" height="500px"></iframe>
+
+---
+
+
+## Three Faces of Power
+
+.pull-left[
+
+<br>
+
+**Steven Lukes: Power. A Radical View**
+
+<br>
+
+1. Decision-making power
+
+2. Non-decision-making power
+
+3. Ideological power
+
+
+]
+
+.pull-right[
+
+<br>
+
+```{r out.width="60%"}
+knitr::include_graphics("https://i.pinimg.com/474x/87/7c/31/877c312fa4ee41196c6087ee6f5b1f4f.jpg")
+```
+
+]
+
+---
+
+
+## Types of Agenda-Setting Power <br> (based on Deters & Falkner 2021)
+
+
+.can-edit[
+
+```{r}
+data.frame (
+  first_column = c("Procedural agenda-setting power",
+                   "Gatekeeping power",
+                   "Agenda leadership",
+                   "Discursive agenda-setting power"),
+  second_column = c("Formal ability (through decision rules) to make it easier to adopt the agenda-setter's preferred policy than to amend it",
+                   "Formal prerogative of a structural first mover to uphold the status quo by excluding alternatives from even being discussed and setting the limits of feasible policy options",
+                   "Ability to 'rally consensus' for a proposal when decision-makers are largely indifferent about competing solutions (when there are multiple negotiations equilibria) ",
+                   "Ability to influence how an issue is perceived by potential decision-makers and stakeholders and thus manipulate - through cognitive or normative framing - the scope and nature of a conflict"),
+  third_column = c("First Face of Power",
+                   "Second Face of Power",
+                   "Influence through appeal to enlightened self-interest",
+                   "Third Face of Power"),
+  fourth_column = c("Commission, CJEU",
+                   "CJEU, Commission",
+                   "European Council, Commission",
+                   "European Parliament, European Council, Interest Groups")
+)%>%
+  rename("Type of Power" = first_column,
+         "Description" = second_column,
+         "Face of Power Equivalent" = third_column,
+         "Main Examples" = fourth_column)%>%
+  kable(booktabs = TRUE, linesep = "\\addlinespace") %>%
+  kable_minimal(font_size = 18)%>%
+  column_spec(1, italic = TRUE)
+```
+]
+
+
+---
+
+## Multiple Streams (Kingdon 2014)
+
+
+
+
+```{r out.width="60%"}
+knitr::include_graphics("img/Kindgon 2014.jpg")
+```
+
+
+---
+
+
+class:inverse, center, middle
+
+# Exercise
+
+<br>
+
+### Look at the document on the EU's Industrial Strategy and compare the excerpts from the two documents
+
+
+---
+
+## Text Re-Use Approaches I
+
+
+.pull-left[
+
+
+<br>
+
+Substring matching (e.g. via the Smith–Waterman local alignment algorithm or the Damerau-Levenshtein minimum edit distance) can be employed to detect instances of coordination among interest groups since it allows us to identify similar passages of text between two documents that are not perfectly overlapping (Scott et al. 2020, RIPE; Pagliari & Young 2020, JEPP; Rauh 2020, EUP)
+
+
+
+
+]
+
+
+.pull-right[
+
+
+
+```{r out.width="90%"}
+knitr::include_graphics("img/text-reuse.png")
+```
+
+
+
+]
+
+---
+
+## Text Re-Use Approaches II
+
+
+.pull-left[
+
+
+
+
+The Commission's legislative agenda-setting power allows it "to select and to propose the one policy from the set of all feasible ones that comes closest to its own preferences. (...) I argue that the Commission’s legislative influence hinges strongly on the quality of anticipation it can muster. (...) Correctly anticipating the political leeway it enjoys for a given initiative is a necessary condition for the Commission’s legislative success. Yet, carving out this leeway is a resource-intensive business [and the individual DGs] are not created equal in this regard. " &mdash; Rauh 2020, EUP
+
+
+
+
+]
+
+
+.pull-right[
+
+
+
+```{r out.width="110%"}
+knitr::include_graphics("img/rauh.png")
+```
+
+
+
+]
+
+---
