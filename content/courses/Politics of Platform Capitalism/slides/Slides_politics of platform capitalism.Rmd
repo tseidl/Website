@@ -40,9 +40,17 @@ library(countrycode)
 library(cowplot)
 library(grid)
 library(kableExtra)
+library(tidytext)
 
 
 ```
+
+
+```{r data}
+
+load("digdiscourses.RData")
+```
+
 
 
 ```{r xaringan-themer}
@@ -1047,3 +1055,102 @@ class:inverse, center, middle
 
 ---
 
+
+name: part8
+class: inverse, center, middle
+
+# Session 8: The Comparative Politics of Uber
+
+
+---
+
+
+## Discursive Sentiment
+
+
+```{r fig.align='center', fig.height=7, fig.width=14}
+sentiment_score_lexicoder_boot%>%
+  mutate(sentiment = Mean,
+       upper = Bca.upper,
+       lower = Bca.lower)%>%
+  mutate(discourse = as.character(
+    glue("{discourse}<br><span> discourse")
+  ))%>%
+  ggplot(aes(
+    reorder_within(country, sentiment, discourse),
+    sentiment,
+    fill = discourse
+  ))+
+  scale_x_reordered() +
+  geom_bar(stat = "identity", position = "dodge") +
+  geom_errorbar(aes(ymin = lower, ymax = upper))+
+  facet_wrap( ~ discourse, scales = "free") +
+  theme_minimal(base_size = 20)+
+  coord_flip() +
+  labs(x = "",
+       y = "") +
+  scale_fill_grey()+
+  theme(
+    strip.background=element_rect( color=NA),
+    strip.text=element_markdown(size = 12, lineheight = 1.1),
+    legend.position = "none"
+  )
+```
+
+
+
+---
+
+## Discursive Content I
+
+
+```{r fig.align='center', fig.height=7, fig.width=14}
+
+
+
+topic_estimates_full%>%
+  mutate(topics = fct_reorder(topics, -ratio),
+         topics = recode(topics, "taxation" = "Taxation",
+                         "industrial_policy" = "Digital Industrial Policy",
+                         "investments" = "Knowledge Investments",
+                         "status" = "Platform Worker Status",
+                         "digital_manufacturing" = "Digital Manufacturing",
+                         "automation" = "Automation & Compensation"))%>%
+  ggplot(aes(reorder_within(value, proportion,  topics), proportion, color = ratio, shape = dominance))+
+  geom_pointrange(aes(ymin = lower, ymax = upper), size = 1.4)+
+  coord_flip()+
+  scale_x_reordered()+
+  facet_wrap(~ topics, scales = "free_y")+
+  theme_minimal(base_size = 18)+
+  scale_color_gradient(low="blue", high="red")+
+  labs(x = "",
+       y= "")+
+  theme(legend.position = "none")
+
+```
+
+---
+
+
+## Discursive Content II
+
+
+```{r fig.align='center', fig.height=7, fig.width=14}
+
+
+rake
+
+```
+
+---
+
+
+class:inverse, center, middle
+
+# Exercise
+
+<br>
+
+### Read the excerpts from Fredrik Söderqvist (an economist at Unionen) and identify key features of the 'Nordic Approach to Platform Regulation'. 
+
+---
