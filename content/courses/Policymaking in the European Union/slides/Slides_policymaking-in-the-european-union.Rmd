@@ -1439,11 +1439,6 @@ class: inverse, center, middle
 knitr::include_graphics("img/student_papers.jpg")
 ```
 
----
-
-## Term Paper
-
-<iframe src="https://pollev-embeds.com/discourses/y5BlZb75HOeKgpIHiP6hU/respond" width="900px" height="500px"></iframe>
 
 ---
 
@@ -1599,4 +1594,169 @@ knitr::include_graphics("img/rauh.png")
 
 ]
 
+
+
 ---
+
+name: part8
+class: inverse, center, middle
+
+# Session 8: Decision-Making in the European Union
+
+.footnote[
+
+[Back to the contents slide](#contents-slide)
+
+]
+
+---
+
+## EU Policymaking?
+
+
+```{r out.width='80%', fig.align='center'}
+knitr::include_graphics("img/eu_creature.jpg")
+```
+
+---
+
+
+## The Origins of EU Legislation I
+
+<iframe src="https://embed.polleverywhere.com/multiple_choice_polls/j8XXFKLmTDazMeRosudnX?controls=none&short_poll=true" width="900px" height="500px"></iframe>
+
+---
+
+
+## The Origins of EU Legislation II
+
+
+.pull-left[
+
+
+```{r out.width='95%', fig.align='center'}
+knitr::include_graphics("img/laloux1.png")
+```
+
+
+]
+
+.pull-right[
+
+
+```{r out.width='95%', fig.align='center'}
+knitr::include_graphics("img/laloux2.png")
+```
+
+
+
+]
+
+<br>
+
+<br>
+
+<font size="2"> Laloux, T. and Delreux, T. (2020) ‘The origins of EU legislation: agenda-setting, intra-institutional decision-making or interinstitutional negotiations?’ *West European Politics*, pp. 1–22.
+
+
+
+
+---
+
+name: part9
+
+class: inverse, center, middle
+
+# Session 9: Implementation
+
+
+---
+
+
+
+class: inverse, center, middle
+
+# €16.9 Million
+
+&mdash;
+
+# 102 Minutes
+
+
+???
+
+2020 Budget of the Irish DPA
+
+How long it takes facebook to make that much money (ca. $200000 in revenue per minute)
+
+---
+
+
+
+
+## Suppose they make a GDPR <br> and no one comes to enforce it
+
+.pull-left[
+
+
+```{r out.width= '50%' , fig.align='center'}
+knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/7/71/Max_Schrems_2016_b.jpg
+")
+```
+
+
+]
+
+
+.pull-right[
+
+<br>
+<br>
+
+> “You can have the best law, but if nobody enforces it, then you’re not going to go anywhere.” <br>	&mdash; Max Schrems
+
+]
+---
+
+
+## Forbearance
+
+<br>
+
+- Forbearance - the active choice to not enforce certain rules - is a key but often overlooked political tool:
+
+  - Forbearance as a means of redistribution (Holland 2017)
+  - Forbearance as a form of industrial policy (Dewey & Di Carlo 2021)
+  
+<br>
+
+> "Regulatory forbearance, therefore, can be thought of as functionally equivalent to direct subsidies used as old instruments of industrial policy in an age where the EU competition policy and state aid regulations significantly constrain governments’ discretionary interventions in markets." (Dewey & Di Carlo 2021)
+
+
+
+
+
+---
+
+class:inverse, center, middle
+
+# Exercise
+
+<br>
+
+###  Watch the Politico Explainer here: https://www.politico.com/story/2019/04/24/ireland-data-privacy-1270123
+
+#### What are the 'larger economic interests of the Irish state'?
+
+#### How can the Irish state influence the actions of the Irish Data Protection Commission?
+
+#### What can be done to stop Ireland from undermining the GDPR?
+
+
+???
+
+"If a train never gets moving, less locomotives don't cause further delays," said Max Schrems
+
+"The long-standing miracle of "self-resolving" GDPR complaints was then lifted by Helen Dixon: The DPC simply interprets the word "handle" to mean that the DPC can also simply dispose of complaints on the fundamental right to privacy. She openly argued “In fact, there is no obligation on the DPC under the 2018 Act to produce a decision in the case of any complaint.”
+
+Max Schrems, Chair of noyb: "If you were to tell your boss that you interpreted 'to handle' as letting you dump work in the trash, you would probably get fired. Instead, the DPC asked for an increase to its existing € 19.1 million budget.""

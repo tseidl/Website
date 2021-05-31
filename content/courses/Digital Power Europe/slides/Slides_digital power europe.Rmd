@@ -684,3 +684,421 @@ class: inverse, center, middle
 Take EU policy towards the Maghreb, for instance. The insistence on migration control in ENP agreements may well be in the interest of Member States, yet its normative assessment is much more problematic, as there is no undisputed norm in favour of migration. The judgement on this issue will therefore always be essentially a political one, and depend on the analyst’s normative views, however honourable they may be (Diez, 2013)
 
 Also, one could argue for dropping the against one's interest part but retain the shaping what is normal part of the argument in some sort of *strategic constructivism*
+
+---
+
+name: part5
+class: inverse, center, middle
+
+# Session 5: Market Power Europe 
+---
+## Powers Compared
+
+<br>
+
+```{r}
+data.frame (
+  first_column = c("Great Power",
+                   "Civilian Power",
+                   "Normative Power"
+  ),
+  second_column = c("Military (e.g., military coercion, threats)",
+                    "Economic (e.g., trade and cooperation agreements, technical and financial assistance, market power)",
+                    "Ideational (e.g., cooperation agreements, political dialogue, technical assistance, discourse/narrative, symbolic representations)"),
+  third_column = c("Self-Interest",
+                   "Self-Interest",
+                   "Norm Promotion")
+)%>%
+  rename("Type of Power" = first_column,
+         "Means" = second_column,
+         "Ends" = third_column)%>%
+  kable(booktabs = TRUE, linesep = "\\addlinespace") %>%
+  kable_minimal()%>%
+  column_spec(1, italic = TRUE)
+```
+---
+## Powers Compared
+
+<br>
+
+```{r}
+data.frame (
+  first_column = c("Great Power",
+                   "Civilian Power - EU as a non-military power",
+                   "Market Power - EU as a market + institutions + interest groups",
+                   "Normative Power - EU as core norms"
+  ),
+  second_column = c("Military (e.g., military coercion, threats)",
+                    "Civilian (e.g., trade and cooperation agreements, technical and financial assistance)",
+                    "Market (e.g., conditionality, membership, extraterritorial regulation)",
+                    "Ideational (e.g., cooperation agreements, political dialogue, technical assistance, discourse/narrative, symbolic representations)"),
+  third_column = c("Self-Interest",
+                   "Self-Interest",
+                   "Self-Interest",
+                   "Norm Promotion")
+)%>%
+  rename("Type of Power" = first_column,
+         "Means" = second_column,
+         "Ends" = third_column)%>%
+  kable(booktabs = TRUE, linesep = "\\addlinespace") %>%
+  kable_minimal()%>%
+  column_spec(1, italic = TRUE)
+```
+---
+class: inverse, center, middle
+
+Annotate the resolution of the European Parliament: What constructions of EU power can you identify? Try to differentiate in the comments between means and ends. https://moodle.univie.ac.at/mod/pdfannotator/view.php?id=8856467 
+---
+###Potential applications of AI in military operations
+<br>
+- Intelligence and surveillance, forecasting
+
+- Logistics (predictive maintenance, efficient shipping, and autonomous transport systems)
+
+- Cyber operations (both defensive and offensive)
+
+- Semi-autonomous and autonomous vehicles and weapons (including lethal autonomous weapons systems (LAWS)
+
+- Swarming, ie. the coordination of many units working together
+
+- Training (e.g. through war games and simulations)
+
+.footnote[Source: Franke (2019) https://ecfr.eu/publication/not_smart_enough_poverty_european_military_thinking_artificial_intelligence/]
+
+--- 
+
+
+---
+
+name: part6
+class: inverse, center, middle
+
+# Session 6: The Brussels Effect
+
+
+---
+
+
+## The Brussels Effect: Conceptual Framework
+
+
+
+```{r out.width= "100%", fig.align="center"}
+
+#use frameablewidget instead of framewidget (for better embedding and also for pdf printing)
+
+widgetframe::frameableWidget(DiagrammeR::grViz("
+
+digraph{
+
+graph[layout = dot]
+
+node[shape = plaintext, fontname = Helvetica, fontcolor = '#2A363B', fontsize = 35]
+
+
+
+'A'[label= 'Market Size', fontcolor = '#accbff']
+'B'[label= 'Capacity of Regulator' , fontcolor = '#92bbff']
+'B2'[label= 'x']
+'C'[label= 'Stringency of Rules', fontcolor = '#78aaff']
+'C2'[label= 'x']
+'D'[label= 'Elasticity of Targets', fontcolor = '#649eff']
+'D2'[label= 'x']
+'E'[label= 'Non-Divisability of Targets', fontcolor = '#4188ff']
+'E2'[label= 'x']
+'F'[label= 'Brussels Effect', fontcolor = violet]
+'F2'[label= 'x']
+
+        
+edge[color = '#2A363B']
+
+
+'A' -> 'B'[label = 'large', color = '#accbff', fontcolor = '#accbff']
+'A' -> 'B2'[label = 'small']
+'B' -> 'C'[label = 'high', color = '#92bbff', fontcolor = '#92bbff']
+'B' -> 'C2'[label = 'low']
+'C' -> 'D'[label = 'high', color = '#78aaff', fontcolor = '#78aaff']
+'C' -> 'D2'[label = 'low']
+'D' -> 'E'[label = 'low', color = '#649eff', fontcolor = '#649eff']
+'D' -> 'E2'[label = 'high']
+'E' -> 'F'[label = 'high', color = '#4188ff', fontcolor = '#4188ff']
+'E' -> 'F2'[label = 'low']
+
+}
+
+"))
+```
+
+
+
+
+---
+
+
+
+
+
+
+## Charger Chaos
+
+
+```{r  out.width="60%"}
+
+knitr::include_graphics("https://thumbs.dreamstime.com/b/charging-phones-other-devices-mess-lots-chargers-tangled-crowded-corner-181543054.jpg")
+
+
+
+```
+
+
+
+---
+
+
+## Is the first course over?
+
+
+.pull-left[
+
+
+
+
+```{r out.width="60%"}
+
+knitr::include_graphics("https://image.gala.de/20549588/t/hB/v16/w480/r1/-/liam-gallagher-ge--10599364-.jpg")
+
+
+
+```
+
+
+]
+
+--
+
+
+.pull-right[
+
+<br>
+<br>
+
+> “He's like a man with a fork, in a world of soup. (about his brother Liam)” <br> &mdash; Noel Gallagher
+
+]
+
+---
+
+
+class: inverse, center, middle
+
+# Exercise I
+
+<br>
+
+
+### Is the 'soup stage' of globalization ending, and, if so, does the EU need the fork of industrial policy or the knife of geo-economic assertiveness in addition to the spoon of its market power to make sure European interests and values are represented on the global stage?
+
+---
+
+
+class: inverse, center, middle
+
+# Exercise II
+
+<br>
+
+
+### What are the normative implications of the Brussels Effect (BE)? Group 1 and Group 2: Think about normatively problematic dimensions of the BE. Group 3 and Group 4: Think about normatively desirable dimensions of the BE.
+
+---
+name: part7
+class: inverse, center, middle
+
+# Session 7: All hail the market? 
+
+---
+class: inverse, center, middle
+
+##What can we learn from Bach and Newman’s (2004) conception of carrot and stick capacity concerning the framework for global electronic commerce? 
+---
+class: inverse, center, middle
+
+##What has changed since then, and what can we learn about self-regulation from Farrell and Newman's (2021) paper? 
+---
+##Seminar papers
+1.	Draw a mind map of interesting topics and illustrate potential links to the idea of Digital Power Europe. Think about specific topics/links that you find particularly interesting and **write down three questions**. (5 mins) 
+
+2.	Breakout rooms: Briefly explain your topic and points of interest to your group. 
+
+3.	As a group, assign a discussant for each topic. 
+
+4.	As a discussant, write down **one reason** why your partner’s topic and questions are **relevant**, pose **one question** you have about the potential paper (e.g. which data/method/theory/alternative approaches), and make at least **one suggestion** to **improve/specify** the question.  
+
+5.	Present and discuss in the group. 
+
+---
+name: part8 
+class: inverse, center, middle
+
+#Session 8: China: State Surveillance Capitalism?
+
+---
+class: inverse, center, middle
+
+##How can we conceptualize key features of the US (Group 1 and 2) vs. the Chinese (Group 3 and 4) approach? Write in the shared Etherpad. 
+---
+
+## Approaches compared
+
+<br>
+
+.can-edit[
+
+```{r}
+data.frame (
+  first_column = c("US",
+                   "China"
+                   
+  ),
+  second_column = c("",
+                    ""),
+  third_column = c("",
+                   ""),
+  fourth_column = c("",
+                   "")
+)%>%
+  rename("Model" = first_column,
+         "Key players/institutions" = second_column,
+         "Norms/interests" = third_column, 
+         "Power" = fourth_column)%>%
+  kable(booktabs = TRUE, linesep = "\\addlinespace") %>%
+  kable_minimal()%>%
+  column_spec(1, italic = TRUE)
+```
+]
+
+---
+#### Executive Order on Addressing the Threat Posed by TikTok
+
+"I, DONALD J. TRUMP, President of the United States of America, find that additional steps must be taken to deal with **the national emergency** with respect to the information and communications technology and services supply chain declared in Executive Order 13873 of May 15, 2019 (Securing the Information and Communications Technology and Services Supply Chain). Specifically, the **spread in the United States of mobile applications developed and owned by companies in the People’s Republic of China (China)** continues to threaten the national security, foreign policy, and economy of the United States.  At this time, action must be taken to address the threat posed by one mobile application in particular, TikTok.
+
+**TikTok**, a video-sharing mobile application owned by the Chinese company ByteDance Ltd., has reportedly been downloaded over 175 million times in the United States and over one billion times globally. TikTok automatically captures vast swaths of information from its users, including Internet and other network activity information such as location data and browsing and search histories. This data collection **threatens to allow the Chinese Communist Party access to Americans’ personal and proprietary information** — potentially allowing China to track the locations of Federal employees and contractors, build dossiers of personal information for blackmail, and conduct corporate espionage."
+---
+class: inverse, center, middle
+##Afraid of the Beijing effect? 
+
+###Should we adopt a geopolitical approach to digital governance?
+
+###Find pro (Group 1 and 2) and con (Group 3 and 4) arguments, also drawing on the examples of Huawei and TikTok. 
+
+
+---
+name: part9
+class: inverse, center, middle
+
+#Session 9: The European Union: A Third Way?
+
+---
+
+## Digital Sovereignty I
+
+
+.pull-left[
+
+
+```{r out.width="80%"}
+
+knitr::include_graphics("img/euparl_digitalsov.PNG")
+
+
+
+```
+
+
+]
+
+
+.pull-right[
+
+```{r out.width="70%"}
+
+knitr::include_graphics("img/ft_digsov.PNG")
+
+
+
+```
+
+]
+
+
+
+---
+
+## Digital Sovereignty II
+
+
+.pull-left[
+
+
+
+
+```{r out.width="90%"}
+
+knitr::include_graphics("img/error_404_5.PNG")
+
+
+
+```
+
+]
+
+
+.pull-right[
+
+```{r out.width="90%"}
+
+knitr::include_graphics("img/error_404_6.PNG")
+
+
+
+```
+]
+
+---
+
+## Digital Sovereignty III
+
+
+.pull-left[
+
+<br>
+
+
+> "The concept [of digital sovereignty] still lacks clarity and, to some extent, purpose. (...) The frequent invocation of this buzzword risks glossing over the fact that the EU still lacks a concrete idea of what it wants rather than just what it fears."
+
+]
+
+
+.pull-right[
+
+```{r out.width="70%"}
+
+knitr::include_graphics("img/obendiek_digsov.PNG")
+
+
+
+```
+]
+
+---
+
+class: inverse, center, middle
+
+# Exercise
+
+<br>
+
+
+### You're invited to write a chapter for the International Encyclopedia of Political Concepts. Your task is to define the concept of digital sovereignty. Before writing the article, the editor asks you to briefly define the concept in three bullet points. These can contain different dimensions or competing intepretations of digital sovereignty.
+
+---

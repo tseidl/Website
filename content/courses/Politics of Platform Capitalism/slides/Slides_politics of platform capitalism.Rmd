@@ -745,17 +745,6 @@ class:inverse, center, middle
 
 ---
 
-####SIRIUS EU Digital Evidence Situation Report 2019
-<br>
-```{r fig.align='center', out.width="60%"}
-knitr::include_graphics("EUlawrequests.png")
-```
-
-
----
-
-
-
 
 name: part5
 class: inverse, center, middle
@@ -1136,10 +1125,6 @@ topic_estimates_full%>%
 
 
 ```{r fig.align='center', fig.height=7, fig.width=14}
-
-
-rake
-
 ```
 
 ---
@@ -1154,3 +1139,180 @@ class:inverse, center, middle
 ### Read the excerpts from Fredrik Söderqvist (an economist at Unionen) and identify key features of the 'Nordic Approach to Platform Regulation'. 
 
 ---
+
+name: part9
+class: inverse, center, middle
+
+# Session 9: The normative politics of data governance
+
+---
+
+####SIRIUS EU Digital Evidence Situation Report 2019
+<br>
+```{r fig.align='center', out.width="50%"}
+knitr::include_graphics("EUlawrequestsI.png")
+```
+---
+####SIRIUS EU Digital Evidence Situation Report 2019
+<br>
+```{r fig.align='center', out.width="60%"}
+knitr::include_graphics("EUlawrequests.png")
+```
+---
+
+class: inverse, center, middle
+
+##What are the implications of public-private security cooperation in digital capitalism? 
+
+---
+##Schrems II - the judgement
+
+"In the view of the Court, the limitations on the **protection of personal data** arising from the domestic law of the United States on the access and use by US public authorities of such data transferred from the European Union to that third country, which the Commission assessed in Decision 2016/1250, **are not circumscribed in a way that satisfies requirements that are essentially equivalent to those required under EU law**, by the principle of proportionality, in so far as **the surveillance programmes based on those provisions are not limited to what is strictly necessary**" (CJEU, 2020, p. 3, emphasis in original)
+---
+##Schrems II - the negotiations
+
+“The U.S. Government and the European Commission have decided to **intensify negotiations** on an enhanced EU-U.S. Privacy Shield framework to comply with the July 16, 2020 judgment of the Court of Justice of the European Union in the Schrems II case.
+
+These negotiations underscore our **shared commitment to privacy, data protection and the rule of law** and our mutual recognition of the importance of transatlantic data flows to our respective citizens, economies, and societies.
+
+Our **partnership on facilitating trusted data flows** will support economic recovery after the global pandemic, to the benefit of citizens and businesses on both sides of the Atlantic.” 
+
+.footnote[https://ec.europa.eu/commission/presscorner/detail/en/STATEMENT_21_1443]
+
+---
+# Exercise
+
+<br>
+
+####Why is the transatlantic relationship so difficult when it comes to data governance? Imagine you are tasked with the negotiation of a new deal – what challenges and stakeholders do you have to consider and what would you propose as potential solutions…
+
+####•	as the European Commission? (Groups 1 and 2)
+
+####•	as the US negotiating team from the Department of Commerce? (Groups 3 and 4)
+
+---
+##US Department of Commerce
+1. Most U.S. companies do not deal in data that is of any interest to U.S. intelligence agencies, and have no grounds to believe they do. They are not engaged in data transfers that present the type of risks to privacy that appear to have concerned the ECJ in Schrems II. 
+
+2. The U.S. government frequently shares intelligence information with EU Member States, including data disclosed by companies in response to FISA 702 orders, to counter threats such as terrorism, weapons proliferation, and hostile foreign cyber activity. Sharing of FISA 702 information undoubtedly serves important EU public interests by protecting the governments and people of the Member States. 
+
+3. There is a wealth of public information about privacy protections in U.S. law concerning government access to data for national security purposes, including information not recorded in Decision 2016/1250, new developments that have occurred since 2016, and information the ECJ neither considered nor addressed. Companies may wish to take this information into account in any assessment of U.S. law post-Schrems II. 
+
+---
+## The role of oversight and secrecy 
+
+.pull-left[
+
+```{r out.width= '80%'}
+knitr::include_graphics("Potarlington.jpeg")
+```
+]
+
+.pull-right[
+```{r out.width= '70%'}
+knitr::include_graphics("DPCHQ.png")
+```
+]
+
+
+
+---
+
+name: part10
+
+class: inverse, center, middle
+
+# Session 10: Explaining the GDPR
+
+
+---
+
+
+
+class: inverse, center, middle
+
+# €16.9 Million
+
+&mdash;
+
+# 102 Minutes
+
+
+???
+
+2020 Budget of the Irish DPA
+
+How long it takes facebook to make that much money (ca. $200000 in revenue per minute)
+
+---
+
+
+
+
+## Suppose they make a GDPR <br> and no one comes to enforce it
+
+.pull-left[
+
+
+```{r out.width= '50%' , fig.align='center'}
+knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/7/71/Max_Schrems_2016_b.jpg
+")
+```
+
+
+]
+
+
+.pull-right[
+
+<br>
+<br>
+
+> “You can have the best law, but if nobody enforces it, then you’re not going to go anywhere.” <br>	&mdash; Max Schrems
+
+]
+---
+
+
+## Forbearance
+
+<br>
+
+- Forbearance - the active choice to not enforce certain rules - is a key but often overlooked political tool:
+
+  - Forbearance as a means of redistribution (Holland 2017)
+  - Forbearance as a form of industrial policy (Dewey & Di Carlo 2021)
+  
+<br>
+
+> "Regulatory forbearance, therefore, can be thought of as functionally equivalent to direct subsidies used as old instruments of industrial policy in an age where the EU competition policy and state aid regulations significantly constrain governments’ discretionary interventions in markets." (Dewey & Di Carlo 2021)
+
+
+
+
+
+---
+
+class:inverse, center, middle
+
+# Exercise
+
+<br>
+
+###  Watch the Politico Explainer here: https://www.politico.com/story/2019/04/24/ireland-data-privacy-1270123
+
+#### What are the 'larger economic interests of the Irish state'?
+
+#### How can the Irish state influence the actions of the Irish Data Protection Commission?
+
+#### What can be done to stop Ireland from undermining the GDPR?
+
+
+???
+
+"If a train never gets moving, less locomotives don't cause further delays," said Max Schrems
+
+"The long-standing miracle of "self-resolving" GDPR complaints was then lifted by Helen Dixon: The DPC simply interprets the word "handle" to mean that the DPC can also simply dispose of complaints on the fundamental right to privacy. She openly argued “In fact, there is no obligation on the DPC under the 2018 Act to produce a decision in the case of any complaint.”
+
+Max Schrems, Chair of noyb: "If you were to tell your boss that you interpreted 'to handle' as letting you dump work in the trash, you would probably get fired. Instead, the DPC asked for an increase to its existing € 19.1 million budget.""
+
