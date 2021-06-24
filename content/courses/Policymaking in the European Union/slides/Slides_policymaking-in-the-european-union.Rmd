@@ -147,9 +147,9 @@ name: contents-slide
 
 #### Part III: Selected Policy Areas
 
-[Session 10: Competition Policy](#part10)
+[Session 10: Environmental Policy](#part10)
 
-[Session 11: Trade Policy](#part11)
+[Session 11: Foreign Policy](#part11)
 
 [Session 12 Digital Policy](#part12)
    
@@ -1760,3 +1760,320 @@ class:inverse, center, middle
 "The long-standing miracle of "self-resolving" GDPR complaints was then lifted by Helen Dixon: The DPC simply interprets the word "handle" to mean that the DPC can also simply dispose of complaints on the fundamental right to privacy. She openly argued “In fact, there is no obligation on the DPC under the 2018 Act to produce a decision in the case of any complaint.”
 
 Max Schrems, Chair of noyb: "If you were to tell your boss that you interpreted 'to handle' as letting you dump work in the trash, you would probably get fired. Instead, the DPC asked for an increase to its existing € 19.1 million budget.""
+
+---
+
+name: part10
+
+class: inverse, center, middle
+
+# Session 10: Environmental Policy
+
+
+---
+
+
+
+.pull-left[
+
+
+```{r out.width= '50%' , fig.align='center'}
+knitr::include_graphics("https://images.unsplash.com/photo-1509391366360-2e959784a276?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80
+")
+```
+
+
+```{r out.width= '50%' , fig.align='center'}
+knitr::include_graphics("https://i.pinimg.com/564x/81/1e/2b/811e2bda45155c63a132efb8c2cc3cda--memory-foam-mattress-topper-the-.jpg
+")
+```
+
+
+```{r out.width= '50%' , fig.align='center'}
+knitr::include_graphics("https://i.rtings.com/assets/products/0C5XharC/black-decker-dustbuster-chv1410l/design-medium.jpg
+")
+```
+
+
+
+
+]
+
+
+.pull-right[
+
+
+
+```{r out.width= '50%' , fig.align='left'}
+knitr::include_graphics("https://cdn.vox-cdn.com/thumbor/ejFVoG7byOqWqMuqcksfe2UbIX0=/0x0:3000x2000/920x613/filters:focal(1260x760:1740x1240):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/66181121/CPT74F.7.jpg
+")
+```
+
+
+```{r out.width= '50%' , fig.align='left'}
+knitr::include_graphics("https://www.tuv.com/content-media-files/master-content/services/products/1535-tuv-rheinland-smoke-detector-testing-and-certification/tuv-rheiland-smoke-detector-testing-certification_core_2_2_1.jpg
+")
+```
+
+
+```{r out.width= '50%' , fig.align='left'}
+knitr::include_graphics("https://www.runningxpert.com/media/catalog/product/cache/1/image/575x/040ec09b1e35df139433887a97daa66f/e/m/emergency_blanket-.jpg
+")
+```
+
+
+]
+
+???
+
+
+Other examples: fire-proof clothing, small digital cameras, wireless headphones, precision gps, etc.
+
+---
+
+## Mission Economy?
+
+
+.pull-left[
+
+
+
+
+> What is required [to combat climate change] is a mission-oriented approach which sets a clear direction for change, while at the same time using the full range of government instruments (from procurement to guaranteed loans, grants and prize schemes) to crowd in bottom-up investments and innovation across the entire economy. The change must occur at all levels — local, regional, national and international. It must be guided not by fear, but by a positive vision for change.
+
+
+]
+
+.pull-right[
+
+
+
+
+```{r out.width= '50%' , fig.align='center'}
+knitr::include_graphics("https://images-na.ssl-images-amazon.com/images/I/41f+Txg2QYS._SY344_BO1,204,203,200_.jpg
+")
+```
+
+]
+
+???
+
+Missions require a new vocabulary. Rather than levelling the playing field they require tilting it. This does not mean tilting it towards one company, one sector or one technology, but tilting it towards a direction. This requires ambitious investments that crowd-in and mobilise private investment as well as the creation of synergies across the different domains of government activity: from regulatory changes, to procurement policy, to reforms in education and labour markets.
+
+
+
+
+---
+
+class:inverse, center, middle
+
+# Exercise
+
+
+
+####  Each group takes a look at  one of the four environmental missions of the EU and identifies their key goals. Also discuss what makes it a mission, what potential downstream innovations could be, and what the general pros and cons of a mission-oriented approach are.
+
+##### Group 1 looks at Adaptation to climate change including societal transformation (https://ec.europa.eu/info/research-and-innovation/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-europe/missions-horizon-europe/adaptation-climate-change-including-societal-transformation_en)
+
+##### Group 2 looks at Healthy oceans, seas, coastal and inland waters (https://ec.europa.eu/info/research-and-innovation/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-europe/missions-horizon-europe/healthy-oceans-seas-coastal-and-inland-waters_en)
+
+
+##### Group 3 looks at Soil health and food (https://ec.europa.eu/info/research-and-innovation/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-europe/missions-horizon-europe/soil-health-and-food_en)
+
+
+##### Group 4 looks at Climate-neutral and smart cities (https://ec.europa.eu/info/research-and-innovation/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-europe/missions-horizon-europe/climate-neutral-and-smart-cities_en)
+
+
+---
+
+
+
+name: part11
+
+class: inverse, center, middle
+
+# Session 11: Foreign Policy
+
+
+---
+
+### Strategic Autonomy as a New Policy Paradigm?
+
+
+<br>
+
+- In recent years, we have seen a remarkable shift in several areas of EU policymaking that puts notions of geo-politics and geo-economics center stage.
+
+- The central concept/idea tying these changes together is the idea of strategic autonomy, which comes in various guises:
+
+  - In digital policy there is much talk about digital/technological sovereignty.
+  - In trade policy the EU has proposed a new strategy based on the concept of *open* strategic autonomy.
+  - In foreign policy, strategic autonomy increasingly is *the* central concept.
+  
+  
+- However, there remains much confusion and disagreement as to what strategic autonomy is and should be.
+
+
+
+
+
+---
+
+
+```{r out.width= '55%' , fig.align='center'}
+knitr::include_graphics("https://ecfr.eu/wp-content/uploads/Q3-How-important-is-the-goal-of-European-strategic-autonomy.png
+")
+```
+
+
+---
+
+## A Definition?
+
+<br>
+
+
+> Strategic autonomy as the "ability to decide and to act freely in an interdependent world" <br> &mdash; République française (2017): Revue stratégique de défense et de sécurité nationale
+
+
+<br>
+
+> "This study defines EU's 'strategic autonomy' as the ability to act autonomously as well as to choose when, in which area, and if, to act with like-minded partners. The capacity to act autonomously implies both the ability to decide and to implement decisions in an autonomous manner. 'Strategic autonomy' is not about self-sufficiency but about means and tools to reduce external dependencies in areas deemed strategic and where dependencies could compromise autonomy, whilst continuing to cooperate with partners in a multilateral setting." <br> &mdash; EPRS (2020): On the path to 'strategic autonomy'
+
+
+
+---
+
+
+class:inverse, center, middle
+
+# Exercise
+
+<br>
+
+#### Take a look at section 4.4 ('Security and defence') of the EPRS report "On the path to 'strategic autonomy'".
+
+
+##### Group 1 looks at subsection 4.4.1
+
+##### Group 2 looks at subsection 4.4.2
+
+##### Group 3 looks at subsection 4.4.3
+
+##### Group 4 looks at subsection 4.4.4
+
+
+#### Identify what strategic autonomy means and how the report argues it could be realized. You can already take a critical stance, asking whether or not strategic autonomy is a useful concept, however defined.
+
+---
+
+
+---
+name: part12
+class: inverse, center, middle
+
+#Session 12: Digital Policy
+
+---
+
+## Digital Sovereignty I
+
+
+.pull-left[
+
+
+```{r out.width="90%"}
+
+knitr::include_graphics("img/bankenverband.PNG")
+
+
+
+```
+
+
+]
+
+
+.pull-right[
+
+```{r out.width="70%"}
+
+knitr::include_graphics("img/ft_digsov.PNG")
+
+
+
+```
+
+]
+
+
+
+---
+
+## Digital Sovereignty II
+
+
+.pull-left[
+
+
+
+
+```{r out.width="90%"}
+
+knitr::include_graphics("img/error_404_5.PNG")
+
+
+
+```
+
+]
+
+
+.pull-right[
+
+```{r out.width="90%"}
+
+knitr::include_graphics("img/error_404_6.PNG")
+
+
+
+```
+]
+
+---
+
+## Digital Sovereignty III
+
+
+.pull-left[
+
+<br>
+
+
+> "The concept [of digital sovereignty] still lacks clarity and, to some extent, purpose. (...) The frequent invocation of this buzzword risks glossing over the fact that the EU still lacks a concrete idea of what it wants rather than just what it fears."
+
+]
+
+
+.pull-right[
+
+```{r out.width="70%"}
+
+knitr::include_graphics("img/obendiek_digsov.PNG")
+
+
+
+```
+]
+
+---
+
+class: inverse, center, middle
+
+# Exercise
+
+<br>
+
+
+### You're invited to write a chapter for the International Encyclopedia of Political Concepts. Your task is to define the concept of digital sovereignty. Before writing the article, the editor asks you to briefly define the concept in three bullet points. These can contain different dimensions or competing intepretations of digital sovereignty.
+

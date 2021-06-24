@@ -152,7 +152,7 @@ name: contents-slide
 
 [Session 11: Taxation](#part11)
 
-[Session 12 Policy Session: DSA and DMA](#part12)
+[Session 12: Policy Session: DSA](#part12)
    
 ]
 
@@ -1102,3 +1102,112 @@ class: inverse, center, middle
 ### You're invited to write a chapter for the International Encyclopedia of Political Concepts. Your task is to define the concept of digital sovereignty. Before writing the article, the editor asks you to briefly define the concept in three bullet points. These can contain different dimensions or competing intepretations of digital sovereignty.
 
 ---
+
+name: part10
+class: inverse, center, middle
+
+#Session 10: Data Protection
+
+---
+class: inverse, center, middle
+
+```{r out.width= '120%'}
+knitr::include_graphics("img/Beyonce.png")
+```
+
+---
+## The GDPR
+
+####•	the ‘right to be forgotten’, 
+####•	data portability, protection by design and default 
+####•	increased transparency for privacy policies and data breaches/hacking
+####•	the right to object to profiling;
+####•	stronger enforcement and fines of up to 4 % of firms’ total annual turnover
+####•	marketplace principle
+
+---
+## EU vs. US
+
+
+<br>
+
+> "If before the revelations the GDPR debate was solely about Internet privacy,
+now it had become about the protection of Europeans’ Internet privacy from unwanted
+and abusive American surveillance." (Rossi 2018, 106)
+---
+
+##Schrems II - the judgement
+
+"In the view of the Court, the limitations on the **protection of personal data** arising from the domestic law of the United States on the access and use by US public authorities of such data transferred from the European Union to that third country, which the Commission assessed in Decision 2016/1250, **are not circumscribed in a way that satisfies requirements that are essentially equivalent to those required under EU law**, by the principle of proportionality, in so far as **the surveillance programmes based on those provisions are not limited to what is strictly necessary**" (CJEU, 2020, p. 3, emphasis in original)
+
+---
+##US Department of Commerce
+1. Most U.S. companies **do not deal in data that is of any interest to U.S. intelligence agencies**, and have no grounds to believe they do. They are not engaged in data transfers that present the type of risks to privacy that appear to have concerned the ECJ in Schrems II. 
+
+2. The U.S. government **frequently shares intelligence information with EU Member States**, including data disclosed by companies in response to FISA 702 orders, to counter threats such as terrorism, weapons proliferation, and hostile foreign cyber activity. Sharing of FISA 702 information undoubtedly serves important EU public interests by protecting the governments and people of the Member States. 
+
+3. There is a **wealth of public information about privacy protections** in U.S. law concerning government access to data for national security purposes, including information not recorded in Decision 2016/1250, new developments that have occurred since 2016, and information the **ECJ neither considered nor addressed**. Companies may wish to take this information into account in any assessment of U.S. law post-Schrems II. 
+---
+##Schrems II - the negotiations
+
+“The U.S. Government and the European Commission have decided to **intensify negotiations** on an enhanced EU-U.S. Privacy Shield framework to comply with the July 16, 2020 judgment of the Court of Justice of the European Union in the Schrems II case.
+
+These negotiations underscore our **shared commitment to privacy, data protection and the rule of law** and our mutual recognition of the importance of transatlantic data flows to our respective citizens, economies, and societies.
+
+Our **partnership on facilitating trusted data flows** will support economic recovery after the global pandemic, to the benefit of citizens and businesses on both sides of the Atlantic.” 
+
+.footnote[https://ec.europa.eu/commission/presscorner/detail/en/STATEMENT_21_1443]
+
+
+---
+class: inverse, center, middle
+
+# Exercise
+
+<br>
+
+####Why is the transatlantic relationship so difficult when it comes to data governance? Imagine you are tasked with the negotiation of a new deal – what interests, norms, and stakeholders do you have to consider and what would you propose as potential solutions…
+
+####•	as the European Commission? (Groups 1 and 2)
+
+####•	as the US negotiating team from the Department of Commerce? (Groups 3 and 4)
+
+
+
+---
+
+name: part11
+class: inverse, center, middle
+
+#Session 11: Taxation
+
+
+---
+
+
+class: inverse, center, middle
+
+## Exercise
+
+
+#### You are a EU policymaker and want to introduce a digital tax. Think about and justify such a tax based on one of the following principles. 
+
+##### Group 1: Proportionality | Idea: The rich/powerful should pay higher taxes | Analogues: Progressive wealth/income taxes
+
+##### Group 2: Externality | Idea: External costs of economic transactions should be internalized through the tax system | Analogues: Tabacco taxes, carbon pricing
+
+##### Group 3: Fairness | Idea: Everyone should pay the same; there should be a level playing field | Analogues: Anti-tax-arbitrage legislation
+
+
+#### Write a short (ca. 150 words) press release where you explain what your policy, i.e., the rough design of your tax and why it is the right policy (e.g., we tax this specific digital activity and not all because we think it's particularly harmful). 
+
+
+---
+
+name: part12
+class: inverse, center, middle
+
+#Session 12: Policy Session: DSA with Julian Jaursch
+
+
+

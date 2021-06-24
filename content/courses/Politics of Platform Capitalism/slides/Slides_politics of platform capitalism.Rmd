@@ -1326,7 +1326,8 @@ class: inverse, center, middle
 # Session 11:  Data Protection Beyond Europe
 
 ---
-#Regional internets 
+# Regional internets 
+
 ```{r out.width= '50%' , fig.align='center'}
 knitr::include_graphics("splinternet3.png"
 )
@@ -1379,3 +1380,99 @@ class:inverse, center, middle
 <br>
 
 ### Can we think of data as a fictitious commodidity, i.e., as if it was something that is created for the market while it is not? And if so, what are the dangers of treating it as a commodifity?
+
+
+---
+
+
+name: part13
+
+class: inverse, center, middle
+
+# Session 13: Not just Breaking but also Making the Law
+
+---
+
+
+## The Limits of Anti-Trust? Bork vs Khan
+
+
+.pull-left[
+
+
+```{r out.width= '80%' , fig.align='center'}
+knitr::include_graphics("https://static.independent.co.uk/s3fs-public/thumbnails/image/2012/12/25/20/Robert-Bork-reuters.jpg?width=990&auto=webp&quality=75
+")
+```
+
+
+]
+
+
+.pull-right[
+
+```{r out.width= '80%' , fig.align='center'}
+knitr::include_graphics("https://image.cnbcfm.com/api/v1/image/106871680-16190182982021-04-21t151546z_2016679555_rc2f0n9fc9u0_rtrmadp_0_usa-biden-nasa.jpeg?v=1619018364
+")
+```
+
+
+]
+
+
+???
+
+
+Antitrust enforcers and regulators, when examining a potential merger or acquisition, or considering if a company is engaging in anticompetitive behavior, are supposed to apply a consumer welfare standard. Basically, it’s fine for a company to be really big, as long as a consumer isn’t harmed. The concept was first introduced by conservative judge Robert Bork in 1978, and it’s guided a lot of US antitrust policy ever since. Court rulings over time have been more permissive in antitrust cases, rendering practices that were once illegal legal. And the DOJ and the FTC, the two federal regulators most involved in antitrust matters, have also become more lax.
+
+But antitrust laws could be unwieldy. Judges sometimes struggled to know whether they were enforcing the law or capriciously blocking a merger. And then, in 1978, a Yale Law professor named Robert Bork promoted a clean new theory of antitrust law, inspired by the libertarian Chicago school of economics.
+
+Bork decreed that all antitrust suits should be judged by one question: What will most lower prices for consumers? The answer, he said, was almost always more mergers. When companies merge, they get rid of redundant business units, lower their operating costs, and become more efficient, ultimately passing this efficiency on to consumers as lower prices.
+
+Within a decade, the Reagan administration turned Bork’s theory into official Department of Justice policy. The business world noticed. In 1985, there were about 2,300 corporate mergers in the United States, according to the Institute for Mergers, Acquisitions and Alliances. In 2017, there were more than 15,300, a new record.
+
+And predatory pricing? It is “a phenomenon that probably does not exist,” he wrote. The Chicago school, he said, had proved that companies would always pursue short-term profits over long-term growth.
+
+---
+
+name: part14
+
+class: inverse, center, middle
+
+# Session 14:  Knowledge and digital capitalism
+
+---
+##A Strange approach? 
+<br>
+
+.pull-left[
+###What can we learn from Strangean knowledge structures about digital capitalism? <br>What is missing? 
+]
+
+.pull-right[
+```{r out.width= '50%' , fig.align='center'}
+knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/d/d6/Professor_Susan_Strange%2C_c1980.jpg
+")
+```
+]
+
+---
+##Power
+
+```{r out.width= '80%' , fig.align='center'}
+knitr::include_graphics("Power.png")
+```
+Barnett and Duvall 2005:48
+
+---
+class: inverse, center, middle
+
+####How can fiction help us understand structures <br> of knowledge and/or social imaginaries? <br> How can this help us understand digital capitalism? 
+
+####Group 1 and 2 – Focus on structures of knowledge  
+
+####Group 3 and 4 – Focus on sociotechnical imaginaries 
+
+https://www.youtube.com/watch?v=kaawwz2ozcw
+
+---
