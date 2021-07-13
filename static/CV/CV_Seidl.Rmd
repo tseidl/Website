@@ -77,17 +77,20 @@ tribble(
   detailed_entries(Type, Year, Desc, x)
 ```
 
-# Teaching
+# Teaching (Syllabi & Materials can be found [here](https://www.timoseidl.com/teaching/))
 
 <p>&nbsp;</p>
 ```{r}
 tibble::tribble(
   ~Type, ~Year, ~Desc, ~x,
-  "Undergraduate Course Heinrich Heine University Düsseldorf","Summer 2020", "Introduction to Comparative Political Economy", "",
-  "Introduction to Teaching in Higher Education, European University Institute","2018-2019", "Teaching Training", "",
-  "Introduction to Sociology", "2012-2013", "Tutor", ""
+  "B.A. Course University of Vienna","Winter 2021", "Key Controversies in European Integration", "",
+  "B.A. Course University of Vienna","Winter 2021", "The Twin Transitions: The EU's Climate and Digital Policies", "",
+  "M.A. Course University of Vienna","Summer 2021", "Politics of Platform Capitalism", "Evaluation result: 1.1 (1-5 scale)",
+  "M.A. Course University of Vienna","Summer 2021", "Digital Power Europe", "Evaluation result: 1.5 (1-5 scale)",
+  "B.A. Course University of Vienna","Summer 2021", "Policymaking in the European Union", "Evaluation result: 1.2 (1-5 scale)",
+  "B.A. Course Heinrich Heine University Düsseldorf","Summer 2020", "Introduction to Comparative Political Economy", "",
   ) %>% 
-  detailed_entries(Type, Year, Desc, x, .protect = F)
+  detailed_entries(Type, x, Desc, Year,  .protect = F)
 ```
 
 
@@ -113,7 +116,7 @@ tribble(
 
 <p>&nbsp;</p>
 
-Journal of Common Market Studies (1x), Industrial Relations (1x), Swiss Journal of Sociology (1x)
+Comparative Political Studies (1x), Journal of Common Market Studies (1x), Industrial Relations (1x), Regulation & Governance (1x), Swiss Journal of Sociology (1x), Zeitschrift für Politikwissenschaft (Journal of Political Science) (1x)
 
 <p>&nbsp;</p>
 
@@ -121,7 +124,7 @@ Journal of Common Market Studies (1x), Industrial Relations (1x), Swiss Journal 
 
 <p>&nbsp;</p>
 
-IPSA, CES, ECPR, DGS, Young Scholar Max Weber Network
+CES, DGS, ECPR, IPSA, SASE, Young Scholar Max Weber Network
 
 <p>&nbsp;</p>
 
@@ -140,6 +143,7 @@ Web Scraping and Text Mining (with Paulo Serodio), Causal Inference (with Elias 
 ```{r}
 tibble::tribble(
   ~Type, ~Year, ~Desc, ~x,
+    "Introduction to Teaching in Higher Education, European University Institute","2018-2019", "Teaching Training", "",
   "Oslo Summer School, with Christel Koop, one week","2018", "The Political Economy of Public Policy", "",
   "Summer school, with Daniel Haun and Peter Kappeler, four weeks",  "2015-2017", "Evolutionary Anthropology" ,"",
   "Summer school, one week", "2015", "Comparing the Cambridge School and Conceptual History", "",
@@ -181,18 +185,22 @@ Discourse Network Analyser, MAXQDA, Gephi, Citavi
 
 <p>&nbsp;</p>
 
-Seidl, T. (2020) Ideas, Politics, and Technological Change: Essays on the Comparative Political Economy of Digital Capitalism. Dissertation European University Institute. | [**PDF**](https://cadmus.eui.eu/handle/1814/69757).
+Seidl, T. (2021) Ideas, Politics, and Technological Change: Essays on the Comparative Political Economy of Digital Capitalism. Dissertation European University Institute. | [**PDF**](https://cadmus.eui.eu/handle/1814/69757).
 
 
 ## Peer-Reviewed Journal Articles
 
 <p>&nbsp;</p>
 
+* Marenco, Matteo and Seidl, Timo (2021) ‘The discursive construction of digitalization: a comparative analysis of national discourses on the digital future of work’, European Political Science Review, pp. 1–19. 
+[**Article**](https://www.cambridge.org/core/journals/european-political-science-review/article/discursive-construction-of-digitalization-a-comparative-analysis-of-national-discourses-on-the-digital-future-of-work/A4B6C6E17C4EE9AD002F7E2553C24696) |
+[**Working Paper**](https://doi.org/10.31235/osf.io/6ex7t) 
+
 * Seidl, Timo (2020) ‘The Politics of Platform Capitalism. A Case Study on the Regulation of Uber in New York’. Regulation & Governance. [**Article**](https://onlinelibrary.wiley.com/doi/abs/10.1111/rego.12353) | [**Working Paper**](https://osf.io/preprints/socarxiv/up9qz/) | [**Replication Materials**](www.timoseidl.com/publication/the-politics-of-platform-capitalism/Replication_Material_Seidl_Politics_of_Platform_Capitalism.zip)
 
-* Laurer, Moritz/Seidl, Timo (2020) ‘Regulating the European Data-Driven Economy. A Case Study on the GDPR’. Policy & Internet [**Article**](https://onlinelibrary.wiley.com/doi/abs/10.1002/poi3.246) | [**Working Paper**](https://osf.io/preprints/socarxiv/a6m8r/) | [**Replication Materials**](www.timoseidl.com/publication/regulating-the-european-data-driven-economy/Laurer_Seidl_GDPR_Replication.zip).
+* Laurer, Moritz & Seidl, Timo (2020) ‘Regulating the European Data-Driven Economy. A Case Study on the GDPR’. Policy & Internet [**Article**](https://onlinelibrary.wiley.com/doi/abs/10.1002/poi3.246) | [**Working Paper**](https://osf.io/preprints/socarxiv/a6m8r/) | [**Replication Materials**](www.timoseidl.com/publication/regulating-the-european-data-driven-economy/Laurer_Seidl_GDPR_Replication.zip).
 
-* Roos, Ulrich/Seidl, Timo (2015) ‘Im »Südwesten« nichts Neues? Eine Analyse der deutschen Namibiapolitik als Beitrag zur Rekonstruktion der außenpolitischen Identität des deutschen Nationalstaates’, Zeitschrift für Friedens- und Konfliktforschung, 4(2), pp. 182–225. [**Article**](https://www.timoseidl.com/publication/im-suedwesten-nichts-neues/Im%20Suedwesten%20nichts%20neues.pdf)
+* Roos, Ulrich & Seidl, Timo (2015) ‘Im »Südwesten« nichts Neues? Eine Analyse der deutschen Namibiapolitik als Beitrag zur Rekonstruktion der außenpolitischen Identität des deutschen Nationalstaates’, Zeitschrift für Friedens- und Konfliktforschung, 4(2), pp. 182–225. [**Article**](https://www.timoseidl.com/publication/im-suedwesten-nichts-neues/Im%20Suedwesten%20nichts%20neues.pdf)
 
 <p>&nbsp;</p>
 
@@ -200,12 +208,11 @@ Seidl, T. (2020) Ideas, Politics, and Technological Change: Essays on the Compar
 
 <p>&nbsp;</p>
 
-* Marenco, Matteo/Seidl, Timo ‘Talkin’ bout Digitalization. A Quantitative Comparison of Discourses on the Digitalization of Work in 8 European Countries’. Soc ArXiv Working Paper. [**Link**](https://doi.org/10.31235/osf.io/6ex7t)
+* Seidl, Timo (2021) ‘Commodification and Disruption: Theorizing Digital Capitalism’, EIF Working Paper. [Link](https://eif.univie.ac.at/downloads/workingpapers/wp2021-02.pdf)
 
+* Nachtwey, Oliver & Seidl, Timo (2020) ‘The Solutionist Ethic and the Spirit of Digital Capitalism’. Soc ArXiv Working Paper. [**Link**](https://doi.org/10.31235/osf.io/sgjzq)
 
-* Nachtwey, Oliver/Seidl, Timo ‘The Solutionist Ethic and the Spirit of Digital Capitalism’. Soc ArXiv Working Paper. [**Link**](https://doi.org/10.31235/osf.io/sgjzq)
-
-* Nachtwey, Oliver/Seidl, Timo (2017) 'Die Ethik der Solution und der Geist des digitalen Kapitalismus'. Institute for Social Research Working Paper (#11). [**Link**](http://www.ifs.uni-frankfurt.de/wp-content/uploads/IfS-WP-11.pdf)
+* Nachtwey, Oliver & Seidl, Timo (2017) 'Die Ethik der Solution und der Geist des digitalen Kapitalismus'. Institute for Social Research Working Paper (#11). [**Link**](http://www.ifs.uni-frankfurt.de/wp-content/uploads/IfS-WP-11.pdf)
 
 <p>&nbsp;</p>
 
@@ -213,7 +220,10 @@ Seidl, T. (2020) Ideas, Politics, and Technological Change: Essays on the Compar
 
 <p>&nbsp;</p>
 
-* Schmitz, Luuk/Seidl, Timo. Weaponizing the Single Market: The Cases of the EU’s Trade Policy and Digital Agenda. Early-stage paper.
+* Obendiek, Anke & Seidl, Timo 'The (False) Promise of Solutionism. Epistemic Authority and the Delegation of Core State Powers in Digital Governance', Early-stage working paper.
+
+* Schmitz, Luuk & Seidl, Timo. 'Protecting, Transforming, and Projecting the Single Market
+Strategic Autonomy in the EU’s Trade and Digital Policies', Early-stage working paper.
 
 * Seidl, Timo: Investing in the Digital Future.	The Comparative Political Economy of Digital Investment Policies. Unpublished Manuscript.
 
@@ -224,9 +234,9 @@ Seidl, T. (2020) Ideas, Politics, and Technological Change: Essays on the Compar
 
 <p>&nbsp;</p>
 
-* Nachtwey, Oliver/Seidl, Timo: ‘Ideologie und der Geist des digitalen Kapitalismus’, in Jahrbuch Ökonomie und Gesellschaft: Ökonomie und Ideologie. Forthcoming.
+* Nachtwey, Oliver & Seidl, Timo (2020) ‘Ideologie und der Geist des digitalen Kapitalismus’, in Nienhüser, W. and Matiaske, W. (eds.) Ökonomie und Ideologie. (Jahrbuch Ökonomie und Gesellschaft). Weimar: Metropolis, pp. 235–265. 
 
-* Laurer, Moritz. and Seidl, Timo (2017) ‘Eine Stabilitäts- und Wettbewerbsunion der Regierungen: Zur Rekonstruktion grundlegender Handlungsregeln deutscher Eurokrisenpolitik’, in Roos, U. (ed.) Deutsche Außenpolitik: Arenen, Diskurse und grundlegende Handlungsregeln. Wiesbaden: Springer VS, pp. 13–47.
+* Laurer, Moritz & Seidl, Timo (2017) ‘Eine Stabilitäts- und Wettbewerbsunion der Regierungen: Zur Rekonstruktion grundlegender Handlungsregeln deutscher Eurokrisenpolitik’, in Roos, U. (ed.) Deutsche Außenpolitik: Arenen, Diskurse und grundlegende Handlungsregeln. Wiesbaden: Springer VS, pp. 13–47.
 
 * Seidl, Timo (2017) ‘Kompatibilität statt Reduktion: Zur Idee einer Interdisziplinären Anthropologie als soziologischem Selbst- und Fremdver(un)sicherungsraum’, in Wagner, G. (ed.) Die Provokation der Reduktion: Beiträge zur Wissenschaftstheorie der Soziologie. Wiesbaden: Harrassowitz, pp. 201–232.
 
@@ -238,7 +248,7 @@ Seidl, T. (2020) Ideas, Politics, and Technological Change: Essays on the Compar
 
 * Seidl, Timo: ‘Book Review: Appadurai, Arjun. and Alexander, Neta (2020) Failure: Cambridge. Polity Press’, Economic Sociology: European Electronic Newsletter. [**Link**](https://econsoc.mpifg.de/40764/06_BookReviewsEconsoc-NL_21-2_March2020.pdf)
 
-* Laurer, Moritz and Seidl, Timo (2014) ‘Das doppelte Ziel der deutschen Eurokrisenpolitik’, Welttrends, 22(99), pp. 120–126.
+* Laurer, Moritz & Seidl, Timo (2014) ‘Das doppelte Ziel der deutschen Eurokrisenpolitik’, Welttrends, 22(99), pp. 120–126.
 
 <p>&nbsp;</p>
 
@@ -246,11 +256,11 @@ Seidl, T. (2020) Ideas, Politics, and Technological Change: Essays on the Compar
 
 <p>&nbsp;</p>
 
-*  Seidl, Timo: The Techlash in Times of Corona. HIIG Blog. [**Link**](https://www.hiig.de/en/the-techlash-in-times-of-corona/)
+*  Seidl, Timo 'The Techlash in Times of Corona', HIIG Blog. [**Link**](https://www.hiig.de/en/the-techlash-in-times-of-corona/)
 
 * Seidl, Timo (2018) Die Linke und der Geist des digitalen Kapitalismus, Oxi Magazin. 10/18, p. 5.
 
-* Roos, Ulrich/Seidl, Timo (2015) Time to Call Things as They Are, Namibian, July 14, p. 7.
+* Roos, Ulrich & Seidl, Timo (2015) Time to Call Things as They Are, Namibian, July 14, p. 7.
 
 <p>&nbsp;</p>
 
@@ -262,6 +272,11 @@ Seidl, T. (2020) Ideas, Politics, and Technological Change: Essays on the Compar
 ## Academic Conferences
 
 <p>&nbsp;</p>
+
+
+* **SASE** (2021): Protecting, Transforming, and Projecting the Single Market, Investing in the Digital Future
+
+* **CES** (2021): Protecting, Transforming, and Projecting the Single Market
 
 * **ECPR** (2020): Investing in the Digital Future, Talkin’ bout Digitalization
 
