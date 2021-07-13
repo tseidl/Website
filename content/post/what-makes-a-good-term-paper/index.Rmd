@@ -1,16 +1,11 @@
+
 ---
-title: "What makes a good term paper?"
-#subtitle: "Guidelines and Criteria"
-author: "Timo Seidl"
 date: "2021-07-12"
-output:
-  tufte::tufte_html:
-    toc: false
-    self_contained: true
-  bookdown::pdf_document2:
-    latex_engine: xelatex
-    keep_tex: true
-    toc: false
+author: Timo Seidl
+diagram: true
+image:
+  placement: 3
+title: What makes a good term paper?
 ---
 
 
